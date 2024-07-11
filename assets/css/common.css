@@ -1,0 +1,309 @@
+.wrap {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 28px;
+}
+.header-wrap .logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 252px;
+  width: 100%;
+}
+.header-wrap .logo-box .logo {
+  max-width: 125px;
+  width: 100%;
+}
+.header-wrap .logo-box #menu-toggle {
+  height: 32px;
+}
+.header-wrap .logo-box .icon-menu {
+  width: 32px;
+  height: 32px;
+}
+.nav-wrap {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-right: 10px;
+}
+.nav-wrap .nav-bar {
+  display: flex;
+  gap: 0 36px;
+  align-items: baseline;
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 1100px;
+  width: 100%;
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+}
+.moved-right .nav-bar {
+  transform: translateX(-36px);
+}
+.nav-wrap .nav-bar button {
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  gap: 0 8px;
+  align-items: baseline;
+}
+.nav-wrap .nav-bar .star-icon {
+  width: 24px;
+  height: 24px;
+  transform: translateY(4px);
+}
+.nav-wrap .bg {
+  padding-top: 6px;
+  width: 53px;
+  position: absolute;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 100%,
+    rgba(255, 255, 255, 0) 71.51%
+  );
+}
+
+.nav-wrap .bg button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.nav-wrap .bg .next-btn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header-wrap .right-header {
+  display: flex;
+  gap: 0 12px;
+  align-items: center;
+}
+.header-wrap .right-header .info-box {
+  border-radius: 36px;
+  border: 1px solid #e0e2e9;
+  background: #fff;
+  padding-left: 16px;
+  display: flex;
+  position: relative;
+  width: 261px;
+  height: 32px;
+}
+
+.header-wrap .right-header .info-box .info {
+  display: flex;
+  align-items: center;
+}
+.header-wrap .right-header .info-box .info h3 {
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 12px;
+}
+.header-wrap .right-header .info-box .info h3 span {
+  font-weight: 800;
+}
+.header-wrap .right-header .info-box .info p {
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 12px;
+}
+.header-wrap .right-header .info-box .info p span {
+  color: #3d6ff1;
+}
+.header-wrap .right-header .info-box .info a {
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header-wrap .right-header .info-box .logout-btn {
+  border-radius: 100px;
+  background: #6f7589;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* side-menu */
+
+.side {
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transform: translateX(-999px);
+  transition: all 0.3s ease-out;
+}
+.side.active {
+  transform: translateX(0);
+}
+.search-menu {
+  background-color: #263a75;
+  padding: 11px 28px;
+  position: relative;
+}
+
+.search-menu input {
+  width: 100%;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: transparent;
+  outline: none;
+}
+.search-menu img {
+  position: absolute;
+  right: 28px;
+}
+
+.side-menu {
+  background-color: #2774e1;
+  padding: 17px 0;
+  flex-grow: 1;
+}
+
+.side-menu .clickbtn-box {
+  position: relative;
+  cursor: pointer;
+}
+.side-menu .clickbtn-box .clickbtn {
+  position: absolute;
+  right: -14px;
+  top: -21px;
+}
+.side-menu .clickbtn-box .clickbtn img {
+  width: 16px;
+  height: 60px;
+}
+.side-menu .title-box {
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  gap: 0 8px;
+  padding-bottom: 17px;
+  border-radius: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.side-menu .menu-list .list-title {
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.side-menu .menu-list .list-title .flex {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 28px;
+}
+.side-menu .menu-list .list-title span {
+  display: block;
+  width: 100%;
+}
+.side-menu .menu-list i {
+  border-radius: 4px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.28);
+}
+.side-menu .menu-list i svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.side-menu .sub-menu {
+  display: none;
+  border-radius: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 28, 39, 0.16) 0%,
+    rgba(23, 28, 39, 0.08) 100%
+  );
+  padding: 27px 0;
+}
+.side-menu .sub-menu li {
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 28px;
+  position: relative;
+}
+.side-menu .sub-menu li:after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  left: 16px;
+  top: 14px;
+  background-color: rgba(217, 217, 217, 0.4);
+}
+
+.side-menu .menu-list .list-title.open .flex {
+  border-bottom: none;
+}
+.side-menu .menu-list .list-title.open i {
+  background-color: #fff;
+}
+
+.side-menu .menu-list .list-title.open i svg {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.side-menu .menu-list .list-title.open i svg path {
+  fill: #2774e1;
+}
