@@ -6,11 +6,13 @@
   width: 100%;
   display: flex;
   position: relative;
+  background: #f6f6fa;
 }
 .search-filter .list {
-  display: flex;
+  height: 52px;
   align-items: center;
-  background: #f6f6fa;
+  display: flex;
+  flex: 1;
 }
 .search-filter .list p {
   color: #373a46;
@@ -21,10 +23,11 @@
   min-width: 135px;
 }
 .search-filter .list .input-box {
-  background-color: #fff;
   padding: 8px;
   display: flex;
+  flex: 1;
   gap: 0 4px;
+  background-color: #fff;
 }
 .search-filter .list .input-box .search-input-box {
   display: flex;
@@ -55,6 +58,9 @@
   background-color: #fff;
   height: 100%;
   padding: 8px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 .search-filter .list .select-box .select-btn {
   border-radius: 4px;
@@ -63,17 +69,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   text-align: left;
   cursor: pointer;
 }
 .search-filter .list .select-box .btn-box {
   display: flex;
   gap: 0 8px;
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .search-filter .list .select-box .btn-box .search-btn {
   border-radius: 4px;
@@ -128,15 +131,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.table-wrap table {
-}
 
 .table-wrap table thead th {
   border-top: 1px solid #263a75;
   border-right: 1px solid #e0e2e9;
   border-bottom: 1px solid #b4b9cd;
   background: #f6f6fa;
-  padding: 13px 22px;
+  padding: 13px 0;
   color: #373a46;
   font-weight: 600;
   line-height: normal;
