@@ -11,14 +11,14 @@
 .header-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 16px 28px;
+  padding: 16px 28px 16px 0;
 }
 .header-wrap .logo-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 252px;
-  width: 100%;
+  width: 14.6%;
+  padding-left: 28px;
 }
 .header-wrap .logo-box .logo {
   max-width: 125px;
@@ -197,8 +197,6 @@ header .right-header .service-btn button:last-child::after {
 /* side-menu */
 
 .side {
-  /* max-width: 280px;
-  width: 100%; */
   width: 14.6%;
   display: flex;
   flex-direction: column;
@@ -366,7 +364,7 @@ header .right-header .service-btn button:last-child::after {
   background: #e6e8f0;
   height: 40px;
   display: flex;
-  padding-left: 40px;
+  padding: 0 40px;
 }
 .tabs .home-btn {
   border-radius: 4px 4px 0px 0px;
@@ -383,9 +381,13 @@ header .right-header .service-btn button:last-child::after {
 }
 .tabs .tab-list {
   display: flex;
+  flex: 1;
+  overflow: hidden;
 }
 .tabs .tab-list .tab {
-  width: 180px;
+  flex: 1;
+  max-width: 180px;
+  width: 100%;
   height: 36px;
   padding: 4px 12px;
   margin-top: 4px;
@@ -401,6 +403,8 @@ header .right-header .service-btn button:last-child::after {
   width: 1px;
   height: 12px;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #caced8;
 }
 .tabs .tab-list .tab.active {
@@ -409,9 +413,13 @@ header .right-header .service-btn button:last-child::after {
   border-left: 1px solid #b4b9cc;
   background: #fff;
 }
+.tabs .tab-list .tab.active:after {
+  display: none;
+}
 .tabs .tab-list .tab span {
   overflow: hidden;
-  width: 140px;
+  max-width: 140px;
+  width: 100%;
   height: 17px;
   color: #555b6c;
   font-size: 14px;
@@ -430,28 +438,19 @@ header .right-header .service-btn button:last-child::after {
   cursor: pointer;
 }
 .tabs .arrow-box {
-  height: 40px;
   display: flex;
   gap: 0 8px;
   align-items: center;
+  margin-top: 4px;
 }
 .tabs .arrow-box .number {
   color: #373a46;
   font-size: 13px;
   font-weight: 500;
   line-height: 14px;
-  position: relative;
+  padding-left: 8px;
 }
-.tabs .arrow-box .number::after {
-  position: absolute;
-  content: '';
-  width: 1px;
-  height: 12px;
-  background-color: #b4b9cc;
-  left: -8px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+
 .tabs .btn-box {
   display: flex;
   gap: 0 8px;

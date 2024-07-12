@@ -31,13 +31,20 @@
 }
 .search-filter .list .input-box .search-input-box {
   display: flex;
+  width: 100%;
 }
-.search-filter .list .input-box .search-input-box input {
+
+.search-filter .list .input-box input {
   padding: 8px 12px;
   border-radius: 4px 0px 0px 4px;
   border: 1px solid #b4b9cc;
   height: 36px;
   outline: none;
+  width: 100%;
+}
+.search-filter .list .input-box .disable {
+  border-radius: 4px;
+  width: 67%;
 }
 .search-filter .list .input-box button {
   border-radius: 0px 4px 4px 0px;
@@ -69,8 +76,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 200px;
-  width: 100%;
+  width: 54.5%;
   text-align: left;
   cursor: pointer;
 }
@@ -81,7 +87,7 @@
 .search-filter .list .select-box .btn-box .search-btn {
   border-radius: 4px;
   background: #263a75;
-  padding: 9px 20px;
+  width: 66px;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
