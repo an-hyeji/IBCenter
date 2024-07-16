@@ -192,6 +192,15 @@
   align-items: center;
   gap: 0 20px;
   position: relative;
+  white-space: nowrap;
+  justify-content: center;
+}
+.total-wrap .total-box {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  position: absolute;
+  left: 0;
 }
 .total-wrap .total {
   display: flex;
@@ -233,10 +242,9 @@
   color: #373a46;
 }
 .pagination-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 0 4px;
 }
 .pagination-wrap button {
   width: 32px;

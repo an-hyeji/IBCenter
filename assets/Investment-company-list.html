@@ -27,14 +27,16 @@
           <div class="nav-wrap">
             <nav>
               <ul class="nav-bar">
-                <button>
-                  <img
-                    src="./images/icon-star.png"
-                    alt="별아이콘"
-                    class="star-icon"
-                  />
-                  마이메뉴
-                </button>
+                <li>
+                  <button>
+                    <img
+                      src="./images/icon-star.png"
+                      alt="별아이콘"
+                      class="star-icon"
+                    />
+                    마이메뉴
+                  </button>
+                </li>
                 <li><a href="">투자관리</a></li>
                 <li><a href="">조합관리</a></li>
                 <li><a href="">회계관리</a></li>
@@ -247,7 +249,7 @@
               <div class="title-box">
                 <img src="./images/Icon-left-arrow.svg" alt="화살표아이콘" />
                 <h1 class="title">투자업체리스트</h1>
-                <button>
+                <button class="icon-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -594,19 +596,22 @@
               </table>
             </div>
             <div class="total-wrap">
-              <div class="total">
-                <p>총 <span>1200</span>건</p>
-                <p class="page"><span>1</span>133</p>
+              <div class="total-box">
+                <div class="total">
+                  <p>총 <span>1200</span>건</p>
+                  <p class="page"><span>1</span>133</p>
+                </div>
+                <div class="select-box total-select-box">
+                  <button class="select-btn">
+                    15개씩 보기
+                    <img
+                      src="./images/icon-select-arrow.svg"
+                      alt="화살표아이콘"
+                    />
+                  </button>
+                </div>
               </div>
-              <div class="select-box total-select-box">
-                <button class="select-btn">
-                  15개씩 보기
-                  <img
-                    src="./images/icon-select-arrow.svg"
-                    alt="화살표아이콘"
-                  />
-                </button>
-              </div>
+
               <div class="pagination-wrap">
                 <button class="border-btn">
                   <img
@@ -643,6 +648,14 @@
                   />
                 </button>
               </div>
+            </div>
+            <div class="fixed-box">
+              <button class="scroll-to-top active">
+                <img src="./images/icon-arrow-up.svg" alt="위로버튼" />
+              </button>
+              <button class="scroll-to-bottom">
+                <img src="./images/icon-arrow-down.svg" alt="아래로버튼" />
+              </button>
             </div>
           </div>
         </section>
