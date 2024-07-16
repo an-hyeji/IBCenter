@@ -1,0 +1,61 @@
+a {
+  color: black;
+}
+a:hover {
+  opacity: 80%;
+}
+
+.index-wrapper {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+}
+.index-wrapper .title {
+  font-size: 28px;
+  margin: 40px 0;
+  text-align: center;
+}
+table {
+  width: 100%;
+}
+
+thead tr td {
+  background-color: gold;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+tbody tr td {
+  border: 1px solid #eee;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.view-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.detail {
+  position: relative;
+}
+svg {
+  width: 40px;
+  position: absolute;
+  top: -20px;
+  background-color: #fff;
+}
+.line {
+  margin: 40px 0;
+  border-top: 1px dashed gold;
+}
+.detail thead tr td {
+  background-color: orange;
+  color: #fff;
+}
+.version {
+  font-size: 12px;
+}

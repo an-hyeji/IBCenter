@@ -6,6 +6,10 @@
 .flex-wrap {
   display: flex;
 }
+.select-wrap {
+  width: 100%;
+  position: relative;
+}
 .select-box {
   background-color: #fff;
   height: 100%;
@@ -29,6 +33,7 @@
   color: #6f7589;
   white-space: nowrap;
 }
+
 .total-select-box {
   max-width: 120px;
   width: 100%;
@@ -39,6 +44,13 @@
   width: 100%;
   padding: 7px 8px;
   color: #373a46;
+}
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: gold;
 }
 
 .icon-button.active svg path {
@@ -54,6 +66,7 @@
   flex-direction: column;
   gap: 3px;
 }
+
 .fixed-box button {
   width: 32px;
   height: 32px;
@@ -71,6 +84,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.fixed-box-bottom {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  gap: 3px;
+}
+.fixed-box-bottom button {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #555b6c;
+  background: #fff;
+  box-shadow: 0px 3.24px 6.48px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 
 /* header */
@@ -347,11 +375,10 @@ header .right-header .service-btn button:last-child::after {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 28px;
 }
-.side-menu .menu-list .list-title span {
-  display: block;
+.side-menu .menu-list .list-title p {
   width: 100%;
 }
-.side-menu .menu-list i {
+.side-menu .menu-list span {
   border-radius: 4px;
   width: 19px;
   height: 19px;
@@ -359,7 +386,7 @@ header .right-header .service-btn button:last-child::after {
   position: relative;
   background: rgba(255, 255, 255, 0.28);
 }
-.side-menu .menu-list i svg {
+.side-menu .menu-list span svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -374,6 +401,9 @@ header .right-header .service-btn button:last-child::after {
     rgba(23, 28, 39, 0.08) 100%
   );
   padding: 28px 20px;
+}
+.sub-menu.active {
+  display: block;
 }
 .side-menu .sub-menu li {
   font-size: 15px;
@@ -410,16 +440,16 @@ header .right-header .service-btn button:last-child::after {
 .side-menu .menu-list .list-title.open .flex {
   border-bottom: none;
 }
-.side-menu .menu-list .list-title.open i {
+.side-menu .menu-list .list-title.open span {
   background-color: #fff;
 }
 .side-menu .menu-list .list-title.open svg {
   transition: all 0.2s ease-out;
 }
-.side-menu .menu-list .list-title.open i svg {
+.side-menu .menu-list .list-title.open span svg {
   transform: translate(-50%, -50%) rotate(0deg);
 }
-.side-menu .menu-list .list-title.open i svg path {
+.side-menu .menu-list .list-title.open span svg path {
   fill: #2774e1;
 }
 

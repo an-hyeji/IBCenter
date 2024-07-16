@@ -15,3 +15,13 @@ buttons.forEach(function (button) {
 document.querySelector('.icon-button').addEventListener('click', function () {
   this.classList.toggle('active');
 });
+
+// 셀렉트박스
+
+const selectBox = document.querySelector('.select-box');
+const dropDownMenu = document.querySelector('.drop-down-menu');
+
+selectBox.addEventListener('click', () => {
+  dropDownMenu.style.display =
+    dropDownMenu.style.display === 'block' ? 'none' : 'block';
+});

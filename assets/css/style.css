@@ -69,7 +69,7 @@
 .search-filter .list .select-box .btn-box .search-btn {
   border-radius: 4px;
   background: #263a75;
-  width: 66px;
+  width: 58px;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -258,7 +258,11 @@
   border: 1px solid #3d6ff1;
   background: rgba(61, 111, 241, 0.04);
 }
-
+@media screen and (max-width: 1400px) {
+  .pagination-wrap {
+    padding-left: 60px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .search-filter .list p {
     min-width: 80px;
