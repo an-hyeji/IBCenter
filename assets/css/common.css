@@ -148,11 +148,13 @@ table thead th:last-child {
 }
 
 /* header */
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
   padding: 16px 28px 16px 0;
   gap: 0 48px;
+  height: 68px;
 }
 .header-wrap .logo-box {
   display: flex;
@@ -489,9 +491,6 @@ header .right-header .service-btn button:last-child::after {
 .side-menu .menu-list .list-title.open span {
   background-color: #fff;
 }
-.side-menu .menu-list .list-title.open svg {
-  transition: all 0.2s ease-out;
-}
 .side-menu .menu-list .list-title.open span svg {
   transform: translate(-50%, -50%) rotate(0deg);
 }
@@ -610,6 +609,8 @@ header .right-header .service-btn button:last-child::after {
 /* content*/
 .content-wrap {
   padding: 0 40px 72px 40px;
+  overflow-y: scroll;
+  height: 100%;
 }
 .content-wrap .top {
   display: flex;

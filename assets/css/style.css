@@ -279,9 +279,7 @@
   align-items: center;
   height: 44px;
 }
-.report-wrap .btn-box .button {
-  width: 50%;
-}
+
 .report-wrap .btn-box button {
   width: 50%;
   color: #373a46;
@@ -290,7 +288,6 @@
   line-height: 16px;
 }
 .report-wrap .btn-box .more-btn {
-  width: 100%;
   position: relative;
 }
 .report-wrap .btn-box .more-btn::after {

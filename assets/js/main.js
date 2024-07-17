@@ -15,3 +15,22 @@ buttons.forEach(function (button) {
 document.querySelector('.icon-button').addEventListener('click', function () {
   this.classList.toggle('active');
 });
+
+// 위아래 버튼 클릭시 영역이동
+const scrollUpButton = document.querySelector('.scroll-up');
+const scrollDownButton = document.querySelector('.scroll-down');
+const contentWrap = document.querySelector('.content-wrap');
+
+scrollUpButton.addEventListener('click', () => {
+  contentWrap.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+scrollDownButton.addEventListener('click', () => {
+  contentWrap.scrollTo({
+    top: contentWrap.scrollHeight,
+    behavior: 'smooth',
+  });
+});

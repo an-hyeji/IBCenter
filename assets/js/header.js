@@ -1,14 +1,22 @@
-//사이드메뉴 토글
+// 사이드메뉴 토글
 const listTitles = document.querySelectorAll('.list-title');
 
 listTitles.forEach((listTitle) => {
   listTitle.addEventListener('click', function () {
-    const activeSubMenus = document.querySelectorAll('.sub-menu.active');
-    activeSubMenus.forEach((subMenu) => {
-      subMenu.classList.remove('active');
+    const currentSubMenu = this.querySelector('.sub-menu');
+
+    listTitles.forEach((title) => {
+      if (title !== this) {
+        const otherSubMenu = title.querySelector('.sub-menu');
+        if (otherSubMenu.classList.contains('active')) {
+          otherSubMenu.classList.remove('active');
+          title.classList.remove('open');
+        }
+      }
     });
 
-    const subMenu = this.querySelector('.sub-menu');
-    subMenu.classList.toggle('active');
+    currentSubMenu.classList.toggle('active');
+
+    this.classList.toggle('open');
   });
 });
