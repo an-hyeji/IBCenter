@@ -5,6 +5,7 @@
 }
 .flex-wrap {
   display: flex;
+  height: 100vh;
 }
 
 .select-box {
