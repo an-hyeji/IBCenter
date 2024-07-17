@@ -695,7 +695,7 @@ header .right-header .service-btn button:last-child::after {
 .modal-content .top h2 img {
   width: 20px;
 }
-.modal-content .top .close img {
+.modal-content .top .modal-close img {
   width: 28px;
 }
 .modal-content .cont {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets//css/style.css" />
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
-    <title>투자업체리스트</title>
+    <title>업무보고서용 자료 산출</title>
   </head>
   <body>
     <div class="wrap">
@@ -265,11 +265,7 @@
           <div class="content-wrap">
             <div class="top">
               <div class="title-box">
-                <img
-                  src="./assets/images//Icon-left-arrow.svg"
-                  alt="화살표아이콘"
-                />
-                <h1 class="title">투자업체리스트</h1>
+                <h1 class="title">업무보고서용 자료 산출</h1>
                 <button class="icon-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -288,69 +284,31 @@
               <div class="bread-crumb">
                 <ul>
                   <li>Home</li>
-                  <li>투자관리</li>
-                  <li>투자기업관리</li>
-                  <li>투자업체리스트</li>
+                  <li>경영관리</li>
+                  <li>업무보고서용 자료 산출</li>
                 </ul>
               </div>
             </div>
             <div class="search-filter">
               <div class="list">
-                <p>투자업체</p>
-                <div class="input-box">
-                  <div class="search-input-box">
-                    <label for="search-company" aria-label="검색"></label>
-                    <input type="text" id="search-company" />
-                    <button>
-                      <img
-                        src="./assets/images//icon-search-input.svg"
-                        alt="검색아이콘"
-                      />
-                    </button>
-                  </div>
-                  <label
-                    for="search-company-disabled"
-                    aria-label="검색"
-                  ></label>
-                  <input
-                    type="text"
-                    id="search-company-disabled"
-                    class="disable"
-                    disabled
-                  />
-                </div>
-              </div>
-              <div class="list">
-                <p>담당자</p>
-                <div class="input-box">
-                  <div class="search-input-box">
-                    <label for="search-person" aria-label="검색"></label>
-                    <input type="text" id="search-person" />
-                    <button>
-                      <img
-                        src="./assets/images//icon-search-input.svg"
-                        alt="검색아이콘"
-                      />
-                    </button>
-                  </div>
-                  <label for="search-person-disabled" aria-label="검색"></label>
-                  <input
-                    type="text"
-                    id="search-person-disabled"
-                    class="disable"
-                    disabled
-                  />
-                </div>
-              </div>
-              <div class="list">
-                <p><label for="categorySelect">구분</label></p>
+                <p><label for="categorySelect">기준연월</label></p>
                 <div class="select-box">
                   <select
                     name="category"
                     id="categorySelect"
                     aria-label="구분 선택"
                   >
-                    <option value="" selected>선택해주세요</option>
+                    <option value="" selected>2024년</option>
+                    <option value="option1">옵션 1</option>
+                    <option value="option2">옵션 2</option>
+                    <option value="option3">옵션 3</option>
+                  </select>
+                  <select
+                    name="category"
+                    id="categorySelect"
+                    aria-label="구분 선택"
+                  >
+                    <option value="" selected>6월</option>
                     <option value="option1">옵션 1</option>
                     <option value="option2">옵션 2</option>
                     <option value="option3">옵션 3</option>
@@ -367,326 +325,168 @@
                 </div>
               </div>
             </div>
-            <div class="btn-list-wrap">
-              <div class="btn-list">
-                <button class="add-btn">회사추가</button>
-                <button class="add-btn">세일즈포스투자업체등록</button>
-                <button>투심위 정보</button>
-                <button>업로드파일 현황</button>
-                <button>세일즈포스 팀정보 끌어오기</button>
-              </div>
-              <div class="icon-list">
-                <button>
-                  <img src="./assets/images//icon-excel.png" alt="엑셀아이콘" />
-                </button>
-                <button>
-                  <img src="./assets/images//icon-word.png" alt="워드아이콘" />
-                </button>
-                <button>
-                  <img src="./assets/images//icon-pdf.png" alt="PDF아이콘" />
-                </button>
-                <button>
-                  <img
-                    src="./assets/images//icon-printer.png"
-                    alt="프린터아이콘"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="table-wrap secondary-scroll">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <thead>
-                  <tr>
-                    <th>회사ID</th>
-                    <th>
-                      회사명<img
-                        src="./assets/images//icon-table-arrow.svg"
-                        alt="화살표"
+            <div class="report-wrap">
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>투자 및<br />융자현황</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
                       />
-                    </th>
-                    <th>사후관리자(국내)</th>
-                    <th>심사자(국내)</th>
-                    <th>사후관리자(해외)</th>
-                    <th>심사자(해외)</th>
-                    <th>대표자</th>
-                    <th>설립일자</th>
-                    <th>
-                      상장(등록)일<br />
-                      (매매개시일)
-                    </th>
-                    <th>업종(표준산업분류)</th>
-                    <th>
-                      투자일자<img
-                        src="./assets/images//icon-table-arrow.svg"
-                        alt="화살표"
-                      />
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="total-wrap">
-              <div class="total-box">
-                <div class="total">
-                  <p>총 <span>1200</span>건</p>
-                  <p class="page"><span>1</span>133</p>
+                      AC285
+                    </div>
+                  </div>
                 </div>
-                <div class="total-select-box">
-                  <label for="total-categorySelect"></label>
-                  <select
-                    name="total-category"
-                    id="total-categorySelect"
-                    aria-label="구분 선택"
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
                   >
-                    <option value="" selected>15개씩 보기</option>
-                  </select>
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
                 </div>
               </div>
-
-              <div class="pagination-wrap">
-                <button class="border-btn">
-                  <img
-                    src="./assets/images//icon-pagination-prev1.svg"
-                    alt="맨앞으로이동버튼"
-                  />
-                </button>
-                <button class="border-btn">
-                  <img
-                    src="./assets/images//icon-pagination-prev2.svg"
-                    alt="이전버튼"
-                  />
-                </button>
-                <button class="number-btn active">1</button>
-                <button class="number-btn">2</button>
-                <button class="number-btn">3</button>
-                <button class="number-btn">4</button>
-                <button class="number-btn">5</button>
-                <button class="number-btn">6</button>
-                <button class="number-btn">7</button>
-                <button class="number-btn">8</button>
-                <button class="number-btn">9</button>
-                <button class="number-btn">10</button>
-                <button class="border-btn">
-                  <img
-                    src="./assets/images//icon-pagination-next1.svg"
-                    alt="다음버튼"
-                  />
-                </button>
-                <button class="border-btn">
-                  <img
-                    src="./assets/images//icon-pagination-next2.svg"
-                    alt="맨끝으로이동버튼"
-                  />
-                </button>
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>업종별 투자 및<br />융자현황</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
+                      />
+                      AC286
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
+                  >
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
+                </div>
               </div>
-            </div>
-            <div class="fixed-box">
-              <button class="scroll-to-top active">
-                <img src="./assets/images//icon-arrow-up.svg" alt="위로버튼" />
-              </button>
-              <button class="scroll-to-bottom">
-                <img
-                  src="./assets/images//icon-arrow-down.svg"
-                  alt="아래로버튼"
-                />
-              </button>
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>업력별 투자 및<br />융자현황</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
+                      />
+                      AC361
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
+                  >
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>신기술 조합<br />결성현황</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
+                      />
+                      AC362
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
+                  >
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>신기술사업투자조합의<br />투자재원 현황</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
+                      />
+                      AC287
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
+                  >
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>유형별 투자회수<br />현황</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
+                      />
+                      AC410
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
+                  >
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="report-card">
+                  <h2>펀트결성 및<br />투자실적</h2>
+                  <div class="file-box">
+                    <div class="file">
+                      <img
+                        src="./assets/images/icon-file.svg"
+                        alt="파일아이콘"
+                      />
+                      증기부
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <form
+                    action="./Investment-and-loan-status.html"
+                    class="button"
+                  >
+                    <button class="more-btn">자세히 보기</button>
+                  </form>
+                  <button>엑셀다운로드</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>

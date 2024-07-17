@@ -1,6 +1,6 @@
 const modal = document.querySelector('.modal');
 const btn = document.querySelector('.modal-button');
-const closeBtn = document.querySelector('.close');
+const closeBtn = document.querySelector('.modal-close');
 
 btn.onclick = function () {
   modal.style.display = 'block';

@@ -223,7 +223,98 @@
   border: 1px solid #3d6ff1;
   background: rgba(61, 111, 241, 0.04);
 }
-/* 업무보고서용 자료 산출 조회 Investment-and-loan-status */
+@media screen and (max-width: 1400px) {
+  .pagination-wrap {
+    padding-left: 60px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .search-filter .list p {
+    min-width: 80px;
+    margin-right: 4px;
+  }
+}
+
+/* 업무보고서용 자료 산출 business-report */
+.report-wrap {
+  margin-top: 32px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.report-wrap .report-card {
+  height: 200px;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #e0e2e9;
+  background: #f6f6fa;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.report-wrap .report-card h2 {
+  color: #373a46;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.report-wrap .file-box .file {
+  margin-top: 20px;
+  border-radius: 4px;
+  background: #e0e2e9;
+  display: inline-block;
+  color: #555b6c;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 4px;
+}
+
+.report-wrap .btn-box {
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #e0e2e9;
+  border-top: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+.report-wrap .btn-box .button {
+  width: 50%;
+}
+.report-wrap .btn-box button {
+  width: 50%;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.report-wrap .btn-box .more-btn {
+  width: 100%;
+  position: relative;
+}
+.report-wrap .btn-box .more-btn::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 16px;
+  background-color: #e0e2e9;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1700px) {
+  .report-wrap {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 1600px) {
+  .report-wrap {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* 투자 및 융자현황 Investment-and-loan-status */
 
 .loan-status-box {
   margin-top: 8px;
@@ -298,15 +389,11 @@
   line-height: normal;
   text-align: center;
 }
-
-@media screen and (max-width: 1400px) {
-  .pagination-wrap {
-    padding-left: 60px;
-  }
+.status-table-wrap table .border {
+  border-bottom: 1px solid #e0e2e9;
+  border-top: 1px solid #e0e2e9;
 }
-@media screen and (max-width: 1280px) {
-  .search-filter .list p {
-    min-width: 80px;
-    margin-right: 4px;
-  }
+.status-table-wrap table .border-r {
+  border-right: 1px solid #e0e2e9;
+  border-bottom: 1px solid #e0e2e9;
 }
