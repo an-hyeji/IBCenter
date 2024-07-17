@@ -291,41 +291,40 @@
                 </ul>
               </div>
             </div>
-            <div>
+            <div class="loan-status-box">
               <h3>기준연월: 2024년 6월</h3>
-              <div class="btn-list-wrap">
+              <div class="btn-list-wrap status-btn-list-wrap">
                 <div class="btn-list">
                   <button>투자거래집계 조회</button>
                   <button>투자원장</button>
                   <button>조합별 출자/분배</button>
                 </div>
-                <div class="icon-list">
-                  <button>
+                <div class="icon-list status-icon-list">
+                  <div class="flex">
+                    <p>(단위: 백만원)</p>
+                    <button>
+                      <img
+                        src="./assets/images//icon-excel.png"
+                        alt="엑셀아이콘"
+                      />
+                    </button>
+                  </div>
+                  <button class="guide-btn">
                     <img
-                      src="./assets/images//icon-excel.png"
-                      alt="엑셀아이콘"
+                      src="./assets/images/icon-info-solid.svg"
+                      alt="알림아이콘"
                     />
-                  </button>
-                  <button>
+                    사용안내
                     <img
-                      src="./assets/images//icon-word.png"
-                      alt="워드아이콘"
-                    />
-                  </button>
-                  <button>
-                    <img src="./assets/images//icon-pdf.png" alt="PDF아이콘" />
-                  </button>
-                  <button>
-                    <img
-                      src="./assets/images//icon-printer.png"
-                      alt="프린터아이콘"
+                      src="./assets/images/iocn-chevron-right.svg"
+                      alt="화살표아이콘"
                     />
                   </button>
                 </div>
               </div>
             </div>
 
-            <div class="table-wrap secondary-scroll">
+            <div class="status-table-wrap secondary-scroll">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <thead>
                   <tr>
@@ -337,7 +336,7 @@
                     <th>E</th>
                     <th>F</th>
                   </tr>
-                  <tr>
+                  <tr style="border: 1px solid #e0e2e9">
                     <th rowspan="2">전분기말 잔액</th>
                     <th colspan="4">심사자</th>
                     <th rowspan="2">당분기말 잔액</th>
@@ -346,7 +345,7 @@
                     <th>당분기중 실행</th>
                     <th>당분기중 회수</th>
                     <th>당분기중 순실행</th>
-                    <th>기타</th>
+                    <th style="border-right: 1px solid #e0e2e9">기타</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -357,7 +356,7 @@
                       사업투자<br />
                       조합분
                     </td>
-                    <td colspan="4">업무집행조합수</td>
+                    <td colspan="4" class="bgtd">업무집행조합수</td>
                     <td>3</td>
                     <td>0</td>
                     <td>0</td>
@@ -368,7 +367,7 @@
                   <tr>
                     <td>BAA</td>
                     <td rowspan="22">투자</td>
-                    <td colspan="3">투자업체수</td>
+                    <td colspan="3" class="bgtd">투자업체수</td>
                     <td>9</td>
                     <td>0</td>
                     <td>0</td>
@@ -389,8 +388,8 @@
                   <tr>
                     <td>B111</td>
                     <td rowspan="6">투자주식</td>
-                    <td rowspan="2">보통주</td>
-                    <td>취득원가</td>
+                    <td rowspan="2" class="bgtd">보통주</td>
+                    <td class="bgtd">취득원가</td>
                     <td>112</td>
                     <td>0</td>
                     <td>0</td>
@@ -411,7 +410,7 @@
                   <tr>
                     <td>B1111</td>
                     <td rowspan="2">우선주</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>881</td>
                     <td>0</td>
                     <td>0</td>
@@ -432,7 +431,7 @@
                   <tr>
                     <td>B113</td>
                     <td rowspan="2">합계</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>993</td>
                     <td>0</td>
                     <td>0</td>
@@ -453,8 +452,8 @@
                   <tr>
                     <td>B121</td>
                     <td rowspan="8">투자사채</td>
-                    <td rowspan="2">BW</td>
-                    <td>취득원가</td>
+                    <td rowspan="2" class="bgtd">BW</td>
+                    <td class="bgtd">취득원가</td>
                     <td>80</td>
                     <td>0</td>
                     <td>0</td>
@@ -475,7 +474,7 @@
                   <tr>
                     <td>B122</td>
                     <td rowspan="2">CB</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>42</td>
                     <td>0</td>
                     <td>0</td>
@@ -496,7 +495,7 @@
                   <tr>
                     <td>B1223</td>
                     <td rowspan="2">기타</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -517,7 +516,7 @@
                   <tr>
                     <td>B12</td>
                     <td rowspan="2">합계</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>122</td>
                     <td>0</td>
                     <td>0</td>
@@ -538,7 +537,7 @@
                   <tr>
                     <td>B13</td>
                     <td colspan="2" rowspan="2">조건부융자</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -559,7 +558,7 @@
                   <tr>
                     <td>B14</td>
                     <td colspan="2" rowspan="2">기타</td>
-                    <td>취득원가</td>
+                    <td class="bgtd">취득원가</td>
                     <td>528</td>
                     <td>0</td>
                     <td>0</td>
@@ -580,7 +579,7 @@
                   <tr>
                     <td>B1</td>
                     <td colspan="2" rowspan="2">소계</td>
-                    <td>취득원가(B)</td>
+                    <td class="bgtd">취득원가(B)</td>
                     <td>1,642</td>
                     <td>0</td>
                     <td>0</td>
@@ -601,7 +600,7 @@
                   <tr>
                     <td>B21</td>
                     <td colspan="2" rowspan="2">신기술금융대출금</td>
-                    <td colspan="2">업무집행조합수</td>
+                    <td colspan="2" class="bgtd">업무집행조합수</td>
                     <td></td>
                     <td></td>
                     <td></td>

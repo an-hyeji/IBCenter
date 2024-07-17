@@ -125,45 +125,10 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
-.table-wrap table {
-  border-collapse: collapse;
-}
 
-.secondary-scroll::-webkit-scrollbar {
-  width: 20px;
-  height: 20px;
-}
-
-.secondary-scroll::-webkit-scrollbar-track {
-  background: #f6f6fa;
-  border-top: 1px solid #e0e2e9;
-}
-
-.secondary-scroll::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: #caced8;
-  background-clip: padding-box;
-  border: 6px solid #f6f6fa;
-}
-.table-wrap table thead th {
-  border-top: 1px solid #263a75;
-  border-right: 1px solid #e0e2e9;
-  border-bottom: 1px solid #b4b9cd;
-  background: #f6f6fa;
-  padding: 13px 22px;
-  color: #373a46;
-  font-weight: 600;
-  line-height: normal;
-  vertical-align: middle;
-}
-
-.table-wrap table thead th:last-child {
-  border-right: none;
-}
 .table-wrap table thead th img {
   margin-left: 4px;
 }
-
 .table-wrap table tbody td {
   padding: 9px 8px;
   text-align: center;
@@ -258,17 +223,88 @@
   border: 1px solid #3d6ff1;
   background: rgba(61, 111, 241, 0.04);
 }
+/* 업무보고서용 자료 산출 조회 Investment-and-loan-status */
+
+.loan-status-box {
+  margin-top: 8px;
+}
+.loan-status-box h3 {
+  color: #373a46;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.status-btn-list-wrap {
+  padding: 12px 0 8px 0;
+}
+.status-btn-list-wrap .status-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.status-btn-list-wrap .status-icon-list .flex {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.status-btn-list-wrap .status-icon-list .flex p {
+  color: #6f7589;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.status-btn-list-wrap .status-icon-list .guide-btn {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  width: 113px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 4px;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status-btn-list-wrap .status-icon-list .guide-btn img {
+  width: unset;
+  position: unset;
+  transform: translate(0);
+}
+.status-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.status-table-wrap table tbody td {
+  padding: 9px 8px;
+  text-align: right;
+  border-bottom: 1px solid #e0e2e9;
+  border-right: 1px solid #e0e2e9;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.status-table-wrap table tbody td:first-child,
+.status-table-wrap table tbody td:nth-child(2),
+.status-table-wrap table tbody .bgtd {
+  background-color: #f6f6fa;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
 
 @media screen and (max-width: 1400px) {
-  /* 투자업체리스트 Investment-company-list */
-
   .pagination-wrap {
     padding-left: 60px;
   }
 }
 @media screen and (max-width: 1280px) {
-  /* 투자업체리스트 Investment-company-list */
-
   .search-filter .list p {
     min-width: 80px;
     margin-right: 4px;
