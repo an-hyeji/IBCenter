@@ -1,4 +1,4 @@
-/* Investment-company-list */
+/* 투자업체리스트 Investment-company-list */
 
 .search-filter {
   border-radius: 4px;
@@ -258,12 +258,17 @@
   border: 1px solid #3d6ff1;
   background: rgba(61, 111, 241, 0.04);
 }
+
 @media screen and (max-width: 1400px) {
+  /* 투자업체리스트 Investment-company-list */
+
   .pagination-wrap {
     padding-left: 60px;
   }
 }
 @media screen and (max-width: 1280px) {
+  /* 투자업체리스트 Investment-company-list */
+
   .search-filter .list p {
     min-width: 80px;
     margin-right: 4px;
