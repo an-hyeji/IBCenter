@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 28px 16px 0;
-  gap: 0 55px;
   height: 68px;
+  gap: 55px;
 }
 .header-wrap .left-header {
   display: flex;
   gap: 0 48px;
+  width: 76%;
 }
 .header-wrap .logo-box {
   display: flex;
@@ -189,6 +190,13 @@ header .right-header .service-btn button:last-child::after {
   right: 0;
   top: 0;
 }
+
+@media screen and (max-width: 1700px) {
+  .header-wrap .left-header {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .header-wrap .logo-box {
     min-width: 220px;
