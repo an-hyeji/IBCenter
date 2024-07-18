@@ -59,11 +59,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.search-filter .list .select-box .btn-box {
+.btn-box {
   display: flex;
   gap: 0 8px;
 }
-.search-filter .list .select-box .btn-box .search-btn {
+.btn-box .search-btn {
   border-radius: 4px;
   background: #263a75;
   width: 58px;
@@ -72,7 +72,7 @@
   font-weight: 600;
   line-height: normal;
 }
-.search-filter .list .select-box .btn-box .refresh-btn {
+.btn-box .refresh-btn {
   border-radius: 4px;
   border: 1px solid #b4b9cc;
   padding: 8px;

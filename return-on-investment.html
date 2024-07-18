@@ -12,10 +12,9 @@
       rel="stylesheet"
       href="./assets/css/components/Investment-company-list.css"
     />
-    <link rel="stylesheet" href="./assets/css/components/pagination.css" />
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
-    <title>투자업체리스트</title>
+    <title>심사역 투자회수 실적</title>
   </head>
   <body>
     <div class="wrap">
@@ -274,11 +273,7 @@
           <div class="content-wrap">
             <div class="top">
               <div class="title-box">
-                <img
-                  src="./assets/images//Icon-left-arrow.svg"
-                  alt="화살표아이콘"
-                />
-                <h1 class="title">투자업체리스트</h1>
+                <h1 class="title">심사역 투자회수 실적</h1>
                 <button class="icon-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -298,39 +293,28 @@
                 <ul>
                   <li>Home</li>
                   <li>투자관리</li>
-                  <li>투자기업관리</li>
-                  <li>투자업체리스트</li>
+                  <li>투자회수관리</li>
+                  <li>심사역 투자/회수 실적</li>
                 </ul>
               </div>
             </div>
             <div class="search-filter">
-              <div class="list">
-                <p>투자업체</p>
-                <div class="input-box">
-                  <div class="search-input-box">
-                    <label for="search-company" aria-label="검색"></label>
-                    <input type="text" id="search-company" />
-                    <button>
+              <div class="list base-date">
+                <p>기준일자ㄴ</p>
+                <div class="select-box base-date-select-box">
+                  <div class="date-select">
+                    <p>2024-07-04</p>
+                    <button class="calendar-btn">
                       <img
-                        src="./assets/images//icon-search-input.svg"
-                        alt="검색아이콘"
+                        src="./assets/images/icon-calendar.png"
+                        alt="달력아이콘"
                       />
                     </button>
                   </div>
-                  <label
-                    for="search-company-disabled"
-                    aria-label="검색"
-                  ></label>
-                  <input
-                    type="text"
-                    id="search-company-disabled"
-                    class="disable"
-                    disabled
-                  />
                 </div>
               </div>
               <div class="list">
-                <p>담당자</p>
+                <p>심사역</p>
                 <div class="input-box">
                   <div class="search-input-box">
                     <label for="search-person" aria-label="검색"></label>
@@ -352,27 +336,34 @@
                 </div>
               </div>
               <div class="list">
-                <p><label for="categorySelect">구분</label></p>
-                <div class="select-box">
-                  <select
-                    name="category"
-                    id="categorySelect"
-                    aria-label="구분 선택"
-                  >
-                    <option value="" selected>선택해주세요</option>
-                    <option value="option1">옵션 1</option>
-                    <option value="option2">옵션 2</option>
-                    <option value="option3">옵션 3</option>
-                  </select>
-                  <div class="btn-box">
-                    <button class="search-btn">검색</button>
-                    <button class="refresh-btn" aria-label="새로고침">
+                <p>조합</p>
+                <div class="input-box">
+                  <div class="search-input-box">
+                    <label for="search-person" aria-label="검색"></label>
+                    <input type="text" id="search-person" />
+                    <button>
                       <img
-                        src="./assets/images/arrow-rotate-left.svg"
-                        alt="새로고침 아이콘"
+                        src="./assets/images//icon-search-input.svg"
+                        alt="검색아이콘"
                       />
                     </button>
                   </div>
+                  <label for="search-person-disabled" aria-label="검색"></label>
+                  <input
+                    type="text"
+                    id="search-person-disabled"
+                    class="disable"
+                    disabled
+                  />
+                </div>
+                <div class="btn-box">
+                  <button class="search-btn">검색</button>
+                  <button class="refresh-btn" aria-label="새로고침">
+                    <img
+                      src="./assets/images/arrow-rotate-left.svg"
+                      alt="새로고침 아이콘"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
@@ -686,11 +677,11 @@
                 </button>
               </div>
             </div>
-            <div class="fixed-box-bottom">
-              <button class="scroll-to-top active">
+            <div class="fixed-box">
+              <button class="scroll-up active">
                 <img src="./assets/images//icon-arrow-up.svg" alt="위로버튼" />
               </button>
-              <button class="scroll-to-bottom">
+              <button class="scroll-down">
                 <img
                   src="./assets/images//icon-arrow-down.svg"
                   alt="아래로버튼"

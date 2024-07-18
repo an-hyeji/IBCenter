@@ -5,40 +5,32 @@
   min-width: 200px;
   width: 200px;
 }
-.combination-select-box .date-select {
-  min-width: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 4px;
-  border: 1px solid #b4b9cc;
-}
-.combination-select-box .date-select p {
-  color: #373a46;
-  font-size: 14px;
-  font-weight: 400;
-}
-.combination-select-box .date-select .calendar-btn {
-  border-left: 1px solid #b4b9cc;
-  padding: 8px;
-}
-.combination-select-box .date-select .calendar-btn img {
-  width: 18px;
-  height: 18px;
-}
 .combination-table-wrap {
   text-align: center;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 .combination-table-wrap tr:last-child {
   background-color: #e9effe;
 }
-@media screen and (max-width: 1500px) {
+.total-wrap {
+  margin-top: 12px;
+}
+.total-wrap .total p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+.total-wrap .total p span {
+  font-weight: 600;
+}
+@media screen and (max-width: 1530px) {
   .combination-select-box select {
     min-width: 120px;
-    width: fit-content;
-  }
-  .combination-select-box .date-select {
-    min-width: 120px;
+    width: 120px;
   }
 }
