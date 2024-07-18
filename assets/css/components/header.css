@@ -8,7 +8,7 @@
 .header-wrap .left-header {
   display: flex;
   gap: 0 48px;
-  width: 76%;
+  width: 75%;
 }
 .header-wrap .logo-box {
   display: flex;
@@ -97,7 +97,6 @@
   gap: 0 12px;
   align-items: center;
   white-space: nowrap;
-  width: 24%;
 }
 .header-wrap .right-header .service-btn {
   display: flex;
@@ -196,16 +195,10 @@ header .right-header .service-btn button:last-child::after {
   .header-wrap .left-header {
     width: 72%;
   }
-  .header-wrap .right-header {
-    width: 28%;
-  }
 }
 @media screen and (max-width: 1500px) {
   .header-wrap .left-header {
     width: 68%;
-  }
-  .header-wrap .right-header {
-    width: 32%;
   }
 }
 
