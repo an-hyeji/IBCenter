@@ -150,6 +150,12 @@ table tbody .left {
 table tbody .right {
   text-align: right;
 }
+table tbody tr:hover {
+  background: #fdf2e5;
+}
+table tbody tr.selected {
+  background: #fdf2e5;
+}
 
 /* 사용안내버튼 */
 .use-button-list {

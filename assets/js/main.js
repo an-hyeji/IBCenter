@@ -7,7 +7,7 @@ buttons.forEach(function (button) {
       btn.classList.remove('active');
     });
 
-    button.classList.add('active');
+    this.classList.add('active');
   });
 });
 
@@ -36,7 +36,7 @@ scrollDownButton.addEventListener('click', () => {
 });
 
 // 테이블 선택 시 액티브
-const tableRows = document.querySelectorAll('.table-wrap table tbody tr');
+const tableRows = document.querySelectorAll('table tbody tr');
 let selectedRow = null;
 
 tableRows.forEach((row) => {

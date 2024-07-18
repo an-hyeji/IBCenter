@@ -19,12 +19,7 @@
 .table-wrap table tbody td:last-child {
   border-right: none;
 }
-.table-wrap table tbody tr:hover {
-  background: #fdf2e5;
-}
-.table-wrap table tbody tr.selected {
-  background: #fdf2e5;
-}
+
 .total-wrap {
   margin-top: 12px;
   display: flex;
