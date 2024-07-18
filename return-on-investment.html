@@ -313,9 +313,9 @@
                   </div>
                 </div>
               </div>
-              <div class="list return-list">
+              <div class="list checkpoint-list">
                 <p>심사역</p>
-                <div class="input-box return-input-box">
+                <div class="input-box checkpoint-input-box">
                   <div class="search-input-box">
                     <label for="search-person" aria-label="검색"></label>
                     <input type="text" id="search-person" />
@@ -336,26 +336,31 @@
                 </div>
               </div>
               <div class="list">
-                <p>조합</p>
-                <div class="input-box">
-                  <div class="search-input-box">
-                    <label for="search-person" aria-label="검색"></label>
-                    <input type="text" id="search-person" />
-                    <button class="icon-btn">
-                      <img
-                        src="./assets/images//icon-search-input.svg"
-                        alt="검색아이콘"
-                      />
-                    </button>
+                <p><label for="categorySelect">조합</label></p>
+                <div class="combination-list">
+                  <div class="input-box combination-input-box">
+                    <div class="search-input-box">
+                      <label for="search-person" aria-label="검색"></label>
+                      <input type="text" id="search-person" />
+                      <button class="icon-btn">
+                        <img
+                          src="./assets/images//icon-search-input.svg"
+                          alt="검색아이콘"
+                        />
+                      </button>
+                    </div>
+                    <label
+                      for="search-person-disabled"
+                      aria-label="검색"
+                    ></label>
+                    <input
+                      type="text"
+                      id="search-person-disabled"
+                      class="disable"
+                      disabled
+                    />
                   </div>
-                  <label for="search-person-disabled" aria-label="검색"></label>
-                  <input
-                    type="text"
-                    id="search-person-disabled"
-                    class="disable"
-                    disabled
-                  />
-                  <div class="btn-box combination-btn-box">
+                  <div class="btn-box">
                     <button class="search-btn">검색</button>
                     <button class="refresh-btn" aria-label="새로고침">
                       <img
