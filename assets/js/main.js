@@ -34,3 +34,17 @@ scrollDownButton.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+// 테이블 선택 시 액티브
+const tableRows = document.querySelectorAll('.table-wrap table tbody tr');
+let selectedRow = null;
+
+tableRows.forEach((row) => {
+  row.addEventListener('click', function () {
+    if (selectedRow) {
+      selectedRow.classList.remove('selected');
+    }
+    this.classList.add('selected');
+    selectedRow = this;
+  });
+});

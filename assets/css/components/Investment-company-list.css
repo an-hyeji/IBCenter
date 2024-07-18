@@ -22,6 +22,9 @@
 .table-wrap table tbody tr:hover {
   background: #fdf2e5;
 }
+.table-wrap table tbody tr.selected {
+  background: #fdf2e5;
+}
 .total-wrap {
   margin-top: 12px;
   display: flex;
