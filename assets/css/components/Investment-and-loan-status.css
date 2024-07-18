@@ -1,0 +1,39 @@
+.loan-status-box {
+  margin-top: 8px;
+}
+.loan-status-box h3 {
+  color: #373a46;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.status-btn-list-wrap {
+  padding: 12px 0 8px 0;
+}
+.status-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.status-table-wrap table tbody td {
+  text-align: right;
+}
+.status-table-wrap table tbody td:first-child,
+.status-table-wrap table tbody td:nth-child(2),
+.status-table-wrap table tbody .bgtd {
+  background-color: #f6f6fa;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.status-table-wrap table .border {
+  border-bottom: 1px solid #e0e2e9;
+  border-top: 1px solid #e0e2e9;
+}
+.status-table-wrap table .border-r {
+  border-right: 1px solid #e0e2e9;
+  border-bottom: 1px solid #e0e2e9;
+}
