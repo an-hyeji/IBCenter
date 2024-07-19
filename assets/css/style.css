@@ -5,8 +5,9 @@
 /* Views */
 @import './views/business-report.css';
 @import './views/combination-information.css';
-@import './views/Investment-and-loan-status.css';
-@import './views/Investment-company-list.css';
+@import './views/investment-and-loan-status.css';
+@import './views/investment-company-list.css';
+@import './views/investment-company.css';
 @import './views/return-on-investment.css';
 @import './views/members-contributions-allocations.css';
 /* Views */
@@ -17,4 +18,5 @@
 @import './components/pagination.css';
 @import './components/search-filter.css';
 @import './components/side-menu.css';
+@import './components/tabs.css';
 /* Componenets */

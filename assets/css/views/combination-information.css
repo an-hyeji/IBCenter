@@ -15,19 +15,7 @@
 .combination-table-wrap tr:last-child {
   background-color: #e9effe;
 }
-.total-wrap {
-  margin-top: 12px;
-}
-.total-wrap .total p {
-  color: #373a46;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.28px;
-}
-.total-wrap .total p span {
-  font-weight: 600;
-}
+
 @media screen and (max-width: 1530px) {
   .combination-select-box select {
     min-width: 120px;
