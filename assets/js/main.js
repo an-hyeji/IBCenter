@@ -36,15 +36,17 @@ scrollDownButton.addEventListener('click', () => {
 });
 
 // 테이블 선택 시 액티브
-const tableRows = document.querySelectorAll('table tbody tr');
-let selectedRow = null;
+document.addEventListener('DOMContentLoaded', () => {
+  const tableRows = document.querySelectorAll('table tbody tr');
+  let selectedRow = null;
 
-tableRows.forEach((row) => {
-  row.addEventListener('click', function () {
-    if (selectedRow) {
-      selectedRow.classList.remove('selected');
-    }
-    this.classList.add('selected');
-    selectedRow = this;
+  tableRows.forEach((row) => {
+    row.addEventListener('click', function () {
+      if (selectedRow) {
+        selectedRow.classList.remove('selected');
+      }
+      this.classList.add('selected');
+      selectedRow = this;
+    });
   });
 });

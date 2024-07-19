@@ -5,9 +5,9 @@
   white-space: nowrap;
 }
 .search-filter .checkpoint-list {
-  flex: 0.7;
+  flex: 0.7 !important;
 }
-.search-filter .combination-list {
+.search-filter .return-combination-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,4 +20,7 @@
 }
 
 @media screen and (max-width: 1530px) {
+  .search-filter .list .combination-input-box {
+    flex: 1;
+  }
 }

@@ -1,5 +1,5 @@
 .search-filter .combination-list {
-  flex: 0;
+  flex: 0 !important;
 }
 .combination-select-box select {
   min-width: 200px;

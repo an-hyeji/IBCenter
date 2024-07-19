@@ -79,3 +79,9 @@
   width: 36px;
   height: 36px;
 }
+
+@media screen and (max-width: 1530px) {
+  .search-filter .list p {
+    min-width: 100px;
+  }
+}
