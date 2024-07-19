@@ -1,0 +1,64 @@
+.ledger-search-filter {
+  flex-direction: column;
+}
+.ledger-list-box {
+  display: flex;
+}
+.ledger-list-box:last-child {
+  border-top: 1px solid #e0e2e9;
+}
+.ledger-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.checkbox-input {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.checkbox-wrap input[type='checkbox'] {
+  display: none;
+}
+.checkbox-wrap .checkbox-input svg {
+  vertical-align: middle;
+  cursor: pointer;
+  fill: none;
+}
+.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg path {
+  stroke: #2774e1;
+}
+.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg rect {
+  stroke: #2774e1;
+}
+.investment-date-select-box .investment-select {
+  min-width: 200px;
+  max-width: 100%;
+}
+.investment-date-select-box .investment-select select {
+  width: 100%;
+}
+@media screen and (max-width: 1800px) {
+  .ledger-flex {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .search-filter .withdrawal-list {
+    height: unset !important;
+  }
+  .company-input-box {
+    height: 100%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .withdrawal-select-box {
+    min-width: 120px;
+  }
+  .investment-date-select-box .investment-select {
+    min-width: 120px;
+  }
+}
