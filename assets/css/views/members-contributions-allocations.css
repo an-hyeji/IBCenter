@@ -1,0 +1,8 @@
+.search-filter .list .input-box .members-input-box {
+  min-width: 200px;
+}
+@media screen and (max-width: 1530px) {
+  .search-filter .list .input-box .members-input-box {
+    min-width: 120px;
+  }
+}

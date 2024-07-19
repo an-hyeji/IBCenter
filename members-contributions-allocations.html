@@ -297,10 +297,10 @@
             <div class="search-filter">
               <div class="list combination-list">
                 <p><label for="name-categorySelect">조합원</label></p>
-                <div class="input-box">
-                  <div class="search-input-box">
-                    <label for="search-company" aria-label="검색"></label>
-                    <input type="text" id="search-company" />
+                <div class="input-box checkpoint-input-box">
+                  <div class="search-input-box members-input-box">
+                    <label for="search-person" aria-label="검색"></label>
+                    <input type="text" id="search-person" />
                     <button class="icon-btn">
                       <img
                         src="./assets/images//icon-search-input.svg"
@@ -354,12 +354,8 @@
                 <button>해당 조합원 출자/분배 내역</button>
               </div>
               <div class="icon-list use-button-list">
-                  <button class="document-icon">
-                    <img
-                      src="./assets/images//icon-excel.png"
-                      alt="엑셀아이콘"
-                    />
-                  </button>
+                <button class="document-icon">
+                  <img src="./assets/images//icon-excel.png" alt="엑셀아이콘" />
                 </button>
               </div>
             </div>
@@ -367,119 +363,227 @@
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <thead>
                   <tr>
-                    <th>조합코드</th>
-                    <th style="width: 12%">조합명</th>
-                    <th>
-                      내부<br />
-                      수익률(%)
-                    </th>
-                    <th>고유번호</th>
-                    <th>결성일자</th>
-                    <th>만기일자</th>
-                    <th>청산일자</th>
-                    <th>관계사구분1</th>
-                    <th>관계사구분2</th>
-                    <th>출자약정액</th>
-                    <th>출자납입액</th>
-                    <th>미출자액</th>
+                    <th>조합원</th>
+                    <th>조합원구분</th>
+                    <th>주요LP구분</th>
+                    <th>약정총액</th>
+                    <th>출자액</th>
+                    <th>원금분배</th>
+                    <th>이익분배</th>
+                    <th>분배총액</th>
+                    <th>양수액</th>
+                    <th>양도액</th>
                     <th>출자잔액</th>
-                    <th>납입비율(%)</th>
+                    <th>출자자구분(금감원)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>0011</td>
-                    <td class="left">테스트 조합123</td>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">0</td>
-                    <td>112-45-12344</td>
-                    <td>2022-12-01</td>
-                    <td>2022-12-01</td>
-                    <td>2024-11-01</td>
-                    <td></td>
-                    <td></td>
-                    <td class="right">400,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">20,000,000</td>
-                    <td class="right">20,000,000</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">0.00</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>0011</td>
-                    <td class="left">테스트 조합123</td>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">0</td>
-                    <td>112-45-12344</td>
-                    <td>2022-12-01</td>
-                    <td>2022-12-01</td>
-                    <td>2024-11-01</td>
-                    <td></td>
-                    <td></td>
-                    <td class="right">400,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">20,000,000</td>
-                    <td class="right">20,000,000</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">0.00</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>0011</td>
-                    <td class="left">테스트 조합123</td>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">0</td>
-                    <td>112-45-12344</td>
-                    <td>2022-12-01</td>
-                    <td>2022-12-01</td>
-                    <td>2024-11-01</td>
-                    <td></td>
-                    <td></td>
-                    <td class="right">400,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">20,000,000</td>
-                    <td class="right">20,000,000</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">0.00</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>0011</td>
-                    <td class="left">테스트 조합123</td>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">0</td>
-                    <td>112-45-12344</td>
-                    <td>2022-12-01</td>
-                    <td>2022-12-01</td>
-                    <td>2024-11-01</td>
-                    <td></td>
-                    <td></td>
-                    <td class="right">400,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">20,000,000</td>
-                    <td class="right">20,000,000</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">0.00</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>0011</td>
-                    <td class="left">테스트 조합123</td>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">0</td>
-                    <td>112-45-12344</td>
-                    <td>2022-12-01</td>
-                    <td>2022-12-01</td>
-                    <td>2024-11-01</td>
-                    <td></td>
-                    <td></td>
-                    <td class="right">400,000,000</td>
+                    <td class="right">70,000,000</td>
                     <td class="right">20,000,000</td>
-                    <td class="right">20,000,000</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">0.00</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td colspan="2">합계</td>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
                     <td></td>
-                    <td class="right">1,70,000,000</td>
-                    <td class="right">1,70,000,000</td>
-                    <td class="right">1,70,000,000</td>
-                    <td class="right">1,70,000,000</td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="left">한국모태펀드</td>
+                    <td>업무집행조합원</td>
+                    <td>모태펀드</td>
+                    <td class="right">280,000,000</td>
+                    <td class="right">140,000,000</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td class="right">20,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">70,000,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">합계</td>
+                    <td class="right">4,280,000,000</td>
+                    <td class="right">1,140,000,000</td>
+                    <td class="right">170,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">170,000,000</td>
+                    <td class="right">120,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">170,000,000</td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -488,7 +592,7 @@
             <div class="total-wrap">
               <div class="total-box">
                 <div class="total">
-                  <p>총 <span>5</span>건</p>
+                  <p>총 <span>14</span>건</p>
                 </div>
               </div>
             </div>
