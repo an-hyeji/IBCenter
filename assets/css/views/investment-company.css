@@ -2,7 +2,6 @@
   display: flex;
   gap: 0 4px;
 }
-
 .flex-box {
   display: flex;
   justify-content: space-between;
