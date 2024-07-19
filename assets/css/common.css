@@ -143,6 +143,7 @@ table tbody td {
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  cursor: default;
 }
 table tbody .center {
   text-align: center;
