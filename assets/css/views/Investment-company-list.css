@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 1280px) {
   .search-filter .list p {
-    min-width: 80px;
+    width: 80px;
     margin-right: 4px;
   }
 }

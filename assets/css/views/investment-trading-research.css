@@ -8,16 +8,15 @@
 .research-table-wrap table tbody td {
   max-width: 130px;
 }
-.research-table-wrap tr:last-child {
-  background-color: #e9effe;
-}
-.research-table-wrap table tbody tr:last-child {
-  border-top: 1px solid #b4b9cc;
-  border-bottom: 1px solid #b4b9cc;
-}
 
 .research-table-wrap table tbody tr:last-child td {
   border-bottom: none;
+  border-top: none;
+}
+.research-table-wrap table tbody tr:last-child {
+  border-bottom: 1px solid #b4b9cc;
+  border-top: 1px solid #b4b9cc;
+  background-color: #e9effe;
 }
 .research-select {
   width: 100%;
@@ -28,7 +27,51 @@
 .research-list-box {
   display: flex;
 }
+.research-list-box:nth-child(2) {
+  border-top: 1px solid #e0e2e9;
+  border-bottom: 1px solid #e0e2e9;
+}
 
-.test-date {
+.date-input-box {
+  border: 1px solid #b4b9cc;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+}
+.date-input-box span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 12px;
+  color: #6f7589;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.date-input-box .start {
+  border-right: 1px solid #b4b9cc;
+}
+
+.selected-date {
   flex: 0.7 !important;
+}
+.search-btn-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: end;
+}
+.search-btn-box .search-btn {
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 1530px) {
+  .date-input-box span {
+    font-size: 12px;
+    padding: 0;
+    justify-content: center;
+  }
+  .selected-date {
+    flex: 1 !important;
+  }
 }
