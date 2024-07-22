@@ -299,8 +299,8 @@
               </div>
             </div>
             <div class="search-filter ledger-search-filter">
-              <div class="ledger-list-box">
-                <div class="list checkpoint-list">
+              <div class="research-list-box">
+                <div class="list">
                   <p>조합</p>
                   <div class="input-box">
                     <div class="search-input-box">
@@ -325,68 +325,12 @@
                     />
                   </div>
                 </div>
-                <div class="list base-date">
-                  <p>기준일자</p>
-                  <div class="select-box base-date-select-box">
-                    <div class="date-select">
-                      <span>2024-07-04</span>
-                      <button class="calendar-btn">
-                        <img
-                          src="./assets/images/icon-calendar.png"
-                          alt="달력아이콘"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="list">
-                  <p><label for="status-categorySelect">펀드상태</label></p>
-                  <div class="select-box combination-select-box">
-                    <select
-                      name="status-category"
-                      id="status-categorySelect"
-                      aria-label="구분 선택"
-                    >
-                      <option value="" selected>선택해주세요</option>
-                      <option value="status-option1">옵션 1</option>
-                      <option value="status-option2">옵션 2</option>
-                      <option value="status-option3">옵션 3</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="ledger-list-box">
-                <div class="list checkpoint-list withdrawal-list">
-                  <p>투자업체</p>
-                  <div class="input-box company-input-box">
-                    <div class="search-input-box">
-                      <label for="search-company" aria-label="검색"></label>
-                      <input type="text" id="search-company" />
-                      <button class="icon-btn">
-                        <img
-                          src="./assets/images//icon-search-input.svg"
-                          alt="검색아이콘"
-                        />
-                      </button>
-                    </div>
-                    <label
-                      for="search-company-disabled"
-                      aria-label="검색"
-                    ></label>
-                    <input
-                      type="text"
-                      id="search-company-disabled"
-                      class="disable"
-                      disabled
-                    />
-                  </div>
-                </div>
-                <div class="list base-date withdrawal-list">
+                <div class="list test-date">
                   <p>
-                    <label for="investment-categorySelect">투자유형</label>
+                    <label for="investment-categorySelect">신/주구</label>
                   </p>
                   <div class="select-box investment-date-select-box">
-                    <div class="investment-select">
+                    <div class="research-select">
                       <select
                         name="investment-category"
                         id="investment-categorySelect"
@@ -399,62 +343,41 @@
                     </div>
                   </div>
                 </div>
-                <div class="list withdrawal-list">
-                  <p><label for="withdrawal-categorySelect">회수유형</label></p>
-                  <div class="select-box combination-select-box">
-                    <div class="ledger-flex">
+                <div class="list test-date">
+                  <p>
+                    <label for="investment-categorySelect">처분구분</label>
+                  </p>
+                  <div class="select-box investment-date-select-box">
+                    <div class="research-select">
                       <select
-                        name="withdrawal-category"
-                        id="withdrawal-categorySelect"
-                        aria-label="구분 선택"
+                        name="investment-category"
+                        id="investment-categorySelect"
                       >
                         <option value="" selected>선택해주세요</option>
-                        <option value="withdrawal-option1">옵션 1</option>
-                        <option value="withdrawal-option2">옵션 2</option>
-                        <option value="withdrawal-option3">옵션 3</option>
+                        <option value="investment-option1">옵션 1</option>
+                        <option value="investment-option2">옵션 2</option>
+                        <option value="investment-option3">옵션 3</option>
                       </select>
-
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox" />
-                        <label for="checkbox" class="checkbox-input">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            style="vertical-align: middle; cursor: pointer"
-                          >
-                            <rect
-                              x="1.16669"
-                              y="0.719055"
-                              width="19"
-                              height="19"
-                              rx="3.5"
-                              fill="white"
-                              stroke="#B4B9CC"
-                            />
-                            <path
-                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
-                              stroke="#fff"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                          <span>투자업체별 소계 표시</span>
-                        </label>
-                      </div>
                     </div>
-
-                    <div class="btn-box">
-                      <button class="search-btn">검색</button>
-                      <button class="refresh-btn" aria-label="새로고침">
-                        <img
-                          src="./assets/images/arrow-rotate-left.svg"
-                          alt="새로고침 아이콘"
-                        />
-                      </button>
+                  </div>
+                </div>
+                <div class="list test-date">
+                  <p>
+                    <label for="investment-categorySelect"
+                      >입력(경과연수)</label
+                    >
+                  </p>
+                  <div class="select-box">
+                    <div class="research-select">
+                      <select
+                        name="investment-category"
+                        id="investment-categorySelect"
+                      >
+                        <option value="" selected>선택해주세요</option>
+                        <option value="investment-option1">옵션 1</option>
+                        <option value="investment-option2">옵션 2</option>
+                        <option value="investment-option3">옵션 3</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -477,13 +400,13 @@
                 <thead>
                   <tr>
                     <th>조합</th>
-                    <th>회사명</th>
+                    <th style="width: 10%">회사명</th>
                     <th>투자번호</th>
                     <th>투자유형</th>
                     <th>투자상품유형</th>
                     <th>투자명칭</th>
                     <th>거래일자</th>
-                    <th>거래종류</th>
+                    <th style="border-right: 1.5px solid #b4b9cc">거래종류</th>
                     <th>전표상태</th>
                     <th>거래금액</th>
                     <th>해당원금</th>
@@ -495,147 +418,162 @@
                 <tbody>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td></td>
-                    <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">-9,000,000</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td></td>
-                    <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">113,333,000</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
-                    <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td>미결</td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td></td>
-                    <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
-                    <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td>미결</td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">10,100,000</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td></td>
-                    <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">-300,000</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td></td>
-                    <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
                     <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
                     <td></td>
-                    <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
                   </tr>
                   <tr>
                     <td>123</td>
-                    <td>제이엔티씨</td>
+                    <td class="left">제이엔티씨</td>
                     <td>7598</td>
                     <td>해외투자(우선주)</td>
                     <td>해외_우선주_지분상품</td>
-                    <td>해외 우선주 투자명칭..</td>
+                    <td>해외 우선주 투자명칭</td>
+                    <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
+                    <td></td>
+                    <td class="right">110,000,000</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">합 계</td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>110,000,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-9,000,000</td>
-                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td style="border-right: 1.5px solid #b4b9cc"></td>
+                    <td></td>
+                    <td></td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">113,233,000</td>
+                    <td class="right">0</td>
                   </tr>
                 </tbody>
               </table>

@@ -124,6 +124,7 @@ table thead {
 }
 table thead th {
   border-right: 1px solid #e0e2e9;
+  border-bottom: 1px solid #b4b9cc;
   background: #f6f6fa;
   padding: 13px 22px;
   color: #373a46;
@@ -137,13 +138,19 @@ table thead th:last-child {
 table tbody td {
   padding: 9px 8px;
   height: 36px;
-  border-bottom: 1px solid #e0e2e9;
+  border-top: 1px solid #e0e2e9;
   border-right: 1px solid #e0e2e9;
   color: #373a46;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
   cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table tbody td:last-child {
+  border-right: none;
 }
 table tbody .center {
   text-align: center;

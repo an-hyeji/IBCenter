@@ -5,14 +5,25 @@
   min-width: 200px;
   width: 200px;
 }
+
 .combination-table-wrap {
-  text-align: center;
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-.combination-table-wrap tr:last-child {
+
+.combination-table-wrap table tbody td:nth-child(2) {
+  max-width: 100px;
+}
+
+.combination-table-wrap table tbody tr:last-child td {
+  border-bottom: none;
+  border-top: none;
+}
+.combination-table-wrap table tbody tr:last-child {
+  border-bottom: 1px solid #b4b9cc;
+  border-top: 1px solid #b4b9cc;
   background-color: #e9effe;
 }
 

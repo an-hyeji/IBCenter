@@ -7,14 +7,17 @@
 .table-wrap table thead th img {
   margin-left: 4px;
 }
+.table-wrap table tbody tr:last-child {
+  border-bottom: 1px solid #e0e2e9;
+}
 .table-wrap table tbody td {
   text-align: center;
 }
 .table-wrap table tbody td:first-child {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   max-width: 108px;
+}
+.table-wrap table tbody td:nth-child(2) {
+  max-width: 148px;
 }
 .table-wrap table tbody td:last-child {
   border-right: none;
