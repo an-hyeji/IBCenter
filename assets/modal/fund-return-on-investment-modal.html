@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>안내팝업_조합수익률</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="top">
+          <h2>
+            <img
+              src="../images/icon-info-solid.svg"
+              alt="알림아이콘"
+            />재계산/저장 안내
+          </h2>
+          <button class="modal-close">
+            <img src="../images/icon-close.png" alt="닫기버튼" />
+          </button>
+        </div>
+        <div class="cont">
+          <p class="circle">
+            [저장 /재계산]을 하면 입력된 기준일자 및 회수예상액이 저장되고 해당
+            일자의 수익률이 재계산/저장 됩니다.
+          </p>
+          <p class="circle">
+            [평가액 끌어오기/재계산]을 하면 기준일자 현재의 조합 평가액을
+            끌어오고 수익률이 재계산/저장 됩니다.
+          </p>
+          <p class="circle">출자자간 양수/양도 거래는 제외됩니다.</p>
+          <p class="circle">출자액이 없으면 수익율은 0으로 계산됩니다.</p>
+          <p class="circle">
+            기준일 현재 미분배된 잔액은 기준일에 원금으로 분배된다고 가정함
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
