@@ -22,4 +22,6 @@
 @import './components/search-filter.css';
 @import './components/side-menu.css';
 @import './components/tabs.css';
+@import './components/button-list.css';
+@import './components/fixed-button.css';
 /* Componenets */

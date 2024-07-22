@@ -70,50 +70,6 @@ select {
   fill: #ffc700;
 }
 
-/* 버튼 fixed */
-.fixed-box {
-  position: fixed;
-  right: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-.fixed-box button {
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  border: 1px solid #555b6c;
-  background: #fff;
-  box-shadow: 0px 3.24px 6.48px 0px rgba(0, 0, 0, 0.08);
-  position: relative;
-}
-.fixed-box button.active {
-  border: 1px solid #2774e1;
-}
-.fixed-box button img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.fixed-box-bottom {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  gap: 3px;
-}
-.fixed-box-bottom button {
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  border: 1px solid #555b6c;
-  background: #fff;
-  box-shadow: 0px 3.24px 6.48px 0px rgba(0, 0, 0, 0.08);
-  position: relative;
-}
-
 /* 테이블 */
 table {
   border-collapse: collapse;
@@ -266,49 +222,6 @@ table tbody tr.selected {
 }
 .content-wrap .top .bread-crumb ul li:last-child::after {
   display: none;
-}
-
-/* .btn-list-wrap */
-.btn-list-wrap {
-  display: flex;
-  gap: 0 8px;
-  justify-content: space-between;
-  padding: 32px 0 8px 0;
-}
-.btn-list-wrap .btn-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.btn-list-wrap .btn-list button {
-  border-radius: 4px;
-  padding: 7px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  border: 1px solid rgba(51, 70, 128, 0.8);
-  background: rgba(51, 70, 128, 0);
-  color: #334680;
-}
-.btn-list-wrap .btn-list .add-btn {
-  border: 1px solid rgba(61, 111, 241, 0.8);
-  background: rgba(61, 111, 241, 0);
-  color: #3d6ff1;
-}
-.btn-list-wrap .icon-list .document-icon {
-  border-radius: 4px;
-  border: 1px solid #b4b9cc;
-  background: #fff;
-  width: 32px;
-  height: 32px;
-  position: relative;
-}
-.btn-list-wrap .icon-list .document-icon img {
-  width: 22px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* 토탈 */
