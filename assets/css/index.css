@@ -5,22 +5,38 @@ a:hover {
   opacity: 80%;
 }
 
+.index-wrapper .title {
+  font-size: 32px;
+  text-align: center;
+  color: #3375d1;
+}
 .index-wrapper {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
-.index-wrapper .title {
-  font-size: 28px;
-  margin: 40px 0;
-  text-align: center;
+.table-wrap {
+  margin-bottom: 40px;
+}
+.table-wrap h2 {
+  margin: 0 0 10px 0;
+  position: relative;
+  padding-left: 12px;
+}
+.table-wrap h2::after {
+  position: absolute;
+  content: '*';
+  left: 0;
+  top: 5px;
+  color: #3375d1;
 }
 table {
   width: 100%;
 }
 
 thead tr td {
-  background-color: gold;
+  background-color: #3375d1;
+  color: #fff;
   padding: 10px;
   font-size: 14px;
   font-weight: 700;

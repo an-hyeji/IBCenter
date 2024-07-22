@@ -311,6 +311,11 @@ table tbody tr.selected {
   transform: translate(-50%, -50%);
 }
 
+/* 토탈 */
+.total-boxs {
+  justify-content: start !important;
+}
+
 /* 기준일자 */
 .search-filter .base-date {
   flex: 0 !important;
@@ -355,9 +360,4 @@ table tbody tr.selected {
   .base-date-select-box .date-select span {
     padding: 0 2px;
   }
-}
-
-/* 토탈 */
-.total-boxs {
-  justify-content: start !important;
 }
