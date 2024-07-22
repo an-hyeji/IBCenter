@@ -26,6 +26,7 @@
   flex: 1;
   gap: 0 4px;
   background-color: #fff;
+  height: 100%;
 }
 .search-filter .list .input-box .search-input-box {
   display: flex;
@@ -35,7 +36,6 @@
   padding: 8px 12px;
   border-radius: 4px 0px 0px 4px;
   border: 1px solid #b4b9cc;
-  height: 32px;
   outline: none;
   width: 100%;
 }
@@ -48,11 +48,13 @@
   border-top: 1px solid #b4b9cc;
   border-right: 1px solid #b4b9cc;
   border-bottom: 1px solid #b4b9cc;
-  height: 32px;
   width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.radius {
+  border-radius: 0 4px 4px 0;
 }
 
 .btn-box {
