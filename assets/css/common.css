@@ -170,6 +170,24 @@ table tbody tr.selected {
   display: flex;
   align-items: center;
   gap: 0 4px;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: inherit;
+}
+.guide-button .info-icon {
+  width: 16px;
+}
+
+/* 저장버튼 */
+.save-button {
+  border-radius: 4px;
+  background: #263a75;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 8px 16px;
 }
 
 /* scroll */
@@ -246,6 +264,22 @@ table tbody tr.selected {
 /* 기준일자 */
 .search-filter .base-date {
   flex: 0 !important;
+}
+
+/* 체크박스 */
+.checkbox-wrap input[type='checkbox'] {
+  display: none;
+}
+.checkbox-wrap .checkbox-input svg {
+  vertical-align: middle;
+  cursor: pointer;
+  fill: none;
+}
+.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg path {
+  stroke: #2774e1;
+}
+.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg rect {
+  stroke: #2774e1;
 }
 
 .date-select {

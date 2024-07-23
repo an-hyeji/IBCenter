@@ -277,15 +277,22 @@
                   </button>
                 </div>
                 <button class="guide-button">
-                  <img src="../images/icon-info-solid.svg" alt="알림아이콘" />
+                  <img
+                    src="../images/icon-info-solid.svg"
+                    alt="알림아이콘"
+                    class="info-icon"
+                  />
                   안내
                   <img
                     src="../images/iocn-chevron-right.svg"
                     alt="화살표아이콘"
                   />
                 </button>
-                <button class="input-guide-btn">
-                  <img src="../images/icon-info-solid.svg" alt="알림아이콘" />
+                <button class="guide-button">
+                  <img
+                    src="../images/icon-message-alert-circle.svg"
+                    alt="알림아이콘"
+                  />
                   안내
                   <img
                     src="../images/iocn-chevron-right.svg"
@@ -310,324 +317,194 @@
                 <p>문서유형<span>조합원명부</span></p>
                 <p>원본문서번호<span>24-0419-0002</span></p>
                 <p>작성자<span>게스트1711 [GUEST1711]</span></p>
-                <p>결재상태<span>미상신</span></p>
-                <p>최종결재권자<span>미상신</span></p>
+                <p>결재상태<span class="green">미상신</span></p>
+                <p>최종결재권자<span>게스트1711 [GUEST1711]</span></p>
+              </div>
+              <div class="title-input-box">
+                <div class="input-flex">
+                  <p>제목</p>
+                  <label for="title-input"></label>
+                  <input type="text" id="title-input" />
+                </div>
+                <button class="save-button">저장</button>
               </div>
             </div>
+
             <div class="btn-list-wrap">
-              <div class="btn-list">
-                <button class="add-btn">회사추가</button>
-                <button class="add-btn">세일즈포스투자업체등록</button>
-                <button>투심위 정보</button>
-                <button>업로드파일 현황</button>
-                <button>세일즈포스 팀정보 끌어오기</button>
-              </div>
-              <div class="icon-list">
-                <button class="document-icon">
-                  <img src="../images/icon-excel.png" alt="엑셀아이콘" />
-                </button>
-                <button class="document-icon">
-                  <img src="../images/icon-word.png" alt="워드아이콘" />
-                </button>
-                <button class="document-icon">
-                  <img src="../images/icon-pdf.png" alt="PDF아이콘" />
-                </button>
-                <button class="document-icon">
-                  <img src="../images/icon-printer.png" alt="프린터아이콘" />
-                </button>
+              <div class="flex">
+                <div class="add-remove-button-box">
+                  <button class="add-remove-button">
+                    <img src="../images/icon-plus.svg" alt="추가버튼" />
+                    추가
+                  </button>
+                  <button class="add-remove-button">
+                    <img src="../images/icon-close-button.svg" alt="삭제버튼" />
+                    삭제
+                  </button>
+                  <div class="up-down-botton">
+                    <button>
+                      <img
+                        src="../images/icon-chevron-top.svg"
+                        alt="위로버튼"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="../images/icon-chevron-down.svg"
+                        alt="아래로버튼"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="btn-list">
+                  <button>결재상신 시작</button>
+                  <button>미상신 결재문서삭제</button>
+                  <button>문서Template으로 저장</button>
+                </div>
               </div>
             </div>
-            <div class="table-wrap secondary-scroll">
+            <div class="payment-table-wrap secondary-scroll">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <thead>
                   <tr>
-                    <th>회사ID</th>
-                    <th>
-                      회사명<img
-                        src="../images/icon-table-arrow.svg"
-                        alt="화살표"
-                      />
+                    <th style="width: 3%">
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="checkbox-input">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                            fill="none"
+                            style="vertical-align: middle; cursor: pointer"
+                          >
+                            <rect
+                              x="1.16669"
+                              y="0.719055"
+                              width="19"
+                              height="19"
+                              rx="3.5"
+                              fill="white"
+                              stroke="#B4B9CC"
+                            />
+                            <path
+                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                              stroke="#fff"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </label>
+                      </div>
                     </th>
-                    <th>사후관리자(국내)</th>
-                    <th>심사자(국내)</th>
-                    <th>사후관리자(해외)</th>
-                    <th>심사자(해외)</th>
-                    <th>대표자</th>
-                    <th>설립일자</th>
-                    <th>
-                      상장(등록)일<br />
-                      (매매개시일)
-                    </th>
-                    <th>업종(표준산업분류)</th>
-                    <th>
-                      투자일자<img
-                        src="../images/icon-table-arrow.svg"
-                        alt="화살표"
-                      />
-                    </th>
+                    <th>No</th>
+                    <th>사번</th>
+                    <th>이름</th>
+                    <th>부서</th>
+                    <th>직위</th>
+                    <th>userID</th>
+                    <th>상신일자</th>
+                    <th>읽은일자</th>
+                    <th>권한</th>
+                    <th>상태</th>
+                    <th>대결대상자</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" id="checkbox2" />
+                        <label for="checkbox2" class="checkbox-input">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                            fill="none"
+                            style="vertical-align: middle; cursor: pointer"
+                          >
+                            <rect
+                              x="1.16669"
+                              y="0.719055"
+                              width="19"
+                              height="19"
+                              rx="3.5"
+                              fill="white"
+                              stroke="#B4B9CC"
+                            />
+                            <path
+                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                              stroke="#fff"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                    </td>
+                    <td>2</td>
+                    <td>243532523423</td>
+                    <td>홍길동</td>
+                    <td>테스트부서</td>
+                    <td>대리</td>
+                    <td>GUEST1711</td>
+                    <td>2024.01.01</td>
+                    <td>2024.01.01</td>
+                    <td>결재</td>
+                    <td></td>
+                    <td>테스트</td>
                   </tr>
                   <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                  </tr>
-                  <tr>
-                    <td>0012v000002Z</td>
-                    <td>0012v000002ZeH2AAJ</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>박우경</td>
-                    <td>최용석</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
-                    <td>2021-10-11</td>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" id="checkbox1" />
+                        <label for="checkbox1" class="checkbox-input">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                            fill="none"
+                            style="vertical-align: middle; cursor: pointer"
+                          >
+                            <rect
+                              x="1.16669"
+                              y="0.719055"
+                              width="19"
+                              height="19"
+                              rx="3.5"
+                              fill="white"
+                              stroke="#B4B9CC"
+                            />
+                            <path
+                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                              stroke="#fff"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td>243532523423</td>
+                    <td>김진아</td>
+                    <td>테스트부서</td>
+                    <td>팀장</td>
+                    <td>GUEST1711</td>
+                    <td>2024.01.01</td>
+                    <td>2024.01.01</td>
+                    <td>참조</td>
+                    <td></td>
+                    <td>테스트</td>
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <div class="total-wrap">
-              <div class="total-box">
-                <div class="total">
-                  <p>총 <span>1200</span>건</p>
-                  <p class="page"><span>1</span>133</p>
-                </div>
-                <div class="total-select-box">
-                  <label for="total-categorySelect"></label>
-                  <select
-                    name="total-category"
-                    id="total-categorySelect"
-                    aria-label="구분 선택"
-                  >
-                    <option value="" selected>15개씩 보기</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="pagination-wrap">
-                <button class="border-btn">
-                  <img
-                    src="../images/icon-pagination-prev1.svg"
-                    alt="맨앞으로이동버튼"
-                  />
-                </button>
-                <button class="border-btn">
-                  <img
-                    src="../images/icon-pagination-prev2.svg"
-                    alt="이전버튼"
-                  />
-                </button>
-                <button class="number-btn active">1</button>
-                <button class="number-btn">2</button>
-                <button class="number-btn">3</button>
-                <button class="number-btn">4</button>
-                <button class="number-btn">5</button>
-                <button class="number-btn">6</button>
-                <button class="number-btn">7</button>
-                <button class="number-btn">8</button>
-                <button class="number-btn">9</button>
-                <button class="number-btn">10</button>
-                <button class="border-btn">
-                  <img
-                    src="../images/icon-pagination-next2.svg"
-                    alt="다음버튼"
-                  />
-                </button>
-                <button class="border-btn">
-                  <img
-                    src="../images/icon-pagination-next1.svg"
-                    alt="맨끝으로이동버튼"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="fixed-box">
-              <button class="scroll-up active">
-                <img src="../images/icon-arrow-up.svg" alt="위로버튼" />
-              </button>
-              <button class="scroll-down">
-                <img src="../images/icon-arrow-down.svg" alt="아래로버튼" />
-              </button>
             </div>
           </div>
         </section>
