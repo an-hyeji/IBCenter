@@ -37,6 +37,9 @@
   position: relative;
   cursor: pointer;
 }
+.clickbtn {
+  cursor: pointer;
+}
 .clickbtn img {
   position: absolute;
   margin-left: -2px;
