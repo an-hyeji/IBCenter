@@ -124,7 +124,7 @@ table tbody tr.selected {
   background: #fdf2e5;
 }
 
-/* 사용안내버튼 */
+/* 안내버튼 */
 .use-button-list {
   display: flex;
   align-items: center;
@@ -156,6 +156,20 @@ table tbody tr.selected {
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
+}
+.guide-title {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.guide-button {
+  border-radius: 1100px;
+  border: 1px solid #e0e2e9;
+  background: #fff;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
 }
 
 /* scroll */
