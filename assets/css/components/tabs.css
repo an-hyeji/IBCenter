@@ -23,7 +23,7 @@
 .tabs .tab-list {
   display: flex;
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .tabs .tab-list .tab {
   flex: 1;
