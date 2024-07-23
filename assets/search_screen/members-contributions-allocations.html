@@ -312,12 +312,17 @@
                 </div>
               </div>
               <div class="list">
-                <p><label for="status-categorySelect">펀드상태</label></p>
+                <p>펀드상태</p>
                 <div class="select-box radius combination-select-box">
+                  <label
+                    for="status-categorySelect"
+                    aria-label="펀드상태"
+                    style="display: none"
+                  ></label>
                   <select
                     name="status-category"
                     id="status-categorySelect"
-                    aria-label="구분 선택"
+                    aria-label="펀드상태"
                   >
                     <option value="" selected>선택해주세요</option>
                     <option value="status-option1">옵션 1</option>

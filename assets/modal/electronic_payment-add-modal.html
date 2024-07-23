@@ -21,12 +21,13 @@
         <div class="cont">
           <div class="modal-box">
             <div class="select-cont">
-              <h4><label for="">사용자ID/명</label></h4>
+              <h4>사용자ID/명</h4>
               <div class="modal-select-box">
+                <label for="id-categorySelect" aria-label="사용자ID/명"></label>
                 <select
                   name="id-category"
                   id="id-categorySelect"
-                  aria-label="구분 선택"
+                  aria-label="사용자ID/명"
                 >
                   <option value="" selected>선택해주세요</option>
                   <option value="id-option1">옵션 1</option>
@@ -36,12 +37,16 @@
               </div>
             </div>
             <div class="select-cont">
-              <h4><label for="">결재권한</label></h4>
+              <h4>결재권한</h4>
               <div class="modal-select-box">
+                <label
+                  for="approval-categorySelect"
+                  aria-label="결재권한"
+                ></label>
                 <select
-                  name="id-category"
-                  id="id-categorySelect"
-                  aria-label="구분 선택"
+                  name="approval-category"
+                  id="approval-categorySelect"
+                  aria-label="결재권한"
                 >
                   <option value="" selected>선택해주세요</option>
                   <option value="id-option1">옵션 1</option>
@@ -87,8 +92,13 @@
               </div>
             </div>
             <div class="select-cont">
-              <h4><label for="reason">부재사유</label></h4>
+              <h4>부재사유</h4>
               <div class="modal-input-box">
+                <label
+                  for="reason"
+                  aria-label="부재사유"
+                  style="display: none"
+                ></label>
                 <input type="text" id="reason" />
               </div>
             </div>

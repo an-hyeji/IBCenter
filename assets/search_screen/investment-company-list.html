@@ -334,13 +334,14 @@
                 </div>
               </div>
               <div class="list">
-                <p><label for="categorySelect">구분</label></p>
+                <p>구분</p>
                 <div class="select-box radius">
-                  <select
-                    name="category"
-                    id="categorySelect"
-                    aria-label="구분 선택"
-                  >
+                  <label
+                    for="categorySelect"
+                    aria-label="구분"
+                    style="display: none"
+                  ></label>
+                  <select name="category" id="categorySelect" aria-label="구분">
                     <option value="" selected>선택해주세요</option>
                     <option value="option1">옵션 1</option>
                     <option value="option2">옵션 2</option>
@@ -618,11 +619,7 @@
                 </div>
                 <div class="total-select-box">
                   <label for="total-categorySelect"></label>
-                  <select
-                    name="total-category"
-                    id="total-categorySelect"
-                    aria-label="구분 선택"
-                  >
+                  <select name="total-category" id="total-categorySelect">
                     <option value="" selected>15개씩 보기</option>
                   </select>
                 </div>
