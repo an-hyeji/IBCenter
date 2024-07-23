@@ -57,6 +57,7 @@
 .tabs .tab-list .tab.active:after {
   display: none;
 }
+
 .tabs .tab-list .tab span {
   overflow: hidden;
   max-width: 140px;
