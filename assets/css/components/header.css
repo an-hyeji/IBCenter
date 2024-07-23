@@ -4,11 +4,13 @@
   padding: 16px 28px 16px 0;
   height: 68px;
   overflow: hidden;
+  gap: 0 55px;
 }
 .header-wrap .left-header {
   display: flex;
   gap: 0 48px;
-  width: 75%;
+  width: 100%;
+  width: calc(100% - 448px);
 }
 .header-wrap .logo-box {
   display: flex;

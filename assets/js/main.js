@@ -58,3 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// 사이드메뉴 숨기기
+
+const clickbtn = document.querySelector('.clickbtn');
+const sideMenu = document.querySelector('.side');
+
+clickbtn.addEventListener('click', function () {
+  sideMenu.classList.toggle('hide');
+});
