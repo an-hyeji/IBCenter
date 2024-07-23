@@ -17,7 +17,7 @@
 /* Views */
 
 /* Componenets */
-@import './components/modal.css';
+
 @import './components/header.css';
 @import './components/pagination.css';
 @import './components/search-filter.css';
@@ -25,4 +25,9 @@
 @import './components/tabs.css';
 @import './components/button-list.css';
 @import './components/fixed-button.css';
+
+/* modals */
+@import './components/modal.css';
+/* modals */
+
 /* Componenets */
