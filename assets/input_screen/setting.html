@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/main.js" defer></script>
-    <title>전자결재처리</title>
+    <title>환경설정</title>
   </head>
   <body>
     <div class="wrap">
@@ -261,7 +261,7 @@
             <div class="top">
               <div class="title-box">
                 <div class="guide-title">
-                  <h1 class="title">전자결재처리</h1>
+                  <h1 class="title">환경설정</h1>
                   <button class="icon-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -277,99 +277,237 @@
                     </svg>
                   </button>
                 </div>
-                <button class="guide-button">
-                  <img
-                    src="../images/icon-info-solid.svg"
-                    alt="알림아이콘"
-                    class="info-icon"
-                  />
-                  안내
-                  <img
-                    src="../images/iocn-chevron-right.svg"
-                    alt="화살표아이콘"
-                  />
-                </button>
-                <button class="guide-button">
-                  <img
-                    src="../images/icon-message-alert-circle.svg"
-                    alt="알림아이콘"
-                  />
-                  안내
-                  <img
-                    src="../images/iocn-chevron-right.svg"
-                    alt="화살표아이콘"
-                  />
-                </button>
               </div>
               <div class="bread-crumb">
                 <ul>
                   <li>Home</li>
-                  <li>조합관리</li>
-                  <li>조합정보</li>
-                  <li>조합원명부 관리</li>
-                  <li>전자결재</li>
+                  <li>환경설정</li>
                 </ul>
               </div>
             </div>
-            <div class="input-filter">
-              <p class="title">재원 : 123[123]</p>
-              <div class="input-status">
-                <p>결재문서번호<span>24-0419-0002</span></p>
-                <p>문서유형<span>조합원명부</span></p>
-                <p>원본문서번호<span>24-0419-0002</span></p>
-                <p>작성자<span>게스트1711 [GUEST1711]</span></p>
-                <p>결재상태<span class="green">미상신</span></p>
-                <p>최종결재권자<span>게스트1711 [GUEST1711]</span></p>
-              </div>
-              <div class="title-input-box">
-                <div class="input-flex">
-                  <p>제목</p>
-                  <label for="title-input"></label>
-                  <input type="text" id="title-input" />
-                </div>
-                <button class="save-button">저장</button>
-              </div>
+            <div class="input-filter input-filter-flex">
+              <p class="title">개인설정</p>
+              <button class="save-button">저장</button>
             </div>
 
-            <div class="btn-list-wrap">
-              <div class="flex">
-                <div class="add-remove-button-box">
-                  <button class="add-remove-button">
-                    <img src="../images/icon-plus.svg" alt="추가버튼" />
-                    추가
-                  </button>
-                  <button class="add-remove-button">
-                    <img src="../images/icon-close-button.svg" alt="삭제버튼" />
-                    삭제
-                  </button>
-                  <div class="up-down-botton">
-                    <button>
-                      <img
-                        src="../images/icon-chevron-top.svg"
-                        alt="위로버튼"
-                      />
-                    </button>
-                    <button>
-                      <img
-                        src="../images/icon-chevron-down.svg"
-                        alt="아래로버튼"
-                      />
-                    </button>
-                  </div>
-                </div>
-                <div class="btn-list">
-                  <button>결재상신 시작</button>
-                  <button>미상신 결재문서삭제</button>
-                  <button>문서Template으로 저장</button>
-                </div>
-              </div>
-            </div>
-            <div class="payment-table-wrap secondary-scroll">
+            <div class="setting-table-wrap secondary-scroll">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <thead>
+                <colgroup>
+                  <col style="width: 12%" />
+                  <col style="width: 38%" />
+                  <col style="width: 12%" />
+                  <col style="width: 10%" />
+                  <col style="width: 28%" />
+                </colgroup>
+                <tbody>
                   <tr>
-                    <th style="width: 3%">
-                      <div class="checkbox-wrap">
+                    <td>기수</td>
+                    <td>
+                      <label
+                        for="number-categorySelect"
+                        aria-label="기수"
+                      ></label>
+                      <select
+                        name="number-category"
+                        id="number-categorySelect"
+                        aria-label="기수"
+                      >
+                        <option value="" selected>
+                          24기 (2023-01-01 부터 2023-12-31 까지
+                        </option>
+                        <option value="number-option1">옵션 1</option>
+                        <option value="number-option2">옵션 2</option>
+                        <option value="number-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td rowspan="10" style="background-color: #f6f6fa">
+                      사용자 전자세금계산서 처리
+                    </td>
+                    <td class="bar">주소 (우편번호)</td>
+                    <td class="flex">
+                      <div class="address">12345</div>
+                      <button>우편번호</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>디폴트 전표연도</td>
+                    <td>
+                      <label for="fiscal-year"></label
+                      ><input type="text" class="w-200" id="fiscal-year" />
+                    </td>
+                    <td class="bar">상세주소 1</td>
+                    <td>
+                      <label for="detail-address"></label
+                      ><input type="text" id="detail-address" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Default 사업장</td>
+                    <td>
+                      <label
+                        for="business-categorySelect"
+                        aria-label="Default 사업장"
+                      ></label>
+                      <select
+                        name="business-category"
+                        id="business-categorySelect"
+                        aria-label="Default 사업장"
+                      >
+                        <option value="" selected>
+                          01 주식회사 아이비센터
+                        </option>
+                        <option value="business-option1">옵션 1</option>
+                        <option value="business-option2">옵션 2</option>
+                        <option value="business-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td class="bar">상세주소 2</td>
+                    <td>
+                      <label for="detail-address2"></label
+                      ><input type="text" id="detail-address2" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Default 회계단위</td>
+                    <td>
+                      <label
+                        for="unit-categorySelect"
+                        aria-label="Default 회계단위"
+                      ></label>
+                      <select
+                        name="business-category"
+                        id="business-categorySelect"
+                        aria-label="Default 회계단위"
+                        class="w-200"
+                      >
+                        <option value="" selected></option>
+                        <option value="business-option1">옵션 1</option>
+                        <option value="business-option2">옵션 2</option>
+                        <option value="business-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td class="bar">메일계정</td>
+                    <td>
+                      <label for="mail"></label><input type="text" id="mail" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Default 부서코드</td>
+                    <td class="code-flex">
+                      <div class="search-input-box">
+                        <label for="department-code" aria-label="검색"></label>
+                        <input
+                          type="text"
+                          id="department-code"
+                          class="w-200 code-input"
+                        />
+                        <button class="icon-btn">
+                          <img
+                            src="../images/icon-search-input.svg"
+                            alt="검색아이콘"
+                          />
+                        </button>
+                      </div>
+                      <label
+                        for="search-person-disabled"
+                        aria-label="검색"
+                      ></label>
+                      <input
+                        type="text"
+                        id="search-person-disabled"
+                        class="disable w-200"
+                        disabled
+                      />
+                    </td>
+                    <td class="bar">메일계정 비밀번호</td>
+                    <td>
+                      <label for="mail-password"></label
+                      ><input
+                        type="password"
+                        class="w-200"
+                        id="mail-password"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Default 창고</td>
+                    <td>
+                      <label
+                        for="warehouse-categorySelect"
+                        aria-label="Default 창고"
+                      ></label>
+                      <select
+                        name="warehouse-category"
+                        id="warehouse-categorySelect"
+                        aria-label="Default 창고"
+                        class="w-200"
+                      >
+                        <option value="" selected></option>
+                        <option value="warehouse-option1">옵션 1</option>
+                        <option value="warehouse-option2">옵션 2</option>
+                        <option value="warehouse-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td class="bar">메일계정 SMTP서버</td>
+                    <td>
+                      <label for="server"></label
+                      ><input type="text" class="w-200" id="server" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>사번설정</td>
+                    <td>
+                      <label
+                        for="employee-number"
+                        aria-label="사번설정"
+                      ></label>
+                      <select
+                        name="employee-number-category"
+                        id="employee-number"
+                        aria-label="사번설정"
+                        class="w-200"
+                      >
+                        <option value="" selected>20190429 임세미</option>
+                        <option value="employee-number-option1">옵션 1</option>
+                        <option value="employee-number-option2">옵션 2</option>
+                        <option value="employee-number-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td class="bar">메일계정 SMTP포트번호</td>
+                    <td>
+                      <label for="port"></label
+                      ><input type="text" class="w-100" id="port" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>결재할 문서번호 정렬순서</td>
+                    <td>
+                      <label
+                        for="approval-categorySelect"
+                        aria-label="결재할 문서번호 정렬순서"
+                      ></label>
+                      <select
+                        name="approval-category"
+                        id="approval-categorySelect"
+                        aria-label="결재할 문서번호 정렬순서"
+                        class="w-200"
+                      >
+                        <option value="" selected>내림차순</option>
+                        <option value="approval-option1">옵션 1</option>
+                        <option value="approval-option2">옵션 2</option>
+                        <option value="approval-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td class="bar">전화번호</td>
+                    <td>
+                      <label for="call"></label
+                      ><input type="text" class="w-200" id="call" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>결재 알림 문자 수신 거부</td>
+                    <td>
+                      <div class="checkbox-wrap flex">
                         <input type="checkbox" id="checkbox" />
                         <label for="checkbox" class="checkbox-input">
                           <svg
@@ -398,27 +536,21 @@
                             />
                           </svg>
                         </label>
+                        거부
                       </div>
-                    </th>
-                    <th>No</th>
-                    <th>사번</th>
-                    <th>이름</th>
-                    <th>부서</th>
-                    <th>직위</th>
-                    <th>userID</th>
-                    <th>상신일자</th>
-                    <th>읽은일자</th>
-                    <th>권한</th>
-                    <th>상태</th>
-                    <th>대결대상자</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
+                    </td>
+                    <td class="bar">FAX번호</td>
                     <td>
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox2" />
-                        <label for="checkbox2" class="checkbox-input">
+                      <label for="fax"></label
+                      ><input type="text" class="w-200" id="fax" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>전자결재 라인 추가 거부</td>
+                    <td>
+                      <div class="checkbox-wrap flex">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -445,25 +577,34 @@
                             />
                           </svg>
                         </label>
+                        거부
                       </div>
                     </td>
-                    <td>2</td>
-                    <td>243532523423</td>
-                    <td>홍길동</td>
-                    <td>테스트부서</td>
-                    <td>대리</td>
-                    <td>GUEST1711</td>
-                    <td>2024.01.01</td>
-                    <td>2024.01.01</td>
-                    <td>결재</td>
-                    <td></td>
-                    <td>테스트</td>
+                    <td class="bar">Default 입금계좌 1</td>
+                    <td>
+                      <label
+                        for="account-categorySelect"
+                        aria-label="Default 입금계좌 1"
+                      ></label>
+                      <select
+                        name="account-category"
+                        id="account-categorySelect"
+                        aria-label="Default 입금계좌 1"
+                        class="w-200"
+                      >
+                        <option value="" selected>123123-456-789</option>
+                        <option value="account-option1">옵션 1</option>
+                        <option value="account-option2">옵션 2</option>
+                        <option value="account-option3">옵션 3</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
+                    <td>사이드 메뉴 숨김</td>
                     <td>
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox1" />
-                        <label for="checkbox1" class="checkbox-input">
+                      <div class="checkbox-wrap flex">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -490,19 +631,57 @@
                             />
                           </svg>
                         </label>
+                        거부
                       </div>
                     </td>
-                    <td>1</td>
-                    <td>243532523423</td>
-                    <td>김진아</td>
-                    <td>테스트부서</td>
-                    <td>팀장</td>
-                    <td>GUEST1711</td>
-                    <td>2024.01.01</td>
-                    <td>2024.01.01</td>
-                    <td>참조</td>
-                    <td></td>
-                    <td>테스트</td>
+                    <td style="background-color: #f6f6fa">폰트 크기 설정</td>
+                    <td colspan="2">
+                      <label
+                        for="fontSize-categorySelect"
+                        aria-label="폰트 크기 설정"
+                      ></label>
+                      <select
+                        name="fontSize-category"
+                        id="fontSize-categorySelect"
+                        aria-label="폰트 크기 설정"
+                        class="w-80"
+                      >
+                        <option value="" selected>12px</option>
+                        <option value="fontSize-option1">옵션 1</option>
+                        <option value="fontSize-option2">옵션 2</option>
+                        <option value="fontSize-option3">옵션 3</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      개인 단위 테이블 행수<br />
+                      설정 (최대 200개)
+                    </td>
+                    <td>
+                      <div class="flex">
+                        <label for="unit" style="display: none"></label>
+                        <input type="text" class="w-80" id="unit" />
+                        <div class="unit-box">
+                          <p>회사단위: <span>20</span></p>
+                          <p>도메인 단위: <span>17</span></p>
+                        </div>
+                      </div>
+                    </td>
+                    <td style="background-color: #f6f6fa">
+                      개인 단위 보이는 테이블<br />
+                      행수 설정 (최대 200개)
+                    </td>
+                    <td colspan="2">
+                      <div class="flex">
+                        <label for="unit2" style="display: none"></label>
+                        <input type="text" class="w-80" id="unit2" />
+                        <div class="unit-box">
+                          <p>회사단위: <span>20</span></p>
+                          <p>도메인 단위: <span>17</span></p>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>

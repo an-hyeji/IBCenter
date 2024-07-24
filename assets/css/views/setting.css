@@ -1,0 +1,128 @@
+.input-filter-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-table-wrap {
+  margin-top: 24px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.setting-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.setting-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.setting-table-wrap table tbody td {
+  font-weight: 600;
+  height: unset;
+}
+.setting-table-wrap table tbody td:first-child {
+  background-color: #f6f6fa;
+  padding: 12px 16px;
+  height: unset;
+}
+.setting-table-wrap table tbody td select {
+  width: 71.3%;
+}
+.setting-table-wrap table tbody .bar {
+  border-right: none;
+  position: relative;
+}
+.setting-table-wrap table tbody .bar::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 32px;
+  background-color: #e0e2e9;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.setting-table-wrap table tbody .flex {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.setting-table-wrap table tbody .flex .unit-box {
+  display: flex;
+  gap: 0 17px;
+}
+.setting-table-wrap table tbody .flex .unit-box p {
+  font-weight: 500;
+  position: relative;
+}
+.setting-table-wrap table tbody .flex .unit-box p::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 8px;
+  background-color: #b4b9cc;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.setting-table-wrap table tbody .flex .unit-box p:last-child::after {
+  display: none;
+}
+.setting-table-wrap table tbody .flex .unit-box p span {
+  color: #2774e1;
+}
+
+.setting-table-wrap table tbody .flex .address {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  width: 100px;
+  font-weight: 400;
+}
+.setting-table-wrap table tbody .flex button {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.setting-table-wrap table tbody .code-flex {
+  display: flex;
+  gap: 0 4px;
+}
+.setting-table-wrap table tbody .code-flex .search-input-box {
+  position: relative;
+}
+.setting-table-wrap table tbody .code-flex .icon-btn {
+  border-left: 1px solid #b4b9cc;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 4px 4px 0px;
+}
+.setting-table-wrap table tbody .code-flex .disable {
+  background-color: #f6f6fa;
+}
+.setting-table-wrap table tbody .w-200 {
+  width: 200px;
+}
+.setting-table-wrap table tbody .w-100 {
+  width: 100px;
+}
+.setting-table-wrap table tbody .w-80 {
+  width: 80px;
+  min-width: unset;
+}
+.setting-table-wrap table tbody input {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  outline: none;
+  font-weight: 400;
+  width: 100%;
+}
