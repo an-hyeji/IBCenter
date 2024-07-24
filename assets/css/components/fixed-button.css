@@ -1,6 +1,6 @@
 .fixed-box {
   position: fixed;
-  right: 13px;
+  right: 33px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -27,7 +27,7 @@
 }
 .fixed-box-bottom {
   position: fixed;
-  right: 16px;
+  right: 37px;
   bottom: 16px;
   gap: 3px;
 }

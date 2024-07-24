@@ -209,7 +209,18 @@ table tbody tr.selected {
 }
 
 .content-wrap::-webkit-scrollbar {
-  display: none;
+  width: 20px;
+  height: 20px;
+}
+.content-wrap::-webkit-scrollbar-track {
+  background: #f6f6fa;
+  border-top: 1px solid #e0e2e9;
+}
+.content-wrap::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #caced8;
+  background-clip: padding-box;
+  border: 6px solid #f6f6fa;
 }
 
 /* content*/
