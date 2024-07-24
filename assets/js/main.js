@@ -95,3 +95,5 @@ listTitles.forEach((listTitle) => {
     });
   }
 });
+
+window.addEventListener('resize', () => console.log('resizing'));
