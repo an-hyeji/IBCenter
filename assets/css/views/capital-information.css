@@ -1,0 +1,116 @@
+.capital-flex {
+  width: 100%;
+  justify-content: space-between;
+}
+.left-flex {
+  display: flex;
+  gap: 0 25px;
+}
+.capital-table-wrap,
+.edit-capital-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.edit-capital-table-wrap {
+  margin-top: 40px;
+}
+.edit-capital-table-wrap .edit-filter-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.edit-capital-table-wrap .edit-filter-flex h2 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.edit-capital-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.edit-capital-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.edit-capital-table-wrap table tbody td {
+  font-weight: 600;
+  height: unset;
+}
+.edit-capital-table-wrap table tbody td:first-child {
+  background-color: #f6f6fa;
+  padding: 12px 16px;
+  height: unset;
+}
+
+.edit-capital-table-wrap table tbody .search-input-box {
+  position: relative;
+}
+.edit-capital-table-wrap table tbody .icon-btn {
+  border-left: 1px solid #b4b9cc;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.edit-capital-table-wrap table tbody input {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  font-weight: 400;
+  width: 100%;
+  text-align: right;
+}
+
+.deit-date-select-box {
+  padding: 0;
+}
+.edit-flex {
+  display: flex;
+  margin-bottom: 12px;
+  gap: 0 8px;
+}
+.edit-flex:last-child {
+  margin-bottom: 0;
+}
+.edit-flex span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+  color: #555b6c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fluctuation-table {
+  min-width: 1024px;
+  width: 76.8%;
+  border: 1px solid #cbdcf8;
+}
+.fluctuation-table thead th {
+  background-color: #edf3fd;
+  border-bottom: 1px solid #cbdcf8;
+  border-right: 1px solid #cbdcf8;
+  color: #555b6c;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.fluctuation-table td {
+  color: #555b6c;
+  font-size: 14px;
+  font-weight: 500;
+  border-right: 1px solid #cbdcf8;
+  border-top: 1px solid #cbdcf8;
+  padding: 6px 8px;
+}
+
+.fluctuation-table tbody input {
+  padding: 5px 8px !important;
+}

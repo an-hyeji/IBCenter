@@ -60,6 +60,7 @@ select {
   color: #6f7589;
   white-space: nowrap;
 }
+
 .total-select-box select {
   width: 120px;
   padding: 7px 8px;
@@ -72,6 +73,7 @@ select {
 
 /* 테이블 */
 table {
+  width: 100%;
   border-collapse: separate;
   border-top: 1px solid #263a75;
   border-bottom: 1px solid #e0e2e9;
@@ -124,6 +126,25 @@ table tbody tr:hover {
 }
 table tbody tr.selected {
   background: #fdf2e5;
+}
+table tbody .w-200 {
+  width: 200px;
+}
+table tbody .w-100 {
+  width: 100px;
+}
+table tbody .w-80 {
+  width: 80px;
+  min-width: unset;
+}
+
+/* 인풋 */
+input {
+  outline: none;
+}
+.disable {
+  background-color: #f6f6fa !important;
+  color: #000;
 }
 
 /* 안내버튼 */

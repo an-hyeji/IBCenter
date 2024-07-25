@@ -1,3 +1,17 @@
+.ledger-search-filter {
+  flex-direction: column;
+}
+.ledger-list-box {
+  display: flex;
+}
+.ledger-list-box:last-child {
+  border-top: 1px solid #e0e2e9;
+}
+.ledger-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
 .research-table-wrap {
   width: 100%;
   overflow-x: auto;
