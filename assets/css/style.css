@@ -16,11 +16,12 @@
 @import './views/electronic_payment.css';
 @import './views/setting.css';
 @import './views/capital-information.css';
-
+@import './views/completion-of-accounting-statements.css';
+@import './views/outstanding-accounting-statement.css';
+@import './views/calendar-management.css';
 /* Views */
 
 /* Componenets */
-
 @import './components/header.css';
 @import './components/pagination.css';
 @import './components/search-filter.css';
@@ -28,6 +29,7 @@
 @import './components/tabs.css';
 @import './components/button-list.css';
 @import './components/fixed-button.css';
+@import './components/input-filter.css';
 
 /* modals */
 @import './components/modal.css';

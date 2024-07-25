@@ -1,0 +1,72 @@
+.calendar-input-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendar-input-filter .calender-flex {
+  display: flex;
+  align-items: center;
+}
+.calendar-input-filter .calender-flex p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.calendar-input-filter .calender-flex button {
+  border-radius: 4px;
+  border: 1px solid rgba(51, 70, 128, 0.8);
+  background: #fff;
+  padding: 8px 12px;
+  color: #334680;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 4px;
+  height: 32px;
+}
+.calendar-table-wrap {
+  margin-top: 32px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+.calendar-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.calendar-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.calendar-table-wrap table tbody td {
+  font-weight: 400;
+}
+.calendar-table-wrap table tbody td:first-child,
+.calendar-table-wrap table tbody td:nth-child(7) {
+  background-color: #f6f6fa;
+}
+.saturday {
+  background-color: #e8effe;
+  color: #2774e1;
+}
+.sunday {
+  color: #ff3b30;
+  background: rgba(255, 59, 48, 0.12);
+}
+.calendar-table-wrap table tbody td input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  width: 100%;
+}
+
+.w-84 {
+  min-width: 84px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1530px) {
+  .calendar-table-wrap table tbody td input {
+    min-width: 120px;
+  }
+}

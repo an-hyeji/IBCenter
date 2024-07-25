@@ -59,10 +59,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  display: flex;
+  display: inherit;
   gap: 0 2px;
   word-break: keep-all;
 }
+
 .modal-content .cont .circle {
   position: relative;
   padding-left: 10px;
@@ -76,6 +77,12 @@
   height: 4px;
   border-radius: 100%;
   background-color: #999ca7;
+}
+.modal-content .cont .blue {
+  color: #2774e1;
+}
+.modal-content .cont .bold {
+  font-weight: 600;
 }
 
 /* 결재권자추가 모달 */
