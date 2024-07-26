@@ -1,30 +1,22 @@
-.accounting-input-status {
-  margin: 12px 0 !important;
-}
-.accounting-btn-wrap {
-  padding: 16px 0 8px 0 !important;
-  border-top: 1px solid #e0e2e9;
-  align-items: baseline;
-}
-.outstanding-box {
+.input-filter .outstanding-box {
   min-width: 100px;
 }
-.draft-box {
+.input-filter .draft-box {
   display: flex;
   gap: 0 8px;
   align-items: center;
 }
-.draft-box span {
+.input-filter .draft-box span {
   color: #373a46;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
 }
-.draft-btn-box {
+.input-filter .draft-btn-box {
   display: flex;
   gap: 0 8px;
 }
-.draft-btn-box button {
+.input-filter .draft-btn-box button {
   border-radius: 4px;
   border: 1px solid #b4b9cc;
   background: #fff;
@@ -33,36 +25,19 @@
   font-size: 14px;
   font-weight: 500;
 }
-.outstanding-flex {
-  display: flex;
-  align-items: center;
-  gap: 0 8px;
+.input-filter .accounting-btn-wrap {
+  padding: 16px 0 8px 0 !important;
+  border-top: 1px solid #e0e2e9;
+  align-items: baseline;
 }
-.outstanding-flex p {
-  color: #373a46;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
+.w-400 {
+  width: 400px !important;
 }
-.outstanding-flex p span {
-  color: #2774e1;
+.w-300 {
+  width: 300px !important;
 }
-.outstanding-btn-box {
-  display: flex;
-  gap: 0 8px;
-}
-.outstanding-btn-box button {
-  color: #334680;
-  padding: 8px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 4px;
-  border: 1px solid rgba(51, 70, 128, 0.8);
-  background: rgba(51, 70, 128, 0);
-}
-.line-btn-list {
-  padding: 0 0 8px 0 !important;
-  align-items: center;
+.orange {
+  color: #ff7a00;
 }
 .accounting-table-wrap {
   width: 100%;
@@ -71,14 +46,45 @@
   white-space: nowrap;
   margin-top: 24px;
 }
-.accounting-table-wrap table {
-  table-layout: fixed;
+.accounting-table-wrap .outstanding-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.accounting-table-wrap .outstanding-flex p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.accounting-table-wrap .outstanding-flex p span {
+  color: #2774e1;
+}
+.accounting-table-wrap .outstanding-btn-box {
+  display: flex;
+  gap: 0 8px;
+}
+.accounting-table-wrap .outstanding-btn-box button {
+  color: #334680;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(51, 70, 128, 0.8);
+  background: rgba(51, 70, 128, 0);
+}
+.accounting-table-wrap .line-btn-list {
+  padding: 0 0 8px 0 !important;
+  align-items: center;
 }
 .accounting-table-wrap table tbody tr:hover {
   background: #fff;
 }
 .accounting-table-wrap table tbody tr.selected {
   background: #fff;
+}
+.accounting-table-wrap table tbody tr:first-child td {
+  border-bottom: 1px solid #e0e2e9;
 }
 .accounting-table-wrap table tbody td {
   font-weight: 600;
@@ -89,10 +95,6 @@
   padding: 12px 16px;
   height: unset;
 }
-.accounting-table-wrap table tbody tr:first-child td {
-  border-bottom: 1px solid #e0e2e9;
-}
-
 .accounting-table-wrap .input-box {
   padding: 8px;
   display: flex;
@@ -136,21 +138,14 @@
   align-items: center;
   justify-content: center;
 }
-.w-400 {
-  width: 400px !important;
-}
-.w-300 {
-  width: 300px !important;
-}
-
-.debit-credit-flex {
+.accounting-table-wrap .debit-credit-flex {
   display: flex;
   gap: 0 20px;
 }
-.debit-credit-flex span {
+.accounting-table-wrap .debit-credit-flex span {
   font-weight: 400;
 }
-.debit-credit-flex span input {
+.accounting-table-wrap .debit-credit-flex span input {
   border-radius: 4px;
   border: 1px solid #b4b9cc;
   padding: 8px;
@@ -234,6 +229,10 @@
   right: 0;
   border-radius: 0px 4px 4px 0px;
 }
+.indignation-line-table-wrap {
+  width: 100%;
+  white-space: nowrap;
+}
 .indignation-line-table-wrap table {
   border-bottom: none;
 }
@@ -244,6 +243,9 @@
   border-bottom: 1px solid #b4b9cc;
   border-top: 1px solid #b4b9cc;
 }
-.orange {
-  color: #ff7a00;
+
+@media screen and (max-width: 1530px) {
+  .custom-width {
+    width: 11.3% !important;
+  }
 }
