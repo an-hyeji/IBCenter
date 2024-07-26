@@ -11,14 +11,15 @@
   max-width: 100px;
 }
 
-.combination-table-wrap table tbody tr:last-child td {
+.combination-table-wrap table {
   border-bottom: none;
-  border-top: none;
 }
-.combination-table-wrap table tbody tr:last-child {
+.combination-table-wrap tbody tr:last-child {
+  background-color: #e9effe;
+}
+.combination-table-wrap tbody tr:last-child td {
   border-bottom: 1px solid #b4b9cc;
   border-top: 1px solid #b4b9cc;
-  background-color: #e9effe;
 }
 .search-filter .list .input-box .members-input-box {
   min-width: 200px;

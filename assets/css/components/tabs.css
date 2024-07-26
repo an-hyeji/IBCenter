@@ -49,9 +49,7 @@
   transform: translateY(-50%);
   background-color: #caced8;
 }
-.tabs .tab-list .tab:last-child::after {
-  display: none;
-}
+
 .tabs .tab-list .tab.active {
   border-top: 1px solid #b4b9cc;
   border-right: 1px solid #b4b9cc;
