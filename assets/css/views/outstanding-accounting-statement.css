@@ -217,6 +217,10 @@
   width: 100%;
   padding-right: 40px;
 }
+.under-accounting-table-wrap .period-input {
+  width: 40px;
+  padding-right: 8px;
+}
 .under-accounting-table-wrap .disable {
   border-radius: 4px;
   width: 67%;

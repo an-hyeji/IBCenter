@@ -371,8 +371,8 @@
                     <td style="width: 38%">
                       <div class="input-box">
                         <div class="search-input-box min-200">
-                          <label for="search-person" aria-label="검색"></label>
-                          <input type="text" id="search-person" />
+                          <label for="code-name" aria-label="검색"></label>
+                          <input type="text" id="code-name" />
                           <button class="icon-btn">
                             <img
                               src="../images/icon-search-input.svg"
@@ -382,12 +382,12 @@
                         </div>
                         <div class="disable-box">
                           <label
-                            for="search-person-disabled"
+                            for="code-name-disabled"
                             aria-label="검색"
                           ></label>
                           <input
                             type="text"
-                            id="search-person-disabled"
+                            id="code-name-disabled"
                             class="disable"
                             disabled
                           />
@@ -399,13 +399,13 @@
                       <div class="debit-credit-flex">
                         <span>
                           차변
-                          <label for=""></label>
-                          <input type="text" class="w-200" />
+                          <label for="debit"></label>
+                          <input type="text" class="w-200" id="debit" />
                         </span>
                         <span>
                           대변
-                          <label for=""></label>
-                          <input type="text" class="w-200" />
+                          <label for="credit"></label>
+                          <input type="text" class="w-200" id="credit" />
                         </span>
                       </div>
                     </td>
@@ -443,21 +443,21 @@
                     <td style="width: 10%" class="bar">계좌코드</td>
                     <td style="width: 31%">
                       <label
-                        for="business-category-select"
+                        for="account-code-category-select"
                         aria-label="Default 사업장"
                       ></label>
                       <select
-                        name="business-category"
-                        id="business-category-select"
+                        name="account-code-category"
+                        id="account-code-category-select"
                         aria-label="Default 사업장"
                         class="w-300"
                       >
                         <option value="" selected>
                           국민은행 보통 11226-22-88964
                         </option>
-                        <option value="business-option1">옵션 1</option>
-                        <option value="business-option2">옵션 2</option>
-                        <option value="business-option3">옵션 3</option>
+                        <option value="account-code-option1">옵션 1</option>
+                        <option value="account-code-option2">옵션 2</option>
+                        <option value="account-code-option3">옵션 3</option>
                       </select>
                     </td>
                     <td style="width: 3%" class="center">5</td>
@@ -465,8 +465,8 @@
                     <td style="width: 31%">
                       <div class="input-box">
                         <div class="search-input-box">
-                          <label for="search-person" aria-label="검색"></label>
-                          <input type="text" id="search-person" />
+                          <label for="cost-center" aria-label="검색"></label>
+                          <input type="text" id="cost-center" />
                           <button class="icon-btn">
                             <img
                               src="../images/icon-search-input.svg"
@@ -476,12 +476,12 @@
                         </div>
                         <div class="disable-box">
                           <label
-                            for="search-person-disabled"
+                            for="cost-center-disabled"
                             aria-label="검색"
                           ></label>
                           <input
                             type="text"
-                            id="search-person-disabled"
+                            id="cost-center-disabled"
                             class="disable"
                             disabled
                           />
@@ -493,15 +493,20 @@
                     <td style="width: 3%" class="center">2</td>
                     <td style="width: 10%" class="bar">결제기간</td>
                     <td style="width: 31%">
-                      <label for=""></label>
-                      <input type="text" style="width: 40px" />
+                      <label for="period"></label>
+                      <input
+                        type="text"
+                        class="period-input"
+                        id="period"
+                        maxlength="2"
+                      />
                       <span>일</span>
                     </td>
                     <td style="width: 3%" class="center">6</td>
                     <td style="width: 10%" class="bar">만기일</td>
                     <td style="width: 31%">
-                      <label for="search-person" aria-label="검색"></label>
-                      <input type="text" id="search-person" class="w-100" />
+                      <label for="maturity-date" aria-label="검색"></label>
+                      <input type="text" id="maturity-date" class="w-100" />
                       <span class="yyyy-mm-dd">YYYY-MM-DD</span>
                     </td>
                   </tr>
@@ -530,10 +535,13 @@
                     <td style="width: 31%">
                       <div class="input-box">
                         <div class="search-input-box">
-                          <label for="search-person" aria-label="검색"></label>
+                          <label
+                            for="foreign-currency"
+                            aria-label="검색"
+                          ></label>
                           <input
                             type="text"
-                            id="search-person"
+                            id="foreign-currency"
                             class="right"
                             style="padding-right: 8px"
                           />
@@ -547,8 +555,8 @@
                     <td style="width: 31%">
                       <div class="input-box">
                         <div class="search-input-box w-300">
-                          <label for="search-person" aria-label="검색"></label>
-                          <input type="text" id="search-person" />
+                          <label for="bill-number" aria-label="검색"></label>
+                          <input type="text" id="bill-number" />
                           <button class="icon-btn">
                             <img
                               src="../images/icon-search-input.svg"
@@ -892,7 +900,6 @@
                     <p>총 <span>20</span>건</p>
                   </div>
                 </div>
-
                 <div class="pagination-wrap">
                   <button class="border-btn">
                     <img
