@@ -69,6 +69,9 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
+.accounting-table-wrap table {
+  table-layout: fixed;
+}
 .accounting-table-wrap table tbody tr:hover {
   background: #fff;
 }
@@ -84,19 +87,8 @@
   padding: 12px 16px;
   height: unset;
 }
-.accounting-table-wrap table tbody .bar {
-  border-right: none;
-  position: relative;
-}
-.accounting-table-wrap table tbody .bar::after {
-  position: absolute;
-  content: '';
-  width: 1px;
-  height: 32px;
-  background-color: #e0e2e9;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+.accounting-table-wrap table tbody tr:first-child td {
+  border-bottom: 1px solid #e0e2e9;
 }
 
 .accounting-table-wrap .input-box {
@@ -110,6 +102,17 @@
 }
 .accounting-table-wrap .search-input-box {
   display: flex;
+  width: 100%;
+}
+.accounting-table-wrap .min-200 {
+  min-width: 200px;
+  width: 200px;
+}
+.accounting-table-wrap .disable-box {
+  width: 100%;
+}
+.accounting-table-wrap .disable-box input {
+  width: 100% !important;
 }
 .accounting-table-wrap input {
   padding: 8px 12px;
@@ -134,8 +137,8 @@
 .w-400 {
   width: 400px !important;
 }
-.w-600 {
-  width: 604px;
+.w-300 {
+  width: 300px;
 }
 
 .debit-credit-flex {
@@ -151,4 +154,76 @@
   padding: 8px;
   display: inline-block;
   margin-left: 4px;
+}
+.under-accounting-table-wrap table {
+  border-top: none;
+}
+
+.under-accounting-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.under-accounting-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.under-accounting-table-wrap table tbody td {
+  font-weight: 600;
+  height: unset;
+  color: #555b6c;
+}
+.under-accounting-table-wrap table tbody td:first-child {
+  background-color: #f6f6fa;
+  padding: 12px 16px;
+  height: unset;
+}
+.under-accounting-table-wrap table tbody .bar {
+  border-right: none;
+  position: relative;
+}
+.under-accounting-table-wrap table tbody .bar::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 32px;
+  background-color: #e0e2e9;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.under-accounting-table-wrap .input-box {
+  padding: 8px;
+  display: flex;
+  flex: 1;
+  gap: 0 2px;
+  background-color: #fff;
+  height: 100%;
+  padding: 0;
+}
+.under-accounting-table-wrap .input-box .search-input-box {
+  width: 60%;
+  position: relative;
+}
+.under-accounting-table-wrap .disable-box {
+  width: 40%;
+}
+.under-accounting-table-wrap .disable-box input {
+  width: 100% !important;
+}
+.under-accounting-table-wrap input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  width: 100%;
+  padding-right: 40px;
+}
+.under-accounting-table-wrap .disable {
+  border-radius: 4px;
+  width: 67%;
+}
+.under-accounting-table-wrap .icon-btn {
+  border-left: 1px solid #b4b9cc;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 4px 4px 0px;
 }

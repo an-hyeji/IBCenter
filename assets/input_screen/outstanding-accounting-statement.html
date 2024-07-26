@@ -370,7 +370,7 @@
                     <td style="width: 12%">계정코드/명</td>
                     <td style="width: 38%">
                       <div class="input-box">
-                        <div class="search-input-box w-200">
+                        <div class="search-input-box min-200">
                           <label for="search-person" aria-label="검색"></label>
                           <input type="text" id="search-person" />
                           <button class="icon-btn">
@@ -380,16 +380,18 @@
                             />
                           </button>
                         </div>
-                        <label
-                          for="search-person-disabled"
-                          aria-label="검색"
-                        ></label>
-                        <input
-                          type="text"
-                          id="search-person-disabled"
-                          class="disable w-400"
-                          disabled
-                        />
+                        <div class="disable-box">
+                          <label
+                            for="search-person-disabled"
+                            aria-label="검색"
+                          ></label>
+                          <input
+                            type="text"
+                            id="search-person-disabled"
+                            class="disable"
+                            disabled
+                          />
+                        </div>
                       </div>
                     </td>
                     <td style="background-color: #f6f6fa; width: 12%">금액</td>
@@ -410,8 +412,8 @@
                   </tr>
                   <tr>
                     <td style="width: 12%">적요</td>
-                    <td colspan="6">
-                      <div class="search-input-box w-600">
+                    <td>
+                      <div class="search-input-box">
                         <label for="search-person" aria-label="검색"></label>
                         <input type="text" id="search-person" />
                         <button class="icon-btn">
@@ -426,14 +428,14 @@
                 </tbody>
               </table>
             </div>
-            <div class="accounting-table-wrap">
+            <div class="under-accounting-table-wrap">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
                   <tr>
                     <td style="width: 12%">관리항목</td>
-                    <td style="width: 3%">1</td>
-                    <td style="width: 11%" class="bar">계좌코드</td>
-                    <td style="width: 30%">
+                    <td style="width: 3%" class="center">1</td>
+                    <td style="width: 10%" class="bar">계좌코드</td>
+                    <td style="width: 31%">
                       <label
                         for="business-category-select"
                         aria-label="Default 사업장"
@@ -442,6 +444,7 @@
                         name="business-category"
                         id="business-category-select"
                         aria-label="Default 사업장"
+                        class="w-300"
                       >
                         <option value="" selected>
                           국민은행 보통 11226-22-88964
@@ -451,11 +454,33 @@
                         <option value="business-option3">옵션 3</option>
                       </select>
                     </td>
-                    <td style="width: 3%">5</td>
-                    <td style="width: 11%" class="bar">cost center</td>
-                    <td style="width: 30%">
-                      <label for="detail-address2"></label
-                      ><input type="text" id="detail-address2" />
+                    <td style="width: 3%" class="center">5</td>
+                    <td style="width: 10%" class="bar">cost center</td>
+                    <td style="width: 31%">
+                      <div class="input-box">
+                        <div class="search-input-box">
+                          <label for="search-person" aria-label="검색"></label>
+                          <input type="text" id="search-person" />
+                          <button class="icon-btn">
+                            <img
+                              src="../images/icon-search-input.svg"
+                              alt="검색아이콘"
+                            />
+                          </button>
+                        </div>
+                        <div class="disable-box">
+                          <label
+                            for="search-person-disabled"
+                            aria-label="검색"
+                          ></label>
+                          <input
+                            type="text"
+                            id="search-person-disabled"
+                            class="disable"
+                            disabled
+                          />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
