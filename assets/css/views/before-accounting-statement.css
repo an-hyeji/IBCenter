@@ -62,3 +62,6 @@
   width: 18px;
   height: 18px;
 }
+.indignation-line-table-wrap table tbody .total-tr td {
+  border-top: none !important;
+}

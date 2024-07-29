@@ -86,6 +86,9 @@
 .accounting-table-wrap table tbody tr:first-child td {
   border-bottom: 1px solid #e0e2e9;
 }
+.accounting-table-wrap table tbody .none {
+  border-top: none !important;
+}
 .accounting-table-wrap table tbody td {
   font-weight: 600;
   height: unset;

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>안내팝업_회계전표</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content calc-modal-content">
+        <div class="top">
+          <h2>
+            <img src="../images/icon-info-solid.svg" alt="알림아이콘" />안내
+          </h2>
+          <button class="modal-close">
+            <img src="../images/icon-close.png" alt="닫기버튼" />
+          </button>
+        </div>
+        <div class="cont">
+          <div class="modal-button-box">
+            <button>
+              전표입력 설정
+              <img src="../images/icon-chevron-right.svg" alt="화살표" />
+            </button>
+            <button>
+              세무상증빙구분
+              <img src="../images/icon-chevron-right.svg" alt="화살표" />
+            </button>
+          </div>
+          <div>
+            <h2 class="sub-title">단축키 안내</h2>
+            <div class="modal-table-wrap">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                  <col style="width: 30%" />
+                  <col style="width: 70%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>Alt+A</td>
+                    <td>
+                      또는 원장전기된 상태에서
+                      <span class="blue">[+]</span> 전표추가
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alt+W</td>
+                    <td>동일일자 전표추가</td>
+                  </tr>
+                  <tr>
+                    <td>Alt+S</td>
+                    <td>
+                      또는 Microsoft의 Edge에서
+                      <span class="blue"> [Alt+Shift+S]</span> 저장
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alt+P</td>
+                    <td>
+                      또는 계정코드안에서
+                      <span class="blue">[++]</span> 원장전기
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alt+U</td>
+                    <td>또는 <span class="blue">[-]</span> 원장역전기</td>
+                  </tr>
+                  <tr>
+                    <td>Alt+Z</td>
+                    <td>라인삭제</td>
+                  </tr>
+                  <tr>
+                    <td>Alt+Q</td>
+                    <td>직전라인 적요복사</td>
+                  </tr>
+                  <tr>
+                    <td>Alt+K</td>
+                    <td>마지막라인 복사생성</td>
+                  </tr>
+                  <tr>
+                    <td>Alt+M</td>
+                    <td>상대계정코드</td>
+                  </tr>
+                  <tr>
+                    <td>F1</td>
+                    <td>popup키</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <h2 class="sub-title">전표일자의 연도</h2>
+          <p class="circle">
+            개인환경설정에서 설정한 연도가 default로 나타납니다.
+          </p>
+          <p class="circle">
+            개인환경 설정에서 연도를 설정하지 않은 경우에는 현재 작업기수의
+            연도가 나타납니다
+          </p>
+          <h2 class="sub-title">전표일자의 연도</h2>
+          <p>
+            현재라인에 대한 상대계정코드를 선택하여 현재라인에 입력된 정보를
+            이용하여 차대변금액이 매칭되어 라인이 추가되어 저장됩니다. 라인저장
+            직전에 사용하세요.
+          </p>
+          <h2 class="sub-title">미결전표인 경우</h2>
+          <p>
+            분개라인번호를 drag 하여 원하는 분개라인번호 위치에 drop 하면
+            분개라인번호 순서변경이 가능합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

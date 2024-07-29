@@ -148,3 +148,49 @@
   padding: 8px 16px;
   border: 1px solid #263a75;
 }
+
+/* 회계전표 모달 */
+.calc-modal-content {
+  height: calc(100% - 80px);
+  overflow-y: auto;
+}
+.modal-button-box {
+  display: flex;
+  gap: 0 8px;
+}
+.modal-button-box button {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.modal-button-box button img {
+  margin-top: -2px;
+}
+.sub-title {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.modal-table-wrap {
+  margin-top: 12px;
+}
+.modal-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.modal-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.modal-table-wrap table tbody td {
+  height: 40px;
+}
+.modal-table-wrap table tbody td:first-child {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  background: #f6f6fa;
+}
