@@ -20,6 +20,9 @@
   border-radius: 8px;
   background: #fff;
 }
+.modal-content-400 {
+  max-width: 400px;
+}
 .modal-content-600 {
   max-width: 600px;
 }
@@ -442,4 +445,27 @@
   color: #2774e1;
   border: 1px solid rgba(39, 116, 225, 0.6);
   background: #edf3fd;
+}
+
+/* 고객확인서 */
+.customer-table-wrap table tr:first-child td {
+  text-align: center;
+  background: #f6f6fa;
+  font-weight: 600;
+  height: 44px;
+}
+.customer-table-wrap table td .document-icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.customer-table-wrap table td .document-icon img {
+  width: 24px;
+  height: 24px;
+}
+.customer-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.customer-table-wrap table tbody tr.selected {
+  background: #fff;
 }
