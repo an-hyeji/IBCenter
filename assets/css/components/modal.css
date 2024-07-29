@@ -78,7 +78,7 @@
   border-radius: 100%;
   background-color: #999ca7;
 }
-.modal-content .cont .blue {
+.modal-content .blue {
   color: #2774e1;
 }
 .modal-content .cont .bold {
@@ -154,6 +154,9 @@
   height: calc(100% - 80px);
   overflow-y: auto;
 }
+.calc-modal-content::-webkit-scrollbar {
+  display: none;
+}
 .modal-button-box {
   display: flex;
   gap: 0 8px;
@@ -193,4 +196,85 @@
   font-size: 14px;
   font-weight: 600;
   background: #f6f6fa;
+}
+/* 안내팝업_전자결재 */
+
+.edit-btn {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 4px 12px;
+  display: flex;
+  gap: 0 4px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.edit-btn .arrow-icon {
+  margin-top: -2px;
+}
+.bold-blue {
+  color: #2774e1;
+  font-weight: 600;
+}
+.sub-title-28 {
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.blue-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #2774e1;
+  margin: 0 auto;
+}
+.electronic-approval-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.electronic-approval-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.electronic-approval-table-wrap table tbody tr td {
+  text-align: center;
+  font-weight: 600;
+}
+.electronic-approval-table-wrap table tbody tr .report {
+  position: relative;
+}
+.electronic-approval-table-wrap table tbody tr .report::after {
+  position: absolute;
+  content: '*';
+  color: #2774e1;
+}
+
+.electronic-approval-table-wrap .dosc {
+  color: #373a46;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.option-dosc {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.option-table-wrap {
+  margin-top: 16px;
+}
+.option-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.option-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.option-table-wrap table tbody td {
+  text-align: center;
+  height: 40px;
+}
+.option-table-wrap table tbody tr:first-child td {
+  background-color: #f6f6fa;
+  font-weight: 600;
 }

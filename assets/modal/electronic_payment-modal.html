@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>안내팝업_전자결재</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content calc-modal-content">
+        <div class="top">
+          <h2>
+            <img src="../images/icon-info-solid.svg" alt="알림아이콘" />안내
+          </h2>
+          <button class="modal-close">
+            <img src="../images/icon-close.png" alt="닫기버튼" />
+          </button>
+        </div>
+        <div class="cont">
+          <button class="edit-btn">
+            <img src="../images/icon-edit.svg" alt="연필아이콘" />
+            전자결제 메뉴얼
+            <img
+              src="../images/icon-chevron-right.svg"
+              alt="화살표"
+              class="arrow-icon"
+            />
+          </button>
+          <p class="circle">
+            결재는 결재프로세스를 따라 순차적으로 상신됩니다.
+          </p>
+          <p class="circle">
+            결재 프로세스 순서를 변경하는 데 사용됩니다. 단 상신이 되기 전에만
+            가능합니다.
+          </p>
+          <p class="circle">
+            결재상신버튼을 누르면 첫번째 라인의 상신일자가 현재날짜로 됩니다.
+          </p>
+          <p class="circle">이미 접수된 결재라인은 삭제가 안됩니다.</p>
+          <p class="circle">
+            <span class="bold-blue">Template</span>은 다음 작성될 같은 유형의
+            전자결재문서에 적용하게 될 개인별 결재프로세스입니다.
+          </p>
+          <p class="circle">
+            <span class="bold-blue">Template</span>이 비어 있으면 바로 직전의
+            같은 유형의 전자결재문서의 결재라인이 디폴트로 생성됩니다.
+          </p>
+          <p class="circle">
+            <span class="bold-blue">User ID</span>가 없으면 결재프로세스에
+            추가할 수 없습니다.
+          </p>
+          <p class="circle">
+            즉 인사기본정보에 등록된 사원이면서 User ID가 있는 경우에만
+            결재프로세스에 등록될 수 있습니다.
+          </p>
+          <p class="circle">
+            반려된 경우에는 원본 문서를 수정하고 [결재 재상신 시작]버튼을 눌러
+            결재프로세스를 다시 진행하실 수 있습니다.
+          </p>
+          <p class="circle">
+            부재여부에 Check될때에는 결재권한이 참조로 변경됩니다.
+          </p>
+          <p class="circle">
+            전달(협조)의 경우에는 마지막 라인에 올 수 없습니다.
+          </p>
+          <p class="circle">
+            퇴사자의 경우 사번과 이름이 <span class="bold-blue">적색</span>으로
+            표시됩니다.
+          </p>
+          <p class="circle">
+            결재시 결재라인 템플릿이 비어있는 경우, 최근 결재완료문서의
+            결재라인을 가져와서 결재문서템플릿을 생성합니다.
+          </p>
+        </div>
+        <div>
+          <h2 class="sub-title-28">전자결재 권한</h2>
+          <div class="electronic-approval-table-wrap">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <colgroup>
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+                <col style="width: 7.7%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>구분</td>
+                  <td>상신</td>
+                  <td>전달</td>
+                  <td>읽음</td>
+                  <td>읽음<br />취소</td>
+                  <td>결재</td>
+                  <td>결재<br />취소</td>
+                  <td>반려</td>
+                  <td>보류</td>
+                  <td>보류<br />취소</td>
+                  <td>반송</td>
+                  <td>찬반<br />선택</td>
+                  <td>의사결정<br />여부</td>
+                </tr>
+                <tr>
+                  <td class="report">상신</td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>전달</td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>결재</td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                </tr>
+                <tr>
+                  <td>합의</td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                </tr>
+                <tr>
+                  <td>회람</td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>참조</td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td><div class="blue-circle"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="dosc">
+              (*)최초상신: *검토의견저장은 상신자 제외 모두 저장할 수 있음
+            </p>
+          </div>
+          <h2 class="sub-title">Option</h2>
+          <p class="option-dosc">
+            회람과 결재(합의)가 섞여 있는 경우 동일 레벨의 회람자들이 모두
+            회람완료 후에 결재(합의)자에게 상신 여부
+          </p>
+          <h2 class="sub-title-28">
+            차상위권자에게 자동상신규칙(Option 적용시)
+          </h2>
+          <p class="option-dosc">
+            분개라인번호를 drag 하여 원하는 분개라인번호 위치에 drop 하면
+            분개라인번호 순서변경이 가능합니다.
+          </p>
+        </div>
+        <div class="option-table-wrap">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <colgroup>
+              <col style="width: 15%" />
+              <col style="width: 20%" />
+              <col style="width: 25%" />
+              <col style="width: 40%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>결재권자</td>
+                <td>결재 Level May count</td>
+                <td>자동상신조건</td>
+                <td>비고</td>
+              </tr>
+              <tr>
+                <td>전달</td>
+                <td>1개</td>
+                <td>전달</td>
+                <td class="left">마지막 라인은 안됨</td>
+              </tr>
+              <tr>
+                <td>결재</td>
+                <td>1개</td>
+                <td>결재</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>합의</td>
+                <td>n개</td>
+                <td>n개 회람 찬반 모두 완료</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>회람</td>
+                <td>n개</td>
+                <td>n개 회람 찬반 모두 완료</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>참조</td>
+                <td>n개</td>
+                <td>n/a</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="sub-title">상신규칙시(Option 미적용시)</h2>
+        <p class="option-dosc">회람이 참조처럼 작동함</p>
+      </div>
+    </div>
+  </body>
+</html>
