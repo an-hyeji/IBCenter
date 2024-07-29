@@ -1,0 +1,64 @@
+.filter-flex {
+  display: flex;
+  align-items: center;
+}
+.filter-flex .title {
+  font-size: 14px !important;
+  margin-right: 8px;
+}
+.filter-flex .input-box {
+  display: flex;
+  flex: 1;
+  gap: 0 4px;
+  height: 100%;
+}
+.filter-flex .input-box .search-input-box {
+  display: flex;
+  width: 100%;
+}
+.filter-flex .input-box input {
+  padding: 8px 12px;
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #b4b9cc;
+  width: 100%;
+}
+.filter-flex .input-box .disable {
+  border-radius: 4px;
+  width: 67%;
+}
+.filter-flex .input-box .icon-btn {
+  border-radius: 0px 4px 4px 0px;
+  border-top: 1px solid #b4b9cc;
+  border-right: 1px solid #b4b9cc;
+  border-bottom: 1px solid #b4b9cc;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.document-date {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.document-date .title {
+  font-size: 14px !important;
+  margin-right: 8px;
+}
+.document-date input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+}
+.document-date .calendar-button {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
+.document-date .calendar-button img {
+  width: 18px;
+  height: 18px;
+}

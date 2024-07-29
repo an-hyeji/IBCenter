@@ -145,6 +145,7 @@
 .accounting-table-wrap .debit-credit-flex span {
   font-weight: 400;
 }
+
 .accounting-table-wrap .debit-credit-flex span input {
   border-radius: 4px;
   border: 1px solid #b4b9cc;
@@ -163,8 +164,8 @@
   background: #fff;
 }
 .under-accounting-table-wrap table tbody td {
-  font-weight: 600;
-  height: unset;
+  font-weight: 500;
+  height: 48px;
   color: #555b6c;
 }
 .under-accounting-table-wrap table tbody td span {
@@ -246,6 +247,9 @@
 .indignation-line-table-wrap table tbody tr:last-child td {
   border-bottom: 1px solid #b4b9cc;
   border-top: 1px solid #b4b9cc;
+}
+.accounting-date-of-change {
+  margin: 31px 0 8px 0 !important;
 }
 
 @media screen and (max-width: 1530px) {

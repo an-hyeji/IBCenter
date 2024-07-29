@@ -14,6 +14,19 @@
 .margin-0 {
   margin: 0 !important;
 }
+.w-200 {
+  width: 200px !important;
+}
+.w-150 {
+  width: 150px !important;
+}
+.w-100 {
+  width: 100px !important;
+}
+.w-80 {
+  width: 80px !important;
+  min-width: unset;
+}
 /* select */
 .select-box {
   background-color: #fff;
@@ -128,19 +141,6 @@ table tbody tr:hover {
 }
 table tbody tr.selected {
   background: #fdf2e5;
-}
-table tbody .w-200 {
-  width: 200px !important;
-}
-table tbody .w-150 {
-  width: 150px !important;
-}
-table tbody .w-100 {
-  width: 100px !important;
-}
-table tbody .w-80 {
-  width: 80px !important;
-  min-width: unset;
 }
 
 /* 인풋 */

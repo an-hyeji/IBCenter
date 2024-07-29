@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/main.js" defer></script>
-    <title>회계전표_완료</title>
+    <title>회계전표_입력전</title>
   </head>
   <body>
     <div class="wrap">
@@ -299,32 +299,66 @@
                 </ul>
               </div>
             </div>
-            <div class="input-filter">
-              <p class="title">재원 : 123[123]</p>
-              <div class="input-status">
-                <p>일자<span>2024-04-01</span></p>
-                <p>전표번호<span>24-0401-0001</span></p>
-                <p>원장전기<span class="green">완료</span></p>
-                <p>생성자<span>이용문</span></p>
-                <p>전기자<span>이용문</span></p>
-                <p>입력경로<span>[대체전표]</span></p>
-              </div>
-              <div class="btn-list-wrap accounting-btn-wrap">
-                <div class="btn-list">
-                  <button class="add-btn">전표추가[A]</button>
-                  <button class="add-btn">동일자 전표추가[W]</button>
-                  <button>전표복사</button>
-                  <button>전표삭제</button>
-                  <button>증빙</button>
-                  <button>문서정보</button>
-                  <button>문서블로그</button>
+            <div class="input-filter search-filter">
+              <div class="filter-flex">
+                <p class="title">재원</p>
+                <div class="input-box">
+                  <div class="search-input-box">
+                    <label for="search-person" aria-label="검색"></label>
+                    <input type="text" id="search-person" />
+                    <button class="icon-btn">
+                      <img
+                        src="../images/icon-search-input.svg"
+                        alt="검색아이콘"
+                      />
+                    </button>
+                  </div>
+                  <label for="search-person-disabled" aria-label="검색"></label>
+                  <input
+                    type="text"
+                    id="search-person-disabled"
+                    class="disable"
+                    disabled
+                  />
                 </div>
+              </div>
+              <div class="document-date">
+                <p class="title">전표일자</p>
+                <div class="input-box">
+                  <label for=""></label>
+                  <input
+                    type="text"
+                    placeholder="연도"
+                    class="w-100"
+                    maxlength="4"
+                  />
+                  <label for=""></label>
+                  <input
+                    type="text"
+                    placeholder="월"
+                    class="w-80"
+                    maxlength="2"
+                  />
+                  <label for=""></label>
+                  <input
+                    type="text"
+                    placeholder="일"
+                    class="w-80"
+                    maxlength="2"
+                  />
+                </div>
+                <button class="calendar-button">
+                  <img src="../images/icon-calendar.png" alt="달력아이콘" />
+                </button>
               </div>
             </div>
             <div class="accounting-table-wrap secondary-scroll">
               <div class="btn-list-wrap line-btn-list">
                 <div class="outstanding-flex">
-                  <p>라인번호: <span>1번</span></p>
+                  <div class="outstanding-btn-box">
+                    <button>대체금액</button>
+                    <button>상대계정코드[M]</button>
+                  </div>
                 </div>
                 <div class="icon-list">
                   <button class="document-icon">
@@ -340,25 +374,60 @@
                   <tr>
                     <td style="width: 12%">계정코드/명</td>
                     <td style="width: 38%">
-                      <div class="code-box">
-                        <p><span>1110104</span>보통예금</p>
+                      <div class="input-box">
+                        <div class="search-input-box min-200">
+                          <label for="code-name" aria-label="검색"></label>
+                          <input type="text" id="code-name" />
+                          <button class="icon-btn">
+                            <img
+                              src="../images/icon-search-input.svg"
+                              alt="검색아이콘"
+                            />
+                          </button>
+                        </div>
+                        <div class="disable-box">
+                          <label
+                            for="code-name-disabled"
+                            aria-label="검색"
+                          ></label>
+                          <input
+                            type="text"
+                            id="code-name-disabled"
+                            class="disable"
+                            disabled
+                          />
+                        </div>
                       </div>
                     </td>
                     <td style="background-color: #f6f6fa; width: 12%">금액</td>
                     <td style="width: 38%">
-                      <div
-                        class="debit-credit-flex completion-debit-credit-flex"
-                      >
-                        <span class="debit-bar"> 차변 10,000,000,000 </span>
-                        <span> 대변 10,000,000,000 </span>
+                      <div class="debit-credit-flex">
+                        <span>
+                          차변
+                          <label for="debit"></label>
+                          <input type="text" class="w-200" id="debit" />
+                        </span>
+                        <span>
+                          대변
+                          <label for="credit"></label>
+                          <input type="text" class="w-200" id="credit" />
+                        </span>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td style="width: 12%">적요</td>
-                    <td class="completion">
-                      증권형 토큰 사업현황 및 법제화 전망 세미나 강사료
-                      지급(이인호)
+                    <td>
+                      <div class="search-input-box">
+                        <label for="search-person" aria-label="검색"></label>
+                        <input type="text" id="search-person" />
+                        <button class="icon-btn">
+                          <img
+                            src="../images/icon-search-input.svg"
+                            alt="검색아이콘"
+                          />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -376,38 +445,31 @@
                       관리항목
                     </td>
                     <td style="width: 3%" class="center">1</td>
-                    <td style="width: 10%" class="bar">계좌코드</td>
-                    <td style="width: 31%" class="completion">
-                      국민은행 보통 11226-22-88964
-                    </td>
+                    <td style="width: 10%" class="bar"></td>
+                    <td style="width: 31%"></td>
                     <td style="width: 3%" class="center">5</td>
-                    <td style="width: 10%" class="bar">cost center</td>
+                    <td style="width: 10%" class="bar"></td>
                     <td style="width: 31%"></td>
                   </tr>
                   <tr>
                     <td style="width: 3%" class="center">2</td>
-                    <td style="width: 10%" class="bar">결제기간</td>
-                    <td style="width: 31%" class="completion">
-                      13
-                      <span>일</span>
-                    </td>
+                    <td style="width: 10%" class="bar"></td>
+                    <td style="width: 31%"></td>
                     <td style="width: 3%" class="center">6</td>
-                    <td style="width: 10%" class="bar">만기일</td>
-                    <td style="width: 31%" class="completion">2024-07-01</td>
+                    <td style="width: 10%" class="bar"></td>
+                    <td style="width: 31%"></td>
                   </tr>
                   <tr>
                     <td style="width: 3%" class="center">3</td>
-                    <td style="width: 10%" class="bar">결제유형</td>
-                    <td style="width: 31%" class="completion">현금</td>
+                    <td style="width: 10%" class="bar"></td>
+                    <td style="width: 31%"></td>
                     <td style="width: 3%" class="center">7</td>
-                    <td style="width: 10%" class="bar">외화금액</td>
-                    <td style="width: 31%" class="completion">
-                      10,000,000,000
-                    </td>
+                    <td style="width: 10%" class="bar"></td>
+                    <td style="width: 31%"></td>
                   </tr>
                   <tr>
                     <td style="width: 3%" class="center">4</td>
-                    <td style="width: 10%" class="bar">어음수표번호</td>
+                    <td style="width: 10%" class="bar"></td>
                     <td style="width: 31%"></td>
                     <td style="width: 3%" class="center">8</td>
                     <td style="width: 10%" class="bar"></td>
@@ -419,7 +481,7 @@
 
             <div class="date-of-change accounting-date-of-change">
               <div class="change-date-flex">
-                <p>분개라인<span>[라인건수: 20]</span></p>
+                <p>분개라인<span>[라인건수: 0]</span></p>
               </div>
             </div>
             <div class="indignation-line-table-wrap secondary-scroll">
@@ -485,277 +547,17 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="center">
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox2" />
-                        <label for="checkbox2" class="checkbox-input">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            style="vertical-align: middle; cursor: pointer"
-                          >
-                            <rect
-                              x="1.16669"
-                              y="0.719055"
-                              width="19"
-                              height="19"
-                              rx="3.5"
-                              fill="white"
-                              stroke="#B4B9CC"
-                            />
-                            <path
-                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
-                              stroke="#fff"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </label>
-                      </div>
-                    </td>
-                    <td class="center">5</td>
-                    <td class="left">보통예금</td>
-                    <td class="left">국민은행 보통</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">0</td>
-                    <td></td>
-                    <td class="left">국민은행 서초지점</td>
-                    <td class="left">11226-22-88964</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="center">
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox3" />
-                        <label for="checkbox3" class="checkbox-input">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            style="vertical-align: middle; cursor: pointer"
-                          >
-                            <rect
-                              x="1.16669"
-                              y="0.719055"
-                              width="19"
-                              height="19"
-                              rx="3.5"
-                              fill="white"
-                              stroke="#B4B9CC"
-                            />
-                            <path
-                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
-                              stroke="#fff"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </label>
-                      </div>
-                    </td>
-                    <td class="center">4</td>
-                    <td class="left">미지급금</td>
-                    <td class="left">(주)케이씨</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">5,000,000</td>
-                    <td>(주)케이씨</td>
-                    <td class="left">국민은행 서초지점</td>
-                    <td class="left">11226-22-88964</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="center">
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox4" />
-                        <label for="checkbox4" class="checkbox-input">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            style="vertical-align: middle; cursor: pointer"
-                          >
-                            <rect
-                              x="1.16669"
-                              y="0.719055"
-                              width="19"
-                              height="19"
-                              rx="3.5"
-                              fill="white"
-                              stroke="#B4B9CC"
-                            />
-                            <path
-                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
-                              stroke="#fff"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </label>
-                      </div>
-                    </td>
-                    <td class="center">3</td>
-                    <td class="left">미지급금</td>
-                    <td class="left">(주)케이씨</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">5,000,000</td>
-                    <td>(주)케이씨</td>
-                    <td class="left">국민은행 서초지점</td>
-                    <td class="left">11226-22-88964</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="center">
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox5" />
-                        <label for="checkbox5" class="checkbox-input">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            style="vertical-align: middle; cursor: pointer"
-                          >
-                            <rect
-                              x="1.16669"
-                              y="0.719055"
-                              width="19"
-                              height="19"
-                              rx="3.5"
-                              fill="white"
-                              stroke="#B4B9CC"
-                            />
-                            <path
-                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
-                              stroke="#fff"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </label>
-                      </div>
-                    </td>
-                    <td class="center">2</td>
-                    <td class="left">미지급금</td>
-                    <td class="left">(주)케이씨</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">5,000,000</td>
-                    <td>(주)케이씨</td>
-                    <td class="left">국민은행 서초지점</td>
-                    <td class="left">11226-22-88964</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="center">
-                      <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox6" />
-                        <label for="checkbox6" class="checkbox-input">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="21"
-                            height="21"
-                            viewBox="0 0 21 21"
-                            fill="none"
-                            style="vertical-align: middle; cursor: pointer"
-                          >
-                            <rect
-                              x="1.16669"
-                              y="0.719055"
-                              width="19"
-                              height="19"
-                              rx="3.5"
-                              fill="white"
-                              stroke="#B4B9CC"
-                            />
-                            <path
-                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
-                              stroke="#fff"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </label>
-                      </div>
-                    </td>
-                    <td class="center">1</td>
-                    <td class="left">미지급금</td>
-                    <td class="left">(주)케이씨</td>
-                    <td class="right">100,000,000</td>
-                    <td class="right">5,000,000</td>
-                    <td>(주)케이씨</td>
-                    <td class="left">국민은행 서초지점</td>
-                    <td class="left">11226-22-88964</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
                     <td colspan="3" class="center">합 계</td>
                     <td></td>
-                    <td class="right">1,700,000,000</td>
-                    <td class="right">1,700,000,000</td>
-                    <td colspan="5" class="right">
-                      차대변 차액: <span class="orange">99,000,000</span>
-                    </td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td colspan="5" class="right"></td>
                   </tr>
                 </tbody>
               </table>
-              <div class="total-wrap">
-                <div class="total-box">
-                  <div class="total">
-                    <p>총 <span>20</span>건</p>
-                  </div>
-                </div>
-                <div class="pagination-wrap">
-                  <button class="border-btn">
-                    <img
-                      src="../images/icon-pagination-prev1.svg"
-                      alt="맨앞으로이동버튼"
-                    />
-                  </button>
-                  <button class="border-btn">
-                    <img
-                      src="../images/icon-pagination-prev2.svg"
-                      alt="이전버튼"
-                    />
-                  </button>
-                  <button class="number-btn active">1</button>
-                  <button class="number-btn">2</button>
-                  <button class="number-btn">3</button>
-                  <button class="number-btn">4</button>
-                  <button class="number-btn">5</button>
-                  <button class="number-btn">6</button>
-                  <button class="number-btn">7</button>
-                  <button class="number-btn">8</button>
-                  <button class="number-btn">9</button>
-                  <button class="number-btn">10</button>
-                  <button class="border-btn">
-                    <img
-                      src="../images/icon-pagination-next2.svg"
-                      alt="다음버튼"
-                    />
-                  </button>
-                  <button class="border-btn">
-                    <img
-                      src="../images/icon-pagination-next1.svg"
-                      alt="맨끝으로이동버튼"
-                    />
-                  </button>
+              <div class="total-wrap total-boxs">
+                <div class="total">
+                  <p>총 <span>0</span>건</p>
                 </div>
               </div>
             </div>

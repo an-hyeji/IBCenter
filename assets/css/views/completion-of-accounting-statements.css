@@ -1,0 +1,33 @@
+.code-box p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
+}
+.code-box p span {
+  color: #ff7a00;
+  display: inline-block;
+  margin-right: 4px;
+}
+.accounting-table-wrap .completion-debit-credit-flex {
+  gap: 0 41px !important;
+}
+.accounting-table-wrap .debit-credit-flex .debit-bar {
+  position: relative;
+}
+.accounting-table-wrap .debit-credit-flex .debit-bar::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #b4b9cc;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+}
+
+.completion {
+  font-weight: 400 !important;
+}
+.completion span {
+  margin-left: 0 !important;
+}
