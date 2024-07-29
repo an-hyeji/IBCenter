@@ -327,7 +327,6 @@
                   <label for="title-input"></label>
                   <input type="text" id="title-input" />
                 </div>
-                <button class="save-button">저장</button>
               </div>
             </div>
 
@@ -366,9 +365,23 @@
             </div>
             <div class="payment-table-wrap secondary-scroll">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                  <col style="width: 3%" />
+                  <col style="width: 6%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col style="width: 8%" />
+                  <col style="width: 8%" />
+                  <col style="width: 7%" />
+                </colgroup>
                 <thead>
                   <tr>
-                    <th style="width: 3%">
+                    <th>
                       <div class="checkbox-wrap">
                         <input type="checkbox" id="checkbox" />
                         <label for="checkbox" class="checkbox-input">
@@ -506,6 +519,110 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div class="add-modify-approver">
+              <div class="top-box">
+                <h2>결재권자 추가/수정</h2>
+                <button class="save-button">저장</button>
+              </div>
+
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="bg">사용자ID/명</td>
+                    <td>
+                      <label for="user-category-select"></label>
+                      <select
+                        name="user-category"
+                        id="user-category-select"
+                        class="w-200"
+                      >
+                        <option value="" selected>선택해주세요</option>
+                        <option value="user-option1">옵션 1</option>
+                        <option value="user-option2">옵션 2</option>
+                        <option value="user-option3">옵션 3</option>
+                      </select>
+                    </td>
+                    <td class="bg">결재권한</td>
+                    <td>
+                      <label for="approval-authority-category-select"></label>
+                      <select
+                        name="approval-authority-category"
+                        id="approval-authority-category-select"
+                        class="w-200"
+                      >
+                        <option value="" selected>선택해주세요</option>
+                        <option value="approval-authority-option1">
+                          옵션 1
+                        </option>
+                        <option value="approval-authority-option2">
+                          옵션 2
+                        </option>
+                        <option value="approval-authority-option3">
+                          옵션 3
+                        </option>
+                      </select>
+                    </td>
+                    <td class="bg">부재여부</td>
+                    <td>
+                      <div class="checkbox-wrap flex">
+                        <input type="checkbox" id="checkbox3" />
+                        <label for="checkbox3" class="checkbox-input">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                            fill="none"
+                            style="vertical-align: middle; cursor: pointer"
+                          >
+                            <rect
+                              x="1.16669"
+                              y="0.719055"
+                              width="19"
+                              height="19"
+                              rx="3.5"
+                              fill="white"
+                              stroke="#B4B9CC"
+                            />
+                            <path
+                              d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                              stroke="#fff"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </label>
+                        부재중
+                      </div>
+                    </td>
+                    <td class="bg">부재사유</td>
+                    <td>
+                      <label for="reason"></label>
+                      <input type="text" id="reason" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="fixed-box">
+                <button class="scroll-up active">
+                  <img src="../images/icon-arrow-up.svg" alt="위로버튼" />
+                </button>
+                <button class="scroll-down">
+                  <img src="../images/icon-arrow-down.svg" alt="아래로버튼" />
+                </button>
+              </div>
             </div>
           </div>
         </section>
