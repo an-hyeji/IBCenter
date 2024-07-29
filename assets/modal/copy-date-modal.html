@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/main.js" defer></script>
+    <title>안내팝업_복사일자</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content modal-content-600">
+        <div class="top">
+          <h2>복사일자 선택</h2>
+          <button class="modal-close">
+            <img src="../images/icon-close.png" alt="닫기버튼" />
+          </button>
+        </div>
+
+        <div class="copy-table-wrap">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>재원</td>
+                <td>
+                  <div class="input-box">
+                    <div class="search-input-box">
+                      <label for="search-person" aria-label="검색"></label>
+                      <input type="text" id="search-person" class="w-168" />
+                      <button class="icon-btn">
+                        <img
+                          src="../images/icon-search-input.svg"
+                          alt="검색아이콘"
+                        />
+                      </button>
+                    </div>
+                    <label
+                      for="search-person-disabled"
+                      aria-label="검색"
+                    ></label>
+                    <input
+                      type="text"
+                      id="search-person-disabled"
+                      class="disable w-150"
+                      disabled
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>역분개여부</td>
+                <td>
+                  <div class="checkbox-wrap flex">
+                    <input type="checkbox" id="checkbox2" />
+                    <label for="checkbox2" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    역분개
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>일자선택</td>
+                <td class="flex">
+                  <div class="date-input-boxs">
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      placeholder="연도"
+                      class="w-100"
+                      maxlength="4"
+                    />
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      placeholder="월"
+                      class="w-80"
+                      maxlength="2"
+                    />
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      placeholder="일"
+                      class="w-80"
+                      maxlength="2"
+                    />
+                  </div>
+                  <div class="date-input-btn">
+                    <button>어제</button>
+                    <button>오늘</button>
+                    <button class="active">내일</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="check-btn-box">
+          <button>취소</button>
+          <button class="bg-btn">실행</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

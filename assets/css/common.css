@@ -14,19 +14,23 @@
 .margin-0 {
   margin: 0 !important;
 }
-.w-200 {
-  width: 200px !important;
-}
-.w-150 {
-  width: 150px !important;
-}
-.w-100 {
-  width: 100px !important;
-}
 .w-80 {
   width: 80px !important;
   min-width: unset;
 }
+.w-100 {
+  width: 100px !important;
+}
+.w-150 {
+  width: 150px !important;
+}
+.w-168 {
+  width: 168px !important;
+}
+.w-200 {
+  width: 200px !important;
+}
+
 /* select */
 .select-box {
   background-color: #fff;
