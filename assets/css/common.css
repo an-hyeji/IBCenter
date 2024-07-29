@@ -146,6 +146,8 @@ table tbody tr.selected {
 /* 인풋 */
 input {
   outline: none;
+  padding: 8px 12px;
+  border: 1px solid #b4b9cc;
 }
 .disable {
   background-color: #f6f6fa !important;
