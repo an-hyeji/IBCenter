@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/main.js" defer></script>
-    <title>안내팝업_계정코드 선택</title>
+    <script defer src="../js/main.js"></script>
+    <title>안내팝업_투자업체로 전환</title>
   </head>
   <body>
     <div class="modal">
       <div class="modal-content modal-content-1000">
         <div class="top">
           <div class="code-flex">
-            <h2>계정코드 선택</h2>
+            <h2>세일즈포스 업체 중에서 투자업체로 반영안된 건</h2>
             <button class="guide-button">
               <img
                 src="../images/icon-info-solid.svg"
@@ -23,86 +23,533 @@
               <img src="../images/iocn-chevron-right.svg" alt="화살표아이콘" />
             </button>
           </div>
-
           <button class="modal-close">
             <img src="../images/icon-close.png" alt="닫기버튼" />
           </button>
         </div>
         <div class="code-box">
-          <p>계정코드</p>
+          <p>투자업체명</p>
           <div class="padding">
-            <div>
+            <div class="convert-flex">
               <label for=""></label>
               <input type="text" class="w-200" />
+              <div class="checkbox-wrap flex">
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3" class="checkbox-input">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    style="vertical-align: middle; cursor: pointer"
+                  >
+                    <rect
+                      x="1.16669"
+                      y="0.719055"
+                      width="19"
+                      height="19"
+                      rx="3.5"
+                      fill="white"
+                      stroke="#B4B9CC"
+                    />
+                    <path
+                      d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                거부
+              </div>
             </div>
             <div class="find-btn-box">
               <button>찾기</button>
-              <button>모든계정찾기</button>
             </div>
           </div>
         </div>
-        <div class="code-table-wrap">
+        <div class="btn-list">
+          <button>세일즈포스 끌어오기</button>
+          <button>선택건 투자업체 등록</button>
+          <button>Toggle 처리 (제외여부)</button>
+        </div>
+        <div class="convert-table-wrap">
           <table border="0" cellpadding="0" cellspacing="0" width="100%">
             <colgroup>
-              <col style="width: 25%" />
-              <col style="width: 35%" />
-              <col style="width: 35%" />
+              <col style="width: 2%" />
+              <col style="width: 18%" />
+              <col style="width: 14%" />
+              <col style="width: 9%" />
+              <col style="width: 9%" />
+              <col style="width: 14%" />
+              <col style="width: 18%" />
+              <col style="width: 8%" />
+              <col style="width: 9%" />
             </colgroup>
             <tbody>
               <tr>
-                <td>계정코드</td>
-                <td>계정과목</td>
-                <td>소속그룹</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" id="select-all" />
+                    <label for="select-all" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>세일즈포스ID</td>
+                <td>업체명</td>
+                <td>생성일</td>
+                <td>대표자명</td>
+                <td>전화번호</td>
+                <td>주소</td>
+                <td>심사역명</td>
+                <td>제외여부</td>
               </tr>
               <tr>
-                <td>1101070100</td>
-                <td>미수금</td>
-                <td>당좌자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox1" />
+                    <label for="checkbox1" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1101070100</td>
-                <td>미수수익기타</td>
-                <td>제무재표</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox2" />
+                    <label for="checkbox2" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1101070100</td>
-                <td>외화예금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox3" />
+                    <label for="checkbox3" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>110111</td>
-                <td>현금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox4" />
+                    <label for="checkbox4" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1110102</td>
-                <td>당좌예금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox5" />
+                    <label for="checkbox5" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1110102</td>
-                <td>외화당좌예금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox6" />
+                    <label for="checkbox6" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1110102</td>
-                <td>보통예금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox7" />
+                    <label for="checkbox7" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1110102</td>
-                <td>수익증권</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox8" />
+                    <label for="checkbox8" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1110102</td>
-                <td>기타예금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox9" />
+                    <label for="checkbox9" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
               <tr>
-                <td>1110102</td>
-                <td>자유적립식정기예금</td>
-                <td>현금및현금성자산</td>
+                <td>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" class="checkbox" id="checkbox10" />
+                    <label for="checkbox10" class="checkbox-input">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        style="vertical-align: middle; cursor: pointer"
+                      >
+                        <rect
+                          x="1.16669"
+                          y="0.719055"
+                          width="19"
+                          height="19"
+                          rx="3.5"
+                          fill="white"
+                          stroke="#B4B9CC"
+                        />
+                        <path
+                          d="M7.66669 10.7191L10.3676 13.2191L14.5417 8.21906"
+                          stroke="#fff"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </td>
+                <td>0012u00000dUszTAAS</td>
+                <td>테스트부서</td>
+                <td>2024.01.01</td>
+                <td>김민수</td>
+                <td>010-2345-6789</td>
+                <td>서울특별시 마포구 독막로 12</td>
+                <td>이혜민</td>
+                <td>제외</td>
               </tr>
             </tbody>
           </table>

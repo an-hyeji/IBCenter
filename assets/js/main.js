@@ -63,9 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
 const clickbtn = document.querySelector('.clickbtn');
 const sideMenu = document.querySelector('.side');
 
-clickbtn.addEventListener('click', function () {
-  sideMenu.classList.toggle('hide');
-});
+if (clickbtn && sideMenu) {
+  clickbtn.addEventListener('click', function () {
+    sideMenu.classList.toggle('hide');
+  });
+}
 
 // 사이드메뉴 토글
 const listTitles = document.querySelectorAll('.list-title');
@@ -97,3 +99,17 @@ listTitles.forEach((listTitle) => {
 });
 
 window.addEventListener('resize', () => console.log('resizing'));
+
+// 체크박스
+document.addEventListener('DOMContentLoaded', function () {
+  const selectAllCheckbox = document.getElementById('select-all');
+  if (selectAllCheckbox) {
+    selectAllCheckbox.addEventListener('click', function () {
+      const checkboxes = document.querySelectorAll('.checkbox');
+      const isChecked = selectAllCheckbox.checked;
+      checkboxes.forEach(function (checkbox) {
+        checkbox.checked = isChecked;
+      });
+    });
+  }
+});
