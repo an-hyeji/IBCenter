@@ -330,7 +330,7 @@
                   </div>
                 </div>
               </div>
-              <div class="btn-list-wrap accounting-btn-wrap">
+              <div class="accounting-btn-wrap">
                 <div class="btn-list">
                   <button>원장전기[P]</button>
                   <button>전기예약</button>
@@ -581,10 +581,10 @@
             </div>
 
             <div class="date-of-change accounting-date-of-change">
-              <div class="change-date-flex">
+              <div class="line-flex">
                 <p>분개라인<span>[라인건수: 20]</span></p>
-                <div class="btn-list-wrap date-of-change-btn">
-                  <div class="flex">
+                <div class="date-of-change-btn">
+                  <div class="flex-bottom">
                     <div class="add-remove-button-box">
                       <button class="add-remove-button">
                         <img src="../images/icon-plus.svg" alt="추가버튼" />
@@ -626,8 +626,8 @@
                   <tr>
                     <th>
                       <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox" />
-                        <label for="checkbox" class="checkbox-input">
+                        <input type="checkbox" id="select-all" />
+                        <label for="select-all" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -672,8 +672,12 @@
                   <tr>
                     <td class="center">
                       <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox2" />
-                        <label for="checkbox2" class="checkbox-input">
+                        <input
+                          type="checkbox"
+                          class="checkbox"
+                          id="checkbox1"
+                        />
+                        <label for="checkbox1" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -716,8 +720,12 @@
                   <tr>
                     <td class="center">
                       <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox3" />
-                        <label for="checkbox3" class="checkbox-input">
+                        <input
+                          type="checkbox"
+                          class="checkbox"
+                          id="checkbox2"
+                        />
+                        <label for="checkbox2" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -760,8 +768,12 @@
                   <tr>
                     <td class="center">
                       <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox4" />
-                        <label for="checkbox4" class="checkbox-input">
+                        <input
+                          type="checkbox"
+                          class="checkbox"
+                          id="checkbox3"
+                        />
+                        <label for="checkbox3" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -804,8 +816,12 @@
                   <tr>
                     <td class="center">
                       <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox5" />
-                        <label for="checkbox5" class="checkbox-input">
+                        <input
+                          type="checkbox"
+                          class="checkbox"
+                          id="checkbox4"
+                        />
+                        <label for="checkbox4" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -848,8 +864,12 @@
                   <tr>
                     <td class="center">
                       <div class="checkbox-wrap">
-                        <input type="checkbox" id="checkbox6" />
-                        <label for="checkbox6" class="checkbox-input">
+                        <input
+                          type="checkbox"
+                          class="checkbox"
+                          id="checkbox5"
+                        />
+                        <label for="checkbox5" class="checkbox-input">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="21"
@@ -946,6 +966,14 @@
             </div>
           </div>
         </section>
+      </div>
+      <div class="fixed-box">
+        <button class="scroll-up active">
+          <img src="../images/icon-arrow-up.svg" alt="위로버튼" />
+        </button>
+        <button class="scroll-down">
+          <img src="../images/icon-arrow-down.svg" alt="아래로버튼" />
+        </button>
       </div>
     </div>
   </body>

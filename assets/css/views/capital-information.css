@@ -13,6 +13,9 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
+.capital-table-wrap table thead th {
+  padding: 13px 12px;
+}
 
 .edit-capital-table-wrap {
   margin-top: 40px;

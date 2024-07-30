@@ -1,5 +1,4 @@
 @import './common.css';
-/* @import './index.css'; */
 @import './reset.css';
 
 /* Views */
@@ -16,15 +15,15 @@
 /* @import './views/electronic_payment.css'; */
 /* @import './views/retrieve-combination-information.css'; */
 /* @import './views/user-permission-settings.css'; */
-@import './views/calendar-management.css';
-
+/* @import './views/calendar-management.css'; */
 /* @import './views/capital-information.css'; */
+/* @import './views/before-accounting-statement.css'; */
+/* @import './views/outstanding-accounting-statement.css'; */
+@import './views/completion-of-accounting-statements.css';
 
 /* @import './views/setting.css';
-@import './views/completion-of-accounting-statements.css';
-@import './views/outstanding-accounting-statement.css';
 
-@import './views/before-accounting-statement.css'; */
+
 /* Views */
 
 /* Componenets */

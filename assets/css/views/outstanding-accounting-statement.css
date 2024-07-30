@@ -1,3 +1,13 @@
+.date-of-change-btn {
+  display: flex;
+  gap: 0 25px;
+  align-items: center;
+}
+.btn-list-wrap .flex {
+  margin-bottom: 0px;
+  gap: 0 25px;
+}
+
 .input-filter .outstanding-box {
   min-width: 100px;
 }
@@ -25,17 +35,15 @@
   font-size: 14px;
   font-weight: 500;
 }
+
 .input-filter .accounting-btn-wrap {
-  padding: 16px 0 8px 0 !important;
+  padding: 16px 0 0 0 !important;
   border-top: 1px solid #e0e2e9;
   align-items: baseline;
+  display: flex;
+  justify-content: space-between;
 }
-.w-400 {
-  width: 400px !important;
-}
-.w-300 {
-  width: 300px !important;
-}
+
 .orange {
   color: #ff7a00;
 }
@@ -250,9 +258,24 @@
 .indignation-line-table-wrap table tbody tr:last-child td {
   border-bottom: 1px solid #b4b9cc;
   border-top: 1px solid #b4b9cc;
+  font-weight: 500;
 }
 .accounting-date-of-change {
   margin: 31px 0 8px 0 !important;
+}
+.accounting-date-of-change .line-flex {
+  display: flex;
+  gap: 0 12px;
+  align-items: center;
+}
+.accounting-date-of-change .line-flex p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.accounting-date-of-change .line-flex p span {
+  color: #2774e1;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1530px) {

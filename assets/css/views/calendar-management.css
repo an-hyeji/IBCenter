@@ -68,9 +68,3 @@
   min-width: 84px;
   width: 100%;
 }
-
-@media screen and (max-width: 1530px) {
-  .calendar-table-wrap table tbody td input {
-    min-width: 120px;
-  }
-}

@@ -299,58 +299,65 @@
                 </ul>
               </div>
             </div>
-            <div class="input-filter search-filter">
-              <div class="filter-flex">
-                <p class="title">재원</p>
-                <div class="input-box">
-                  <div class="search-input-box">
-                    <label for="search-person" aria-label="검색"></label>
-                    <input type="text" id="search-person" />
-                    <button class="icon-btn">
-                      <img
-                        src="../images/icon-search-input.svg"
-                        alt="검색아이콘"
-                      />
-                    </button>
+            <div class="input-filter search-filter statement-flex">
+              <div class="statement-left-flex">
+                <div class="filter-flex">
+                  <p class="title">재원</p>
+                  <div class="input-box">
+                    <div class="search-input-box">
+                      <label for="search-person" aria-label="검색"></label>
+                      <input type="text" id="search-person" />
+                      <button class="icon-btn">
+                        <img
+                          src="../images/icon-search-input.svg"
+                          alt="검색아이콘"
+                        />
+                      </button>
+                    </div>
+                    <label
+                      for="search-person-disabled"
+                      aria-label="검색"
+                    ></label>
+                    <input
+                      type="text"
+                      id="search-person-disabled"
+                      class="disable"
+                      disabled
+                    />
                   </div>
-                  <label for="search-person-disabled" aria-label="검색"></label>
-                  <input
-                    type="text"
-                    id="search-person-disabled"
-                    class="disable"
-                    disabled
-                  />
+                </div>
+                <div class="document-date">
+                  <p class="title">전표일자</p>
+                  <div class="input-box">
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      placeholder="연도"
+                      class="w-100"
+                      maxlength="4"
+                    />
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      placeholder="월"
+                      class="w-80"
+                      maxlength="2"
+                    />
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      placeholder="일"
+                      class="w-80"
+                      maxlength="2"
+                    />
+                  </div>
+                  <button class="calendar-button">
+                    <img src="../images/icon-calendar.png" alt="달력아이콘" />
+                  </button>
                 </div>
               </div>
-              <div class="document-date">
-                <p class="title">전표일자</p>
-                <div class="input-box">
-                  <label for=""></label>
-                  <input
-                    type="text"
-                    placeholder="연도"
-                    class="w-100"
-                    maxlength="4"
-                  />
-                  <label for=""></label>
-                  <input
-                    type="text"
-                    placeholder="월"
-                    class="w-80"
-                    maxlength="2"
-                  />
-                  <label for=""></label>
-                  <input
-                    type="text"
-                    placeholder="일"
-                    class="w-80"
-                    maxlength="2"
-                  />
-                </div>
-                <button class="calendar-button">
-                  <img src="../images/icon-calendar.png" alt="달력아이콘" />
-                </button>
-              </div>
+
+              <button class="save-button">저장</button>
             </div>
             <div class="accounting-table-wrap secondary-scroll">
               <div class="btn-list-wrap line-btn-list">
@@ -563,6 +570,14 @@
             </div>
           </div>
         </section>
+      </div>
+      <div class="fixed-box">
+        <button class="scroll-up active">
+          <img src="../images/icon-arrow-up.svg" alt="위로버튼" />
+        </button>
+        <button class="scroll-down">
+          <img src="../images/icon-arrow-down.svg" alt="아래로버튼" />
+        </button>
       </div>
     </div>
   </body>

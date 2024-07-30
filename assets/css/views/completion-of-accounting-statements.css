@@ -31,3 +31,290 @@
 .completion span {
   margin-left: 0 !important;
 }
+
+/* 회계전표공통 */
+.date-of-change-btn {
+  display: flex;
+  gap: 0 25px;
+  align-items: center;
+}
+.btn-list-wrap .flex {
+  margin-bottom: 0px;
+  gap: 0 25px;
+}
+
+.input-filter .outstanding-box {
+  min-width: 100px;
+}
+.input-filter .draft-box {
+  display: flex;
+  gap: 0 8px;
+  align-items: center;
+}
+.input-filter .draft-box span {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.input-filter .draft-btn-box {
+  display: flex;
+  gap: 0 8px;
+}
+.input-filter .draft-btn-box button {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-filter .accounting-btn-wrap {
+  padding: 16px 0 0 0 !important;
+  border-top: 1px solid #e0e2e9;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orange {
+  color: #ff7a00;
+}
+.accounting-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 24px;
+}
+.accounting-table-wrap .outstanding-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.accounting-table-wrap .outstanding-flex p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.accounting-table-wrap .outstanding-flex p span {
+  color: #2774e1;
+}
+.accounting-table-wrap .outstanding-btn-box {
+  display: flex;
+  gap: 0 8px;
+}
+.accounting-table-wrap .outstanding-btn-box button {
+  color: #334680;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(51, 70, 128, 0.8);
+  background: rgba(51, 70, 128, 0);
+}
+.accounting-table-wrap .line-btn-list {
+  padding: 0 0 8px 0 !important;
+  align-items: center;
+}
+.accounting-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.accounting-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.accounting-table-wrap table tbody tr:first-child td {
+  border-bottom: 1px solid #e0e2e9;
+}
+.accounting-table-wrap table tbody .none {
+  border-top: none !important;
+}
+.accounting-table-wrap table tbody td {
+  font-weight: 600;
+  height: unset;
+}
+.accounting-table-wrap table tbody td:first-child {
+  background-color: #f6f6fa;
+  padding: 12px 16px;
+  height: unset;
+}
+.accounting-table-wrap .input-box {
+  padding: 8px;
+  display: flex;
+  flex: 1;
+  gap: 0 2px;
+  background-color: #fff;
+  height: 100%;
+  padding: 0;
+}
+.accounting-table-wrap .search-input-box {
+  display: flex;
+  width: 100%;
+}
+.accounting-table-wrap .min-200 {
+  min-width: 200px;
+  width: 200px;
+}
+.accounting-table-wrap .disable-box {
+  width: 100%;
+}
+.accounting-table-wrap .disable-box input {
+  width: 100% !important;
+}
+.accounting-table-wrap input {
+  padding: 8px 12px;
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #b4b9cc;
+  width: 100%;
+}
+.accounting-table-wrap .disable {
+  border-radius: 4px;
+  width: 67%;
+}
+.accounting-table-wrap .icon-btn {
+  border-radius: 0px 4px 4px 0px;
+  border-top: 1px solid #b4b9cc;
+  border-right: 1px solid #b4b9cc;
+  border-bottom: 1px solid #b4b9cc;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accounting-table-wrap .debit-credit-flex {
+  display: flex;
+  gap: 0 20px;
+}
+.accounting-table-wrap .debit-credit-flex span {
+  font-weight: 400;
+}
+
+.accounting-table-wrap .debit-credit-flex span input {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  padding: 8px;
+  display: inline-block;
+  margin-left: 4px;
+}
+.under-accounting-table-wrap table {
+  border-top: none;
+}
+
+.under-accounting-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.under-accounting-table-wrap table tbody tr.selected {
+  background: #fff;
+}
+.under-accounting-table-wrap table tbody td {
+  font-weight: 500;
+  height: 48px;
+  color: #555b6c;
+}
+.under-accounting-table-wrap table tbody td span {
+  margin-left: 4px;
+  font-weight: 400;
+}
+.under-accounting-table-wrap table tbody td .yyyy-mm-dd {
+  color: #2774e1;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.under-accounting-table-wrap table tbody .bar {
+  border-right: none;
+  position: relative;
+}
+.under-accounting-table-wrap table tbody .bar::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 32px;
+  background-color: #e0e2e9;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.under-accounting-table-wrap .input-box {
+  padding: 8px;
+  display: flex;
+  flex: 1;
+  gap: 0 2px;
+  background-color: #fff;
+  height: 100%;
+  padding: 0;
+}
+.under-accounting-table-wrap .input-box .search-input-box {
+  width: 60%;
+  position: relative;
+}
+.under-accounting-table-wrap .disable-box {
+  width: 40%;
+}
+.under-accounting-table-wrap .disable-box input {
+  width: 100% !important;
+}
+.under-accounting-table-wrap input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  width: 100%;
+  padding-right: 40px;
+}
+.under-accounting-table-wrap .period-input {
+  width: 40px;
+  padding-right: 8px;
+}
+.under-accounting-table-wrap .disable {
+  border-radius: 4px;
+  width: 67%;
+}
+.under-accounting-table-wrap .icon-btn {
+  border-left: 1px solid #b4b9cc;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 4px 4px 0px;
+}
+.indignation-line-table-wrap {
+  width: 100%;
+  white-space: nowrap;
+}
+.indignation-line-table-wrap table {
+  border-bottom: none;
+}
+.indignation-line-table-wrap table tbody tr:last-child {
+  background-color: #e9effe;
+}
+.indignation-line-table-wrap table tbody tr:last-child td {
+  border-bottom: 1px solid #b4b9cc;
+  border-top: 1px solid #b4b9cc;
+  font-weight: 500;
+}
+.accounting-date-of-change {
+  margin: 31px 0 8px 0 !important;
+}
+.accounting-date-of-change .line-flex {
+  display: flex;
+  gap: 0 12px;
+  align-items: center;
+}
+.accounting-date-of-change .line-flex p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.accounting-date-of-change .line-flex p span {
+  color: #2774e1;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1530px) {
+  .custom-width {
+    width: 11.3% !important;
+  }
+}
