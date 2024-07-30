@@ -113,5 +113,9 @@
   .search-filter .list p {
     width: 80px;
     margin-right: 4px;
+    font-size: 12px;
+  }
+  .search-filter .list .input-box .icon-btn {
+    padding: 4px;
   }
 }

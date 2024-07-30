@@ -11,18 +11,19 @@
 /* @import './views/business-report.css'; */
 /* @import './views/investment-and-loan-status.css'; */
 /* @import './views/fund-return-on-investment.css'; */
+/* @import './views/investment-ledger.css'; */
+/* @import './views/investment-trading-research.css'; */
+/* @import './views/electronic_payment.css'; */
+/* @import './views/retrieve-combination-information.css'; */
+/* @import './views/user-permission-settings.css'; */
+@import './views/calendar-management.css';
 
-@import './views/investment-ledger.css';
+/* @import './views/capital-information.css'; */
 
-/* @import './views/investment-trading-research.css';
-@import './views/electronic_payment.css';
-@import './views/setting.css';
-@import './views/capital-information.css';
+/* @import './views/setting.css';
 @import './views/completion-of-accounting-statements.css';
 @import './views/outstanding-accounting-statement.css';
-@import './views/calendar-management.css';
-@import './views/user-permission-settings.css';
-@import './views/retrieve-combination-information.css';
+
 @import './views/before-accounting-statement.css'; */
 /* Views */
 

@@ -29,6 +29,7 @@
 .research-table-wrap table tbody tr:last-child td {
   border-bottom: 1px solid #b4b9cc;
   border-top: 1px solid #b4b9cc;
+  font-weight: 500;
 }
 .research-table-wrap table tbody td {
   max-width: 130px;
