@@ -99,7 +99,7 @@
 }
 .accounting-table-wrap table tbody td {
   font-weight: 600;
-  height: unset;
+  height: 48px;
 }
 .accounting-table-wrap table tbody td:first-child {
   background-color: #f6f6fa;

@@ -1,9 +1,24 @@
-.code-box p {
+.change-date-flex {
+  margin-bottom: 15px;
+}
+.change-date-flex p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.change-date-flex p span {
+  color: #2774e1;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.code-txt {
   color: #373a46;
   font-size: 14px;
   font-weight: 400;
 }
-.code-box p span {
+.code-txt span {
   color: #ff7a00;
   display: inline-block;
   margin-right: 4px;
@@ -24,7 +39,6 @@
   transform: translateY(-50%);
   right: -20px;
 }
-
 .completion {
   font-weight: 400 !important;
 }
@@ -134,7 +148,7 @@
 }
 .accounting-table-wrap table tbody td {
   font-weight: 600;
-  height: unset;
+  height: 48px;
 }
 .accounting-table-wrap table tbody td:first-child {
   background-color: #f6f6fa;
