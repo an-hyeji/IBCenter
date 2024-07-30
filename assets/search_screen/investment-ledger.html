@@ -47,6 +47,16 @@
                   <li><a href="">전자결재</a></li>
                   <li><a href="">자금세탁방지</a></li>
                   <li><a href="">조합보고</a></li>
+                  <li><a href="">투자관리</a></li>
+                  <li><a href="">조합관리</a></li>
+                  <li><a href="">회계관리</a></li>
+                  <li><a href="">전자결재</a></li>
+                  <li><a href="">경영관리</a></li>
+                  <li><a href="">기본정보</a></li>
+                  <li><a href="">인사관리</a></li>
+                  <li><a href="">전자결재</a></li>
+                  <li><a href="">자금세탁방지</a></li>
+                  <li><a href="">조합보고</a></li>
                 </ul>
               </nav>
               <div class="bg">
@@ -288,9 +298,9 @@
             </div>
             <div class="search-filter ledger-search-filter">
               <div class="ledger-list-box">
-                <div class="list checkpoint-list">
+                <div class="list flex-7">
                   <p>조합</p>
-                  <div class="input-box">
+                  <div class="input-box input-box-h">
                     <div class="search-input-box">
                       <label for="search-company" aria-label="검색"></label>
                       <input type="text" id="search-company" />
@@ -313,7 +323,7 @@
                     />
                   </div>
                 </div>
-                <div class="list base-date">
+                <div class="list flex-half">
                   <p>기준일자</p>
                   <div class="select-box base-date-select-box">
                     <div class="date-select">
@@ -339,6 +349,7 @@
                       name="status-category"
                       id="status-category-select"
                       aria-label="펀드상태"
+                      class="w-200"
                     >
                       <option value="" selected>선택해주세요</option>
                       <option value="status-option1">옵션 1</option>
@@ -349,9 +360,9 @@
                 </div>
               </div>
               <div class="ledger-list-box">
-                <div class="list checkpoint-list withdrawal-list">
+                <div class="list flex-7 withdrawal-list">
                   <p>투자업체</p>
-                  <div class="input-box company-input-box">
+                  <div class="input-box input-box-h company-input-box">
                     <div class="search-input-box">
                       <label for="search-company" aria-label="검색"></label>
                       <input type="text" id="search-company" />
@@ -374,7 +385,7 @@
                     />
                   </div>
                 </div>
-                <div class="list base-date withdrawal-list">
+                <div class="list flex-half withdrawal-list">
                   <p>투자유형</p>
                   <div class="select-box investment-date-select-box">
                     <div class="investment-select">
@@ -404,6 +415,7 @@
                         name="withdrawal-category"
                         id="withdrawal-category-select"
                         aria-label="회수유형"
+                        class="w-200"
                       >
                         <option value="" selected>선택해주세요</option>
                         <option value="withdrawal-option1">옵션 1</option>
@@ -465,14 +477,32 @@
                 <button>투자거래리스트</button>
                 <button>투자거래검색</button>
               </div>
-              <div class="icon-list use-button-list">
+              <div class="icon-list">
                 <button class="document-icon">
                   <img src="../images/icon-excel.png" alt="엑셀아이콘" />
                 </button>
               </div>
             </div>
-            <div class="table-wrap secondary-scroll">
+            <div class="investment-table-wrap secondary-scroll">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                  <col style="width: 5.25%" />
+                  <col style="width: 10.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 6.25%" />
+                  <col style="width: 3.25%" />
+                  <col style="width: 6.25%" />
+                </colgroup>
                 <thead>
                   <tr>
                     <th>조합</th>
@@ -697,6 +727,14 @@
             </div>
           </div>
         </section>
+      </div>
+      <div class="fixed-box">
+        <button class="scroll-up active">
+          <img src="../images/icon-arrow-up.svg" alt="위로버튼" />
+        </button>
+        <button class="scroll-down">
+          <img src="../images/icon-arrow-down.svg" alt="아래로버튼" />
+        </button>
       </div>
     </div>
   </body>

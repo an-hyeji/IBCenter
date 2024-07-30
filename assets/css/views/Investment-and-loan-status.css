@@ -1,5 +1,5 @@
 .loan-status-box {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .loan-status-box h3 {
   color: #373a46;
@@ -8,13 +8,22 @@
   line-height: 20px;
 }
 .status-btn-list-wrap {
-  padding: 12px 0 8px 0;
+  padding: 12px 0 0 0 !important;
 }
 .status-table-wrap {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+}
+.status-table-wrap table thead th {
+  padding: 8px 22px;
+}
+.status-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.status-table-wrap table tbody tr.selected {
+  background: #fff;
 }
 .status-table-wrap table tbody tr:last-child {
   border-bottom: 1px solid #e0e2e9;

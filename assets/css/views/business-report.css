@@ -1,9 +1,3 @@
-.year-select-box select {
-  min-width: 100px;
-}
-.month-select-box select {
-  min-width: 80px;
-}
 .date-select-box {
   display: flex;
   gap: 0 4px;

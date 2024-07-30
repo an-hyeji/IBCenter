@@ -170,8 +170,9 @@ input {
 .use-button-list .flex {
   display: flex;
   align-items: center;
-  gap: 0 8px;
+  gap: 0 8px !important;
 }
+
 .use-button-list .flex p {
   color: #6f7589;
   font-size: 13px;
@@ -406,6 +407,6 @@ input {
     min-width: 120px;
   }
   .base-date-select-box .date-select span {
-    padding: 0 2px;
+    /* padding: 0 2px; */
   }
 }

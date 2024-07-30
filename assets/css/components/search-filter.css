@@ -39,6 +39,9 @@
   gap: 0 2px;
   background-color: #fff;
 }
+.search-filter .list .input-box-h {
+  height: 100%;
+}
 .search-filter .list .input-box .search-input-box {
   display: flex;
   width: 100%;
@@ -81,7 +84,7 @@
   color: #fff;
   font-size: 15px;
   font-weight: 600;
-  line-height: normal;
+  line-height: 30px;
   text-align: center;
 }
 .btn-box .refresh-btn {

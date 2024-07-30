@@ -8,13 +8,13 @@
 /* @import './views/investment-company.css'; */
 /* @import './views/return-on-investment.css'; */
 /* @import './views/combination-information.css'; */
+/* @import './views/business-report.css'; */
+/* @import './views/investment-and-loan-status.css'; */
+/* @import './views/fund-return-on-investment.css'; */
 
-@import './views/business-report.css';
-
-/* @import './views/investment-and-loan-status.css';
-@import './views/fund-return-on-investment.css';
 @import './views/investment-ledger.css';
-@import './views/investment-trading-research.css';
+
+/* @import './views/investment-trading-research.css';
 @import './views/electronic_payment.css';
 @import './views/setting.css';
 @import './views/capital-information.css';

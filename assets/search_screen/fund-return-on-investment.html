@@ -47,6 +47,16 @@
                   <li><a href="">전자결재</a></li>
                   <li><a href="">자금세탁방지</a></li>
                   <li><a href="">조합보고</a></li>
+                  <li><a href="">투자관리</a></li>
+                  <li><a href="">조합관리</a></li>
+                  <li><a href="">회계관리</a></li>
+                  <li><a href="">전자결재</a></li>
+                  <li><a href="">경영관리</a></li>
+                  <li><a href="">기본정보</a></li>
+                  <li><a href="">인사관리</a></li>
+                  <li><a href="">전자결재</a></li>
+                  <li><a href="">자금세탁방지</a></li>
+                  <li><a href="">조합보고</a></li>
                 </ul>
               </nav>
               <div class="bg">
@@ -304,7 +314,7 @@
               <div class="list">
                 <p>기준일자</p>
                 <div class="select-box radius base-date-select-box">
-                  <div class="date-select">
+                  <div class="date-select w-200">
                     <span>2024-07-04</span>
                     <button class="calendar-btn">
                       <img src="../images/icon-calendar.png" alt="달력아이콘" />
@@ -322,7 +332,7 @@
                 <button>평가액 끌어오기/재계산</button>
                 <button>성과보수계산</button>
               </div>
-              <div class="icon-list use-button-list">
+              <div class="icon-list">
                 <button class="document-icon">
                   <img src="../images/icon-excel.png" alt="엑셀아이콘" />
                 </button>
@@ -330,15 +340,24 @@
             </div>
             <div class="table-wrap fund-table-wrap secondary-scroll">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                  <col style="width: 14%" />
+                  <col style="width: 14%" />
+                  <col style="width: 14%" />
+                  <col style="width: 14%" />
+                  <col style="width: 14%" />
+                  <col style="width: 14%" />
+                  <col style="width: 14%" />
+                </colgroup>
                 <thead>
                   <tr>
-                    <th style="width: 14%">잔액 회수 가정</th>
-                    <th style="width: 14%">회수액</th>
-                    <th style="width: 14%">GrossxIRR(조합손익)</th>
-                    <th style="width: 14%">xIRR(출자시손익)</th>
-                    <th style="width: 14%">단순수익률</th>
-                    <th style="width: 14%">연평균수익률</th>
-                    <th style="width: 14%">Multiple</th>
+                    <th>잔액 회수 가정</th>
+                    <th>회수액</th>
+                    <th>GrossxIRR(조합손익)</th>
+                    <th>xIRR(출자시손익)</th>
+                    <th>단순수익률</th>
+                    <th>연평균수익률</th>
+                    <th>Multiple</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -416,18 +435,30 @@
                 </div>
               </div>
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                </colgroup>
                 <thead>
                   <tr>
-                    <th style="width: 10%">CashFlow 일자</th>
-                    <th style="width: 10%">출자액</th>
-                    <th style="width: 10%">분배액(총액)</th>
-                    <th style="width: 10%">분배액(원금)</th>
-                    <th style="width: 10%">분배손익</th>
-                    <th style="width: 10%">잔액</th>
-                    <th style="width: 10%">성과보수</th>
-                    <th style="width: 10%">성과보수 조정액</th>
-                    <th style="width: 10%">성과보수(조정후)</th>
-                    <th style="width: 10%">보유일수</th>
+                    <th>CashFlow 일자</th>
+                    <th>출자액</th>
+                    <th>분배액(총액)</th>
+                    <th>분배액(원금)</th>
+                    <th>분배손익</th>
+                    <th>잔액</th>
+                    <th>성과보수</th>
+                    <th>성과보수 조정액</th>
+                    <th>성과보수(조정후)</th>
+                    <th>보유일수</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -448,6 +479,14 @@
             </div>
           </div>
         </section>
+      </div>
+      <div class="fixed-box">
+        <button class="scroll-up active">
+          <img src="../images/icon-arrow-up.svg" alt="위로버튼" />
+        </button>
+        <button class="scroll-down">
+          <img src="../images/icon-arrow-down.svg" alt="아래로버튼" />
+        </button>
       </div>
     </div>
   </body>
