@@ -20,6 +20,7 @@
 .combination-table-wrap tbody tr:last-child td {
   border-bottom: 1px solid #b4b9cc;
   border-top: 1px solid #b4b9cc;
+  font-weight: 500;
 }
 .search-filter .list .input-box .members-input-box {
   min-width: 200px;

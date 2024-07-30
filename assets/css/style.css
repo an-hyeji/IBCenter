@@ -3,13 +3,15 @@
 @import './reset.css';
 
 /* Views */
+/* @import './views/investment-company-list.css'; */
+/* @import './views/members-contributions-allocations.css'; */
+/* @import './views/investment-company.css'; */
+/* @import './views/return-on-investment.css'; */
+/* @import './views/combination-information.css'; */
+
 @import './views/business-report.css';
-@import './views/combination-information.css';
-@import './views/investment-and-loan-status.css';
-@import './views/investment-company-list.css';
-@import './views/investment-company.css';
-@import './views/return-on-investment.css';
-@import './views/members-contributions-allocations.css';
+
+/* @import './views/investment-and-loan-status.css';
 @import './views/fund-return-on-investment.css';
 @import './views/investment-ledger.css';
 @import './views/investment-trading-research.css';
@@ -21,7 +23,7 @@
 @import './views/calendar-management.css';
 @import './views/user-permission-settings.css';
 @import './views/retrieve-combination-information.css';
-@import './views/before-accounting-statement.css';
+@import './views/before-accounting-statement.css'; */
 /* Views */
 
 /* Componenets */
@@ -33,6 +35,8 @@
 @import './components/button-list.css';
 @import './components/fixed-button.css';
 @import './components/input-filter.css';
+@import './components/total.css';
+@import './components/checkbox.css';
 
 /* modals */
 @import './components/modal.css';

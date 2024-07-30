@@ -1,0 +1,14 @@
+.checkbox-wrap input[type='checkbox'] {
+  display: none;
+}
+.checkbox-wrap .checkbox-input svg {
+  vertical-align: middle;
+  cursor: pointer;
+  fill: none;
+}
+.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg path {
+  stroke: #2774e1;
+}
+.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg rect {
+  stroke: #2774e1;
+}

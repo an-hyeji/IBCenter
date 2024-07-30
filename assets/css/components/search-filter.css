@@ -11,6 +11,18 @@
   display: flex;
   flex: 1;
 }
+.search-filter .flex-7 {
+  flex: 0.7 !important;
+}
+.search-filter .flex-half {
+  flex: 0.5;
+}
+.search-filter .base-date {
+  flex: 0;
+}
+.search-filter .flex-unset {
+  flex: unset;
+}
 .search-filter .list p {
   color: #373a46;
   font-size: 14px;
@@ -24,9 +36,8 @@
   padding: 8px;
   display: flex;
   flex: 1;
-  gap: 0 4px;
+  gap: 0 2px;
   background-color: #fff;
-  height: 100%;
 }
 .search-filter .list .input-box .search-input-box {
   display: flex;
@@ -48,6 +59,7 @@
   border-right: 1px solid #b4b9cc;
   border-bottom: 1px solid #b4b9cc;
   width: 32px;
+  padding: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +95,6 @@
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (max-width: 1530px) {
   .search-filter .list p {
     width: 100px;
@@ -92,5 +103,12 @@
   .search-filter .list .input-box .icon-btn img {
     width: 12px;
     height: 12px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .search-filter .list p {
+    width: 80px;
+    margin-right: 4px;
   }
 }

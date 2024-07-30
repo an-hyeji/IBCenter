@@ -30,6 +30,9 @@
 .w-200 {
   width: 200px !important;
 }
+.ml-4 {
+  margin-left: 4px;
+}
 
 /* select */
 .select-box {
@@ -40,7 +43,6 @@
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  gap: 0 4px;
 }
 
 select {
@@ -107,6 +109,7 @@ table thead th {
   vertical-align: middle;
   font-size: 14px;
   font-weight: 600;
+  line-height: normal;
 }
 table thead th:last-child {
   border-right: none;
@@ -306,35 +309,10 @@ input {
   display: none;
 }
 
-/* 토탈 */
-.total-boxs {
-  justify-content: start !important;
-}
-
-/* 기준일자 */
-.search-filter .base-date {
-  flex: 0 !important;
-}
-
-/* 체크박스 */
-.checkbox-wrap input[type='checkbox'] {
-  display: none;
-}
-.checkbox-wrap .checkbox-input svg {
-  vertical-align: middle;
-  cursor: pointer;
-  fill: none;
-}
-.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg path {
-  stroke: #2774e1;
-}
-.checkbox-wrap input[type='checkbox']:checked + .checkbox-input svg rect {
-  stroke: #2774e1;
-}
-
 .date-select {
-  min-width: 200px;
-  max-width: 100%;
+  /* min-width: 200px;
+  max-width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -347,6 +325,7 @@ input {
   color: #373a46;
   font-size: 14px;
   font-weight: 400;
+  white-space: nowrap;
 }
 .date-select p {
   color: #373a46;

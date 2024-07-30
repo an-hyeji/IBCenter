@@ -1,9 +1,5 @@
-.search-filter .combination-list {
-  flex: 0 !important;
-}
 .combination-select-box select {
-  min-width: 200px;
-  width: 200px;
+  width: 100%;
 }
 
 .combination-table-wrap {
@@ -12,16 +8,21 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
-
 .combination-table-wrap table {
   border-bottom: none;
+  text-align: center;
+}
+.combination-table-wrap table thead tr th {
+  height: 44px;
+  padding: 0 22px;
 }
 .combination-table-wrap table tbody tr:last-child {
   background-color: #e9effe;
 }
 .combination-table-wrap table tbody tr:last-child td {
-  border-bottom: 1px solid #b4b9cc !important;
-  border-top: 1px solid #b4b9cc !important;
+  border-bottom: 1px solid #b4b9cc;
+  border-top: 1px solid #b4b9cc;
+  font-weight: 500;
 }
 .combination-table-wrap table tbody td:nth-child(2) {
   max-width: 100px;
