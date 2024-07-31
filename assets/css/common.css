@@ -36,7 +36,6 @@
 .w-400 {
   width: 400px !important;
 }
-
 .ml-4 {
   margin-left: 4px;
 }
@@ -88,7 +87,6 @@ select {
   color: #6f7589;
   white-space: nowrap;
 }
-
 .total-select-box select {
   width: 120px;
   padding: 7px 8px;
@@ -173,13 +171,13 @@ input {
   display: flex;
   align-items: center;
   gap: 0 8px;
+  margin-bottom: 8px;
 }
 .use-button-list .flex {
   display: flex;
   align-items: center;
   gap: 0 8px !important;
 }
-
 .use-button-list .flex p {
   color: #6f7589;
   font-size: 13px;
@@ -251,7 +249,6 @@ input {
   background-clip: padding-box;
   border: 6px solid #f6f6fa;
 }
-
 .content-wrap::-webkit-scrollbar {
   width: 20px;
   height: 20px;
@@ -316,10 +313,7 @@ input {
 .content-wrap .top .bread-crumb ul li:last-child::after {
   display: none;
 }
-
 .date-select {
-  /* min-width: 200px;
-  max-width: 100%; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -357,6 +351,7 @@ input {
   margin-bottom: 8px;
   gap: 0 25px;
 }
+
 .add-remove-button-box {
   display: flex;
   gap: 0 8px;
@@ -410,11 +405,5 @@ input {
 @media screen and (max-width: 1530px) {
   select {
     min-width: 120px;
-  }
-  .base-date-select-box .date-select {
-    /* min-width: 120px; */
-  }
-  .base-date-select-box .date-select span {
-    /* padding: 0 2px; */
   }
 }

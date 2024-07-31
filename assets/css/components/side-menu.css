@@ -19,6 +19,7 @@
   font-weight: 500;
   line-height: normal;
   background-color: transparent;
+  padding: 0;
 }
 .search-menu img {
   position: absolute;

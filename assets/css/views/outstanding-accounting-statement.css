@@ -3,10 +3,6 @@
   gap: 0 25px;
   align-items: center;
 }
-.btn-list-wrap .flex {
-  margin-bottom: 0px;
-  gap: 0 25px;
-}
 
 .input-filter .outstanding-box {
   min-width: 100px;
