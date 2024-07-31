@@ -1,0 +1,68 @@
+.code-flex {
+  display: flex;
+  gap: 0 8px;
+}
+.code-box {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #caced8;
+  background: #fff;
+  margin: 24px 0;
+  height: 48px;
+}
+.code-box p {
+  border-radius: 4px 0px 0px 4px;
+  background: #f6f6fa;
+  padding: 0 16px;
+  width: 135px;
+  height: 100%;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 46px;
+}
+.code-box .padding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+}
+.code-box .padding input {
+  border-radius: 4px;
+}
+.find-btn-box button {
+  border-radius: 4px;
+  background: #263a75;
+  padding: 8px 16px;
+  color: #fff;
+}
+.code-table-wrap table tr:first-child td {
+  height: 44px;
+  background: #f6f6fa;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.check-btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 0 8px;
+}
+.check-btn-box button {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  padding: 8px 20px;
+  color: #263a75;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.check-btn-box .bg-btn {
+  background: #263a75;
+  color: #fff;
+  border: none;
+}

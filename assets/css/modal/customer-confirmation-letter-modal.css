@@ -1,0 +1,21 @@
+.customer-table-wrap table tr:first-child td {
+  text-align: center;
+  background: #f6f6fa;
+  font-weight: 600;
+  height: 44px;
+}
+.customer-table-wrap table td .document-icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.customer-table-wrap table td .document-icon img {
+  width: 24px;
+  height: 24px;
+}
+.customer-table-wrap table tbody tr:hover {
+  background: #fff;
+}
+.customer-table-wrap table tbody tr.selected {
+  background: #fff;
+}

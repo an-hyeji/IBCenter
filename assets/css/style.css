@@ -2,28 +2,25 @@
 @import './reset.css';
 
 /* Views */
-/* @import './views/investment-company-list.css'; */
-/* @import './views/members-contributions-allocations.css'; */
-/* @import './views/investment-company.css'; */
-/* @import './views/return-on-investment.css'; */
-/* @import './views/combination-information.css'; */
-/* @import './views/business-report.css'; */
-/* @import './views/investment-and-loan-status.css'; */
-/* @import './views/fund-return-on-investment.css'; */
-/* @import './views/investment-ledger.css'; */
-/* @import './views/investment-trading-research.css'; */
-/* @import './views/electronic_payment.css'; */
-/* @import './views/retrieve-combination-information.css'; */
-/* @import './views/user-permission-settings.css'; */
-/* @import './views/calendar-management.css'; */
-/* @import './views/capital-information.css'; */
-/* @import './views/before-accounting-statement.css'; */
-/* @import './views/outstanding-accounting-statement.css'; */
+@import './views/investment-company-list.css';
+@import './views/members-contributions-allocations.css';
+@import './views/investment-company.css';
+@import './views/return-on-investment.css';
+@import './views/combination-information.css';
+@import './views/business-report.css';
+@import './views/investment-and-loan-status.css';
+@import './views/fund-return-on-investment.css';
+@import './views/investment-ledger.css';
+@import './views/investment-trading-research.css';
+@import './views/electronic_payment.css';
+@import './views/retrieve-combination-information.css';
+@import './views/user-permission-settings.css';
+@import './views/calendar-management.css';
+@import './views/capital-information.css';
+@import './views/before-accounting-statement.css';
+@import './views/outstanding-accounting-statement.css';
 @import './views/completion-of-accounting-statements.css';
-
-/* @import './views/setting.css';
-
-
+@import './views/setting.css';
 /* Views */
 
 /* Componenets */
@@ -39,7 +36,12 @@
 @import './components/checkbox.css';
 
 /* modals */
-@import './components/modal.css';
-/* modals */
+@import './modal/common_modal.css';
+/* @import './modal/electronic_payment_modal.css'; */
+/* @import './modal/accounting-statement-modal.css' */
+/* @import './modal/select-account-code-modal.css'; /* */
+/* @import './modal/copy-date-modal.css';  */
+/* @import './modal/customer-confirmation-letter-modal.css'; */
+@import './modal/convert-to-an-investment-company-modal.css'; /* modals */
 
 /* Componenets */
