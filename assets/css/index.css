@@ -13,16 +13,18 @@
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .bold {
   font-weight: 700;
 }
 .box {
-  border: 2px solid #000;
-  padding: 4px 8px;
+  border: 1px solid #000;
+  padding: 20px 8px;
   margin-bottom: 30px;
 }
-.box p {
+.box a {
   font-size: 13px;
   color: gray;
 }
@@ -49,4 +51,49 @@
   font-size: 14px;
   border-right: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+}
+.mo-index-table-wrap {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .index-table-wrap {
+    display: none;
+  }
+  .box {
+    border: 1px solid #000;
+    padding: 14px 8px;
+    margin-bottom: 20px;
+  }
+  .mo-index-table-wrap {
+    display: block;
+  }
+  .mo-index-table-wrap h1 {
+    font-size: 18px;
+  }
+  .mo-index-table-wrap table {
+    margin-bottom: 20px;
+  }
+  .mo-index-table-wrap .header td {
+    background-color: #f0f0f0;
+    border-top: 1px solid #000;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: 700;
+  }
+  .mo-index-table-wrap .border td {
+    border-top: 1px dashed #000;
+  }
+  .mo-index-table-wrap table td {
+    padding: 8px;
+    font-size: 13px;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .mo-index-table-wrap table .bg {
+    background-color: #f0f0f0;
+    font-weight: 600;
+  }
 }
