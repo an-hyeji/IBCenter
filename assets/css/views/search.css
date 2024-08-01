@@ -6,19 +6,19 @@
   line-height: normal;
   margin-top: 56px;
 }
-.search-input-box {
+.search-input-wrap {
   max-width: 600px;
   width: 100%;
   margin: 28px auto;
   position: relative;
 }
-.search-input-box input {
+.search-input-wrapinput {
   width: 100%;
   border-radius: 100px;
   border: 1px solid var(--Outline-2, #caced8);
   padding: 16px 20px;
 }
-.search-input-box button {
+.search-input-wrapbutton {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

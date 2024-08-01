@@ -43,7 +43,7 @@
   padding: 8px 12px;
   border-radius: 4px 0px 0px 4px;
   border: 1px solid #b4b9cc;
-  width: 100%;
+  width: 85%;
 }
 .filter-flex .input-box .disable {
   border-radius: 4px;
@@ -58,6 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 .document-date {
   margin-left: 20px;
