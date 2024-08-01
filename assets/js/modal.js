@@ -12,8 +12,8 @@ closeBtn.onclick = function () {
   document.body.style.overflow = 'auto';
 };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
+window.onclick = function (e) {
+  if (e.target == modal) {
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
