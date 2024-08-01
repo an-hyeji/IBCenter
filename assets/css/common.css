@@ -185,7 +185,6 @@ input {
   display: flex;
   align-items: center;
   gap: 0 8px;
-  margin-bottom: 8px;
 }
 .use-button-list .flex {
   display: flex;
@@ -344,6 +343,7 @@ input {
   margin-bottom: 8px;
   gap: 0 25px;
 }
+
 .add-remove-button-box {
   display: flex;
   gap: 0 8px;

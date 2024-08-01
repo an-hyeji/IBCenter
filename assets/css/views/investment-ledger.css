@@ -34,6 +34,9 @@
 .investment-table-wrap table {
   text-align: center;
 }
+.investment-table-wrap table thead th {
+  padding: 13px 6px;
+}
 
 .investment-date-select-box select {
   width: 100%;

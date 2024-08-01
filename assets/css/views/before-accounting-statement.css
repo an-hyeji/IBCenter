@@ -190,7 +190,7 @@
   padding: 8px;
   display: flex;
   flex: 1;
-  gap: 0 2px;
+  gap: 0 4px;
   background-color: #fff;
   height: 100%;
   padding: 0;
@@ -287,7 +287,7 @@
   padding: 8px;
   display: flex;
   flex: 1;
-  gap: 0 2px;
+  gap: 0 4px;
   background-color: #fff;
   height: 100%;
   padding: 0;
@@ -331,6 +331,9 @@
 }
 .indignation-line-table-wrap table {
   border-bottom: none;
+}
+.indignation-line-table-wrap table thead th {
+  padding: 13px 12px;
 }
 .indignation-line-table-wrap table tbody tr:last-child {
   background-color: #e9effe;
