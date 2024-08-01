@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="./css/calendar.css" />
+    <script src="./js/calendar.js" defer></script>
+    <title>달력_건수가 많은 경우</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="flex">
+        <div class="top">
+          <button>
+            <img src="./images/icon-arrow-prev.svg" alt="이전" />
+          </button>
+          <div class="year-month">
+            <h1>2024년</h1>
+            <button>
+              <img src="./images/icon-calendar-arrow.svg" alt="전체" />
+            </button>
+            <h1>5월</h1>
+          </div>
+          <button>
+            <img src="./images/icon-arrow-next.svg" alt="다음" />
+          </button>
+        </div>
+        <div class="select-wrap">
+          <button class="my-btn">MY</button>
+          <div class="select-box">
+            <label for="category-select"></label>
+            <select name="category" id="category-select">
+              <option value="" selected>전사원</option>
+              <option value="option1">옵션 1</option>
+              <option value="option2">옵션 2</option>
+              <option value="option3">옵션 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-table-wrap">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <colgroup>
+            <col style="width: 14%" />
+            <col style="width: 14%" />
+            <col style="width: 14%" />
+            <col style="width: 14%" />
+            <col style="width: 14%" />
+            <col style="width: 14%" />
+            <col style="width: 14%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>일</th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+              <th>토</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="opacity"><p>28</p></td>
+              <td class="opacity"><p>29</p></td>
+              <td class="opacity"><p>30</p></td>
+              <td><p>1</p></td>
+              <td><p>2</p></td>
+              <td>
+                <p>3</p>
+                <div class="flex-box">
+                  <div class="red badge">출장<span class="number">7</span></div>
+                  <div class="green badge">
+                    교육<span class="number">5</span>
+                  </div>
+                  <div class="blue badge">
+                    휴가<span class="number">7</span>
+                  </div>
+                  <div class="orange badge">
+                    투심<span class="number">5</span>
+                  </div>
+                  <div class="light-green badge">
+                    IR<span class="number">5</span>
+                  </div>
+                  <div class="purple badge">
+                    회의<span class="number">4</span>
+                  </div>
+                  <div class="purple badge">
+                    회의<span class="number">7</span>
+                  </div>
+                  <div class="orange badge">
+                    투심<span class="number">5</span>
+                  </div>
+                  <div class="light-green badge">
+                    IR<span class="number">5</span>
+                  </div>
+                  <div class="purple badge">
+                    회의<span class="number">9</span>
+                  </div>
+                  <div class="purple badge">
+                    회의<span class="number">7</span>
+                  </div>
+                </div>
+              </td>
+              <td><p>4</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>5<span>어린이 날/ 입하</span></p>
+              </td>
+              <td>
+                <p class="holiday">6<span>대체공휴일</span></p>
+              </td>
+              <td>
+                <p>7</p>
+                <div class="flex-box">
+                  <div class="blue badge">
+                    휴가<span class="number">7</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">7</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>8<span>어버이날</span></p>
+                <div class="flex-box">
+                  <div class="red badge">출장<span class="number">5</span></div>
+                  <div class="blue badge">
+                    휴가<span class="number">7</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">6</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>9</p>
+                <div class="flex-box">
+                  <div class="blue badge">
+                    휴가<span class="number">5</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">5</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>10<span>유권자의 날</span></p>
+              </td>
+              <td>
+                <p>11 <span>동학농민혁명 기념일 / 입양의 날</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>12</p></td>
+              <td>
+                <p>13</p>
+                <div class="flex-box">
+                  <div class="blue badge">
+                    휴가<span class="number">7</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">7</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>14</p>
+                <div class="flex-box">
+                  <div class="blue badge">
+                    휴가<span class="number">7</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">7</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>15</p>
+                <div class="flex-box">
+                  <div class="red badge">출장<span class="number">5</span></div>
+                </div>
+              </td>
+              <td>
+                <p>16</p>
+                <div class="flex-box">
+                  <div class="blue badge">
+                    휴가<span class="number">4</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">5</span>
+                  </div>
+                </div>
+              </td>
+              <td><p>17</p></td>
+              <td><p>18</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>19</p>
+                <div class="flex-box">
+                  <div class="red badge">출장<span class="number">9</span></div>
+                  <div class="blue badge">
+                    휴가<span class="number">9</span>
+                  </div>
+                  <div class="green badge">
+                    교육<span class="number">9</span>
+                  </div>
+                  <div class="light-green badge">
+                    IR<span class="number">9</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>20<span>성년의 날 / 세계인의 날</span></p>
+              </td>
+              <td>
+                <p>21<span>부부의 날</span></p>
+              </td>
+              <td><p>22</p></td>
+              <td><p>23</p></td>
+              <td><p>24</p></td>
+              <td><p>25</p></td>
+            </tr>
+            <tr>
+              <td><p>26</p></td>
+              <td><p>27</p></td>
+              <td><p>28</p></td>
+              <td><p>29</p></td>
+              <td><p>30</p></td>
+              <td>
+                <p>31</p>
+                <div class="flex-box">
+                  <div class="orange badge">
+                    투심<span class="number">9</span>
+                  </div>
+                  <div class="red badge">출장<span class="number">9</span></div>
+                  <div class="light-green badge">
+                    IR<span class="number">8</span>
+                  </div>
+                </div>
+              </td>
+              <td class="opacity"><p>1</p></td>
+            </tr>
+            <tr>
+              <td class="opacity"><p>2</p></td>
+              <td class="opacity"><p>3</p></td>
+              <td class="opacity"><p>4</p></td>
+              <td class="opacity"><p>5</p></td>
+              <td class="opacity"><p>6</p></td>
+              <td class="opacity"><p>7</p></td>
+              <td class="opacity"><p>8</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <div class="title-box">
+          <h1>2024.05.14(화)</h1>
+          <div class="btn-box">
+            <button class="edit-btn">
+              <img src="./images/icon-calendar-edit.svg" alt="연필아이콘" />
+              일정추가
+            </button>
+            <button class="close">
+              <img src="./images/icon-calendar-close.svg" alt="닫기버튼" />
+            </button>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="detail-box">
+            <div class="blue badge">휴가<span class="number">7</span></div>
+            <div class="list">
+              <div class="name-box">
+                <p class="name">김민지</p>
+                <p>연차휴가 2024. 05. 03 - 05. 13</p>
+              </div>
+              <div class="name-box">
+                <p class="name">박준기</p>
+                <p>연차휴가 2024. 05. 03</p>
+              </div>
+              <div class="name-box">
+                <p class="name">김민지</p>
+                <p>연차휴가 2024. 05. 03 - 05. 13</p>
+              </div>
+              <div class="name-box">
+                <p class="name">박준기</p>
+                <p>연차휴가 2024. 05. 03</p>
+              </div>
+              <div class="name-box">
+                <p class="name">박준기</p>
+                <p>연차휴가 2024. 05. 03</p>
+              </div>
+              <div class="name-box">
+                <p class="name">박준기</p>
+                <p>연차휴가 2024. 05. 03</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail-box">
+            <div class="green badge">교육<span class="number">7</span></div>
+            <div class="list">
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+              <div class="name-box">
+                <p class="name">한나리</p>
+                <p>
+                  2024. 05. 03 - 05. 10 <span>(한국거래소 회계지원센터)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

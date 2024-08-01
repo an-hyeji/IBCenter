@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="./calendar.css" />
-    <title>달력</title>
+    <link rel="stylesheet" href="./css/calendar.css" />
+    <title>달력_인원 3명 이하</title>
   </head>
   <body>
     <div class="wrap">
@@ -75,33 +75,33 @@
                 <p>5<span>어린이 날/ 입하</span></p>
               </td>
               <td>
-                <p>6<span>대체공휴일</span></p>
+                <p class="holiday">6<span>대체공휴일</span></p>
               </td>
               <td>
                 <p>7</p>
                 <div class="noti">
-                  <div class="blue-badge">휴가</div>
-                  <p>김민지</p>
+                  <div class="blue badge">휴가</div>
+                  <h4>김민지</h4>
                 </div>
                 <div class="noti">
-                  <div class="green-badge">교육</div>
-                  <p>김민지</p>
-                  <p>이나영</p>
+                  <div class="green badge">교육</div>
+                  <h4>김민지</h4>
+                  <h4>이나영</h4>
                 </div>
               </td>
               <td>
                 <p>8<span>어버이날</span></p>
                 <div class="noti">
-                  <div class="blue-badge">휴가</div>
-                  <p>김민지</p>
+                  <div class="blue badge">휴가</div>
+                  <h4>김민지</h4>
                 </div>
                 <div class="noti">
-                  <div class="green-badge">교육</div>
-                  <p>박민수</p>
+                  <div class="green badge">교육</div>
+                  <h4>박민수</h4>
                 </div>
                 <div class="noti">
-                  <div class="red-badge">출장</div>
-                  <p>김민지</p>
+                  <div class="red badge">출장</div>
+                  <h4>김민지</h4>
                 </div>
               </td>
               <td><p>9</p></td>
@@ -143,16 +143,16 @@
               <td>
                 <p>32</p>
                 <div class="noti">
-                  <div class="orange-badge">투심</div>
-                  <p>김민지</p>
+                  <div class="orange badge">투심</div>
+                  <h4>김민지</h4>
                 </div>
                 <div class="noti">
-                  <div class="red-badge">출장</div>
-                  <p>이나영</p>
+                  <div class="red badge">출장</div>
+                  <h4>이나영</h4>
                 </div>
                 <div class="noti">
-                  <div class="light-green-badge">IR</div>
-                  <p>이나영</p>
+                  <div class="light-green badge">IR</div>
+                  <h4>이나영</h4>
                 </div>
               </td>
               <td class="opacity"><p>1</p></td>
@@ -170,37 +170,5 @@
         </table>
       </div>
     </div>
-    <div id="popup" class="popup" style="display: none">
-      <div class="popup-content">
-        <span class="close">&times;</span>
-        <p>팝업</p>
-      </div>
-    </div>
-
-    <script>
-      const tds = document.querySelectorAll('td');
-      const popup = document.getElementById('popup');
-      const popupContent = document.querySelector('.popup-content');
-      const closeBtn = document.querySelector('.close');
-
-      tds.forEach((td) => {
-        td.addEventListener('click', (event) => {
-          const rect = td.getBoundingClientRect();
-          popup.style.top = `${rect.bottom + window.scrollY}px`;
-          popup.style.left = `${rect.left + window.scrollX}px`;
-          popup.style.display = 'block';
-        });
-      });
-
-      closeBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
-      });
-
-      window.addEventListener('click', (event) => {
-        if (event.target == popup) {
-          popup.style.display = 'none';
-        }
-      });
-    </script>
   </body>
 </html>
