@@ -256,20 +256,18 @@
   border-top: 1px solid #b4b9cc;
   font-weight: 500;
 }
-.accounting-date-of-change {
-  margin: 31px 0 8px 0 !important;
-}
-.accounting-date-of-change .line-flex {
+
+.line-flex {
   display: flex;
   gap: 0 12px;
   align-items: center;
 }
-.accounting-date-of-change .line-flex p {
+.line-flex p {
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
 }
-.accounting-date-of-change .line-flex p span {
+.line-flex p span {
   color: #2774e1;
   font-weight: 500;
 }

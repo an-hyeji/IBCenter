@@ -39,6 +39,10 @@
 .ml-4 {
   margin-left: 4px;
 }
+.icon-button.active svg path {
+  stroke: #ffc700;
+  fill: #ffc700;
+}
 
 /* select */
 .select-box {
@@ -50,7 +54,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 select {
   border-radius: 4px;
   border: 1px solid #b4b9cc;
@@ -87,14 +90,26 @@ select {
   color: #6f7589;
   white-space: nowrap;
 }
-.total-select-box select {
-  width: 120px;
-  padding: 7px 8px;
-  color: #373a46;
+.date-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
 }
-.icon-button.active svg path {
-  stroke: #ffc700;
-  fill: #ffc700;
+.date-select span {
+  display: block;
+  padding: 0 12px;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.date-select p {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* 테이블 */
@@ -104,7 +119,6 @@ table {
   border-top: 1px solid #263a75;
   border-bottom: 1px solid #e0e2e9;
 }
-
 table thead th {
   border-right: 1px solid #e0e2e9;
   border-bottom: 1px solid #b4b9cc;
@@ -312,27 +326,6 @@ input {
 }
 .content-wrap .top .bread-crumb ul li:last-child::after {
   display: none;
-}
-.date-select {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 4px;
-  border: 1px solid #b4b9cc;
-}
-.date-select span {
-  display: block;
-  padding: 0 12px;
-  color: #373a46;
-  font-size: 14px;
-  font-weight: 400;
-  white-space: nowrap;
-}
-.date-select p {
-  color: #373a46;
-  font-size: 14px;
-  font-weight: 400;
 }
 .calendar-btn {
   border-left: 1px solid #b4b9cc;
