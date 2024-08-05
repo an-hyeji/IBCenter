@@ -12,13 +12,13 @@
   margin: 28px auto;
   position: relative;
 }
-.search-input-wrapinput {
+.search-input-wrap input {
   width: 100%;
   border-radius: 100px;
   border: 1px solid var(--Outline-2, #caced8);
   padding: 16px 20px;
 }
-.search-input-wrapbutton {
+.search-input-wrap button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -41,7 +41,7 @@
   margin: 0 auto;
   border-top: 1px solid #334680;
 }
-.search-list .list {
+.search-list .list a {
   padding: 20px;
   display: flex;
   justify-content: space-between;

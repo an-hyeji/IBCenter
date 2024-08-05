@@ -24,6 +24,10 @@
 .copy-table-wrap table tbody td {
   height: 48px;
 }
+.copy-table-wrap table tbody .bg {
+  background-color: #f6f6fa;
+  font-weight: 600;
+}
 .copy-table-wrap table tbody tr:hover {
   background: #fff;
 }
