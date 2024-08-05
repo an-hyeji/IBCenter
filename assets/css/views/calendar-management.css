@@ -36,6 +36,9 @@
   white-space: nowrap;
   text-align: center;
 }
+.calendar-table-wrap table thead th {
+  padding: 13px;
+}
 .calendar-table-wrap table tbody tr:hover {
   background: #fff;
 }
