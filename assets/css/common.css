@@ -260,8 +260,12 @@ input {
   border-radius: 20px;
   background: #caced8;
   background-clip: padding-box;
-  border: 6px solid #f6f6fa;
+  border: 4px solid #f6f6fa;
+  /* box-shadow: 0 0 0 6px #4872f4 inset; */
+  box-sizing: border-box;
+  position: relative;
 }
+
 .content-wrap::-webkit-scrollbar {
   width: 20px;
   height: 20px;
