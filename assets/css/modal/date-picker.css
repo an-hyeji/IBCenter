@@ -1,0 +1,172 @@
+.radius {
+  border-radius: 4px 0 0 4px;
+}
+.radius-r {
+  border-radius: 0 4px 4px 0;
+}
+.opacity {
+  opacity: 0.2;
+  color: #000;
+}
+.date-search-filter {
+  border-radius: 4px;
+  border: 1px solid #caced8;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  position: relative;
+  background: #f6f6fa;
+}
+.date-search-filter .date-select-box {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.date-search-filter .flex-date-select-box {
+  flex: 1;
+  gap: 0 8px;
+}
+.date-search-filter .flex-date-select-box .month-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.date-search-filter .date-select-box .list-title {
+  background-color: #f6f6fa;
+  padding: 0 16px;
+  width: 60px;
+  height: 100%;
+  margin-top: 0;
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+}
+.date-search-filter .date-select-box select {
+  width: 260px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.date-search-filter .date-select-box .search-button {
+  border-radius: 4px;
+  background: #263a75;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  margin-right: 8px;
+}
+.date-picker {
+  margin-top: 24px;
+  display: flex;
+}
+.date-picker .left-date-picker {
+  width: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+.date-picker .left-date-picker::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #e0e2e9;
+  right: -20px;
+  top: 0;
+}
+.date-picker .right-date-picker {
+  width: 50%;
+  margin-left: 20px;
+}
+.date-picker table {
+  border-top: none;
+  border-bottom: none;
+  border-spacing: 4px;
+  padding: 0 20px;
+}
+
+.date-picker table tbody tr:hover {
+  background: #fff;
+}
+.date-picker table tbody tr.selected {
+  background: #fff;
+}
+.date-picker table thead th {
+  padding: 0;
+  height: 28px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  border: none;
+  background-color: #fff;
+}
+.date-picker table thead th:first-child {
+  color: #ff0000;
+}
+.date-picker table tbody td {
+  padding: 0;
+  height: 28px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  border: none;
+}
+.date-picker table tbody td:first-child {
+  color: #ff3b30;
+}
+.year-month {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.year-month .picker-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 0 2px;
+}
+.year-month .year-month-flex {
+  display: flex;
+  gap: 0 4px;
+  margin: 0 2px;
+}
+.year-month .year-month-flex .year select {
+  min-width: unset;
+  width: 100px;
+}
+.year-month .year-month-flex .month select {
+  min-width: unset;
+  width: 80px;
+}
+.button-box {
+  display: flex;
+  gap: 0 8px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.button-box button {
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: 1px solid #b4b9cc;
+  color: #263a75;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.button-box button:last-child {
+  color: #fff;
+  background: #263a75;
+}
