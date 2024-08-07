@@ -1,0 +1,148 @@
+.login-body {
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.login-flex-wrap {
+  display: flex;
+  flex-grow: 1;
+}
+.login-flex-wrap .left {
+  width: 36.5%;
+  padding: 106px 130px 60px 130px;
+}
+.login-flex-wrap .left .top {
+  margin-bottom: 80px;
+}
+.login-flex-wrap .left .top .logo {
+  max-width: 187px;
+  width: 100%;
+  margin: 0 auto;
+}
+.login-flex-wrap .left .top .logo img {
+  width: 100%;
+}
+.login-flex-wrap .left .top h3 {
+  color: #373a46;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 28px;
+  text-align: center;
+}
+.login-flex-wrap .left .input-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.login-flex-wrap .left .input-box label {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+.login-flex-wrap .left .input-box input {
+  padding: 22px 21px;
+  background-color: #f6f6fa;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.login-flex-wrap .left .login-btn-box {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.login-flex-wrap .left .login-btn-box button {
+  background-color: #2774e1;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.login-flex-wrap .left .login-btn-box .login-btn {
+  background-color: #334680;
+}
+.login-flex-wrap .left .find-box {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 0 40px;
+}
+.login-flex-wrap .left .find-box button {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.login-flex-wrap .left .find-box .find-id {
+  position: relative;
+}
+.login-flex-wrap .left .find-box .find-id::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 8px;
+  background-color: #b4b9cc;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.login-flex-wrap .left .login-noti {
+  border-radius: 4px;
+  background: #f6f6fa;
+  padding: 20px;
+}
+.login-flex-wrap .left .login-noti p {
+  color: #6f7589;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  padding-left: 10px;
+}
+.login-flex-wrap .left .login-noti .line-22 {
+  line-height: 22px;
+}
+.login-flex-wrap .left .login-noti p::after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #6f7589;
+  left: 0;
+  top: 12px;
+}
+.login-flex-wrap .left .login-noti .line-22::after {
+  top: 9px;
+}
+.login-flex-wrap .right {
+  width: 63.5%;
+  background-color: orange;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.login-flex-wrap .right .samsung-logo {
+  max-width: 780px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-flex-wrap .right .samsung-logo img {
+  width: 100%;
+}
