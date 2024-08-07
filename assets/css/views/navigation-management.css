@@ -42,6 +42,49 @@
   font-weight: 500;
   line-height: 28px;
   cursor: pointer;
+  display: flex;
+}
+.nav-content-wrap .list ul li p {
+  color: #6f7589;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  position: relative;
+}
+.nav-content-wrap .list ul li p::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #b4b9cc;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -9px;
+}
+.nav-content-wrap .list ul li span {
+  display: inline-block;
+  margin-left: 16px;
+  position: relative;
+}
+.nav-content-wrap .list ul li span::after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #caced8;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-content-wrap .list ul li .under-line {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nav-content-wrap .list ul li span:last-child::after {
+  display: none;
 }
 .nav-content-wrap .list ul li.active,
 .nav-content-wrap .list ul li:hover {
