@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/navigation.js" defer></script>
     <title>네비게이션_전체메뉴</title>
   </head>
   <body>
@@ -53,7 +54,7 @@
             </ul>
           </div>
           <div class="list">
-            <p>투자거래관리</p>
+            <p>투자회수관리</p>
             <ul>
               <li onclick="setListActive(this)">투자단위별 투자수익률</li>
               <li onclick="setListActive(this)">투자업체별 투자수익률</li>
@@ -64,25 +65,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      function setTopActive(element) {
-        const topMenuItems = document.querySelectorAll('.top nav ul li');
-        topMenuItems.forEach(function (item) {
-          item.classList.remove('active');
-        });
-        element.classList.add('active');
-      }
-
-      function setListActive(element) {
-        const listMenuItems = document.querySelectorAll(
-          '.list-box .list ul li'
-        );
-        listMenuItems.forEach(function (item) {
-          item.classList.remove('active');
-        });
-        element.classList.add('active');
-      }
-    </script>
   </body>
 </html>
