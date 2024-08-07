@@ -32,7 +32,8 @@
   cursor: pointer;
   padding-bottom: 16px;
 }
-.nav-modal-content .top ul li.active {
+.nav-modal-content .top ul li.active,
+.nav-modal-content .top ul li:hover {
   color: rgba(255, 255, 255, 255);
   background-image: url(../../images/icon-nav-active.svg);
   background-repeat: no-repeat;
@@ -68,7 +69,8 @@
   line-height: 28px;
   cursor: pointer;
 }
-.nav-modal-content .list ul li.active {
+.nav-modal-content .list ul li.active,
+.nav-modal-content .list ul li:hover {
   border: 1px solid #2774e1;
   background: #e8effe;
   color: #334680;

@@ -12,16 +12,16 @@
         <div class="top">
           <nav>
             <ul>
-              <li class="active">투자관리</li>
-              <li>조합관리</li>
-              <li>경영관리</li>
-              <li>기본정보</li>
-              <li>인사관리</li>
-              <li>전자결재</li>
-              <li>회계관리</li>
-              <li>추가메뉴1</li>
-              <li>추가메뉴2</li>
-              <li>마이메뉴</li>
+              <li class="active" onclick="setTopActive(this)">투자관리</li>
+              <li onclick="setTopActive(this)">조합관리</li>
+              <li onclick="setTopActive(this)">경영관리</li>
+              <li onclick="setTopActive(this)">기본정보</li>
+              <li onclick="setTopActive(this)">인사관리</li>
+              <li onclick="setTopActive(this)">전자결재</li>
+              <li onclick="setTopActive(this)">회계관리</li>
+              <li onclick="setTopActive(this)">추가메뉴1</li>
+              <li onclick="setTopActive(this)">추가메뉴2</li>
+              <li onclick="setTopActive(this)">마이메뉴</li>
             </ul>
           </nav>
           <button class="modal-close">
@@ -32,35 +32,57 @@
           <div class="list">
             <p>투자기업관리</p>
             <ul>
-              <li>투자업체정보</li>
-              <li>투심위정보</li>
-              <li class="active">법인등기부등본 RPA</li>
-              <li>투자업체 자본금 정보</li>
-              <li>심사역 정보</li>
-              <li>해외투자신고 관리</li>
-              <li>IPO 일정관리</li>
+              <li onclick="setListActive(this)">투자업체정보</li>
+              <li onclick="setListActive(this)">투심위정보</li>
+              <li class="active" onclick="setListActive(this)">
+                법인등기부등본 RPA
+              </li>
+              <li onclick="setListActive(this)">투자업체 자본금 정보</li>
+              <li onclick="setListActive(this)">심사역 정보</li>
+              <li onclick="setListActive(this)">해외투자신고 관리</li>
+              <li onclick="setListActive(this)">IPO 일정관리</li>
             </ul>
           </div>
           <div class="list">
             <p>투자거래관리</p>
             <ul>
-              <li>투자자산 평가</li>
-              <li>투자원장</li>
-              <li>FoF현황</li>
-              <li>투자거래검색</li>
+              <li onclick="setListActive(this)">투자자산 평가</li>
+              <li onclick="setListActive(this)">투자원장</li>
+              <li onclick="setListActive(this)">FoF현황</li>
+              <li onclick="setListActive(this)">투자거래검색</li>
             </ul>
           </div>
           <div class="list">
             <p>투자거래관리</p>
             <ul>
-              <li>투자단위별 투자수익률</li>
-              <li>투자업체별 투자수익률</li>
-              <li>조합별 투자수익률</li>
-              <li>심사역 투자/회수 실적</li>
+              <li onclick="setListActive(this)">투자단위별 투자수익률</li>
+              <li onclick="setListActive(this)">투자업체별 투자수익률</li>
+              <li onclick="setListActive(this)">조합별 투자수익률</li>
+              <li onclick="setListActive(this)">심사역 투자/회수 실적</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      function setTopActive(element) {
+        const topMenuItems = document.querySelectorAll('.top nav ul li');
+        topMenuItems.forEach(function (item) {
+          item.classList.remove('active');
+        });
+        element.classList.add('active');
+      }
+
+      function setListActive(element) {
+        const listMenuItems = document.querySelectorAll(
+          '.list-box .list ul li'
+        );
+        listMenuItems.forEach(function (item) {
+          item.classList.remove('active');
+        });
+        element.classList.add('active');
+      }
+    </script>
   </body>
 </html>
