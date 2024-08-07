@@ -1,0 +1,75 @@
+.nav-modal-content {
+  max-width: 1100px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background: #fff;
+}
+.nav-modal-content .top {
+  border-radius: 8px 8px 0px 0px;
+  background: #334680;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 0 40px;
+}
+.nav-modal-content .top ul {
+  display: flex;
+  gap: 0 24px;
+}
+.nav-modal-content .top ul li {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+.nav-modal-content .top ul li.active {
+  color: rgba(255, 255, 255, 255);
+  background-image: url(../../images/icon-nav-active.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -1px center;
+}
+.nav-modal-content .list-box {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.nav-modal-content .list p {
+  color: #373a46;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.nav-modal-content .list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.nav-modal-content .list ul li {
+  border-radius: 100px;
+  border: 1px solid #e0e2e9;
+  padding: 12px 16px;
+  color: #373a46;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  cursor: pointer;
+}
+.nav-modal-content .list ul li.active {
+  border: 1px solid #2774e1;
+  background: #e8effe;
+  color: #334680;
+}
