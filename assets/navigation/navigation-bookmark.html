@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/main.js" defer></script>
     <script src="../js/navigation.js" defer></script>
-    <title>네비게이션_기본정보</title>
+    <title>네비게이션_즐겨찾기</title>
   </head>
   <body>
     <div class="wrap">
@@ -274,38 +274,42 @@
               <div class="list">
                 <p>공통업무</p>
                 <ul>
-                  <li>사원정보</li>
-                  <li>퇴직자정보</li>
-                  <li>부서코드</li>
-                  <li>직위</li>
-                  <li>달력관리</li>
+                  <li onclick="setListActive(this)">사원정보</li>
+                  <li onclick="setListActive(this)">퇴직자정보</li>
+                  <li class="active" onclick="setListActive(this)">부서코드</li>
+                  <li onclick="setListActive(this)">직위</li>
+                  <li onclick="setListActive(this)">달력관리</li>
                 </ul>
               </div>
               <div class="list">
                 <p>관리도구</p>
                 <ul>
-                  <li>사용자리스트</li>
-                  <li>사용자그룹</li>
-                  <li>사용자권한관리</li>
-                  <li>접속통계</li>
+                  <li onclick="setListActive(this)">사용자리스트</li>
+                  <li onclick="setListActive(this)">사용자그룹</li>
+                  <li onclick="setListActive(this)">사용자권한관리</li>
+                  <li onclick="setListActive(this)">접속통계</li>
                 </ul>
               </div>
               <div class="list">
                 <p>관리정보</p>
                 <ul>
-                  <li>코드관리</li>
-                  <li>회계연도</li>
-                  <li>기초금액</li>
-                  <li>환경설정</li>
+                  <li onclick="setListActive(this)">코드관리</li>
+                  <li onclick="setListActive(this)">회계연도</li>
+                  <li onclick="setListActive(this)">기초금액</li>
+                  <li onclick="setListActive(this)">환경설정</li>
                 </ul>
               </div>
               <div class="list">
                 <p>인터페이스</p>
                 <ul>
-                  <li>세일즈포스연동세팅</li>
-                  <li>세일즈포스인터페이스내역</li>
-                  <li>사원정보</li>
-                  <li>세일즈포스펀드명과 조합코드 매핑</li>
+                  <li onclick="setListActive(this)">세일즈포스연동세팅</li>
+                  <li onclick="setListActive(this)">
+                    세일즈포스인터페이스내역
+                  </li>
+                  <li onclick="setListActive(this)">사원정보</li>
+                  <li onclick="setListActive(this)">
+                    세일즈포스펀드명과 조합코드 매핑
+                  </li>
                 </ul>
               </div>
             </div>
