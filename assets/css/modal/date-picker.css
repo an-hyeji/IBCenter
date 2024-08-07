@@ -65,7 +65,9 @@
 .date-picker {
   margin-top: 24px;
   display: flex;
+  justify-content: center;
 }
+
 .date-picker .left-date-picker {
   width: 50%;
   margin-right: 20px;
@@ -87,8 +89,7 @@
 .date-picker table {
   border-top: none;
   border-bottom: none;
-  border-spacing: 4px;
-  padding: 0 20px;
+  border-spacing: 20px 4px;
 }
 
 .date-picker table tbody tr:hover {
@@ -125,18 +126,30 @@
   letter-spacing: 0.42px;
   border: none;
 }
+.date-picker table td.active {
+  color: #fff;
+  border-radius: 100%;
+  background: #2774e1;
+}
 .date-picker table tbody td:first-child {
   color: #ff3b30;
+}
+.date-picker-single {
+  display: unset;
 }
 .year-month {
   display: flex;
   margin-bottom: 20px;
-  padding: 0 20px;
+  justify-content: center;
 }
 .year-month .picker-btn-box {
   display: flex;
   align-items: center;
   gap: 0 2px;
+}
+.year-month .picker-btn-box img {
+  width: 20px;
+  height: 20px;
 }
 .year-month .year-month-flex {
   display: flex;
@@ -169,4 +182,5 @@
 .button-box button:last-child {
   color: #fff;
   background: #263a75;
+  border: none;
 }

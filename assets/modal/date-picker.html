@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="modal">
-      <div class="modal-content">
+      <div class="modal-content modal-content-400">
         <div class="top">
           <h2>일일 일정</h2>
           <button class="modal-close">
@@ -16,302 +16,120 @@
           </button>
         </div>
         <div class="cont">
-          <div class="date-search-filter">
-            <div class="date-select-box radius">
-              <p class="list-title radius">기수</p>
-              <label for="number-category-select"></label>
-              <select name="category" id="number-category-select">
-                <option value="" selected>
-                  제14기 2024-01-01 ~ 2024-12-31
-                </option>
-                <option value="number-option1">옵션 1</option>
-                <option value="number-option2">옵션 2</option>
-                <option value="number-option3">옵션 3</option>
-              </select>
-            </div>
-            <div class="date-select-box">
-              <p class="list-title">분기</p>
-              <label for="category-select"></label>
-              <select name="category" id="category-select" class="w-80">
-                <option value="" selected></option>
-                <option value="option1">옵션 1</option>
-                <option value="option2">옵션 2</option>
-                <option value="option3">옵션 3</option>
-              </select>
-            </div>
-            <div class="date-select-box flex-date-select-box radius-r">
-              <p class="list-title">월</p>
-              <div class="month-flex">
-                <div>
-                  <label for="top-month-category-select"></label>
-                  <select
-                    name="category"
-                    id="top-month-category-select"
-                    class="w-80"
-                  >
-                    <option value="" selected></option>
-                    <option value="top-month-option1">1월</option>
-                    <option value="top-month-option2">2월</option>
-                    <option value="top-month-option3">3월</option>
-                    <option value="top-month-option4">4월</option>
-                    <option value="top-month-option5">5월</option>
-                    <option value="top-month-option6">6월</option>
-                    <option value="top-month-option7">7월</option>
-                    <option value="top-month-option8">8월</option>
-                    <option value="top-month-option9">9월</option>
-                    <option value="top-month-option10">10월</option>
-                    <option value="top-month-option11">11월</option>
-                    <option value="top-month-option12">12월</option>
+          <div class="date-picker date-picker-single">
+            <div class="year-month">
+              <div class="picker-btn-box">
+                <button>
+                  <img
+                    src="../images/icon-date-chevron-right.svg"
+                    alt="이전으로"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="../images/icon-date-chevron-right1.svg"
+                    alt="이전으로"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="../images/icon-date-chevron-right2.svg"
+                    alt="이전으로"
+                  />
+                </button>
+              </div>
+              <div class="year-month-flex">
+                <div class="year">
+                  <label for="year-category-select"></label>
+                  <select name="category" id="year-category-select">
+                    <option value="" selected>2024년</option>
+                    <option value="year-option1">옵션 1</option>
+                    <option value="year-option2">옵션 2</option>
+                    <option value="year-option3">옵션 3</option>
                   </select>
                 </div>
-
-                <button class="search-button">선택</button>
-              </div>
-            </div>
-          </div>
-          <div class="date-picker">
-            <div class="left-date-picker">
-              <div class="year-month">
-                <div class="picker-btn-box">
-                  <button>
-                    <img
-                      src="../images/icon-date-chevron-right.svg"
-                      alt="이전으로"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-date-chevron-right1.svg"
-                      alt="이전으로"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-date-chevron-right2.svg"
-                      alt="이전으로"
-                    />
-                  </button>
-                </div>
-                <div class="year-month-flex">
-                  <div class="year">
-                    <label for="year-category-select"></label>
-                    <select name="category" id="year-category-select">
-                      <option value="" selected>2024년</option>
-                      <option value="year-option1">옵션 1</option>
-                      <option value="year-option2">옵션 2</option>
-                      <option value="year-option3">옵션 3</option>
-                    </select>
-                  </div>
-                  <div class="month">
-                    <label for="month-category-select"></label>
-                    <select name="category" id="month-category-select">
-                      <option value="" selected>8월</option>
-                      <option value="month-option1">옵션 1</option>
-                      <option value="month-option2">옵션 2</option>
-                      <option value="month-option3">옵션 3</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="picker-btn-box">
-                  <button>
-                    <img src="../images/icon-chevron-next.svg" alt="다음으로" />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-chevron-next1.svg"
-                      alt="다음으로"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-chevron-next2.svg"
-                      alt="다음으로"
-                    />
-                  </button>
+                <div class="month">
+                  <label for="month-category-select"></label>
+                  <select name="category" id="month-category-select">
+                    <option value="" selected>8월</option>
+                    <option value="month-option1">옵션 1</option>
+                    <option value="month-option2">옵션 2</option>
+                    <option value="month-option3">옵션 3</option>
+                  </select>
                 </div>
               </div>
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <thead>
-                  <tr>
-                    <th>일</th>
-                    <th>월</th>
-                    <th>화</th>
-                    <th>수</th>
-                    <th>목</th>
-                    <th>금</th>
-                    <th>토</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="opacity">27</span></td>
-                    <td><span class="opacity">28</span></td>
-                    <td><span>1</span></td>
-                    <td><span>2</span></td>
-                    <td><span>3</span></td>
-                    <td><span>4</span></td>
-                    <td><span>5</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>6</span></td>
-                    <td><span>7</span></td>
-                    <td><span>8</span></td>
-                    <td><span>9</span></td>
-                    <td><span>10</span></td>
-                    <td><span>11</span></td>
-                    <td><span>12</span></td>
-                  </tr>
-                  <tr>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                  </tr>
-                  <tr>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                  </tr>
-                  <tr>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="opacity">1</td>
-                    <td class="opacity">2</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="right-date-picker">
-              <div class="year-month">
-                <div class="picker-btn-box">
-                  <button>
-                    <img
-                      src="../images/icon-date-chevron-right.svg"
-                      alt="이전으로"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-date-chevron-right1.svg"
-                      alt="이전으로"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-date-chevron-right2.svg"
-                      alt="이전으로"
-                    />
-                  </button>
-                </div>
-                <div class="year-month-flex">
-                  <div class="year">
-                    <label for="year-category-select"></label>
-                    <select name="category" id="year-category-select">
-                      <option value="" selected>2024년</option>
-                      <option value="year-option1">옵션 1</option>
-                      <option value="year-option2">옵션 2</option>
-                      <option value="year-option3">옵션 3</option>
-                    </select>
-                  </div>
-                  <div class="month">
-                    <label for="month-category-select"></label>
-                    <select name="category" id="month-category-select">
-                      <option value="" selected>8월</option>
-                      <option value="month-option1">옵션 1</option>
-                      <option value="month-option2">옵션 2</option>
-                      <option value="month-option3">옵션 3</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="picker-btn-box">
-                  <button>
-                    <img src="../images/icon-chevron-next.svg" alt="다음으로" />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-chevron-next1.svg"
-                      alt="다음으로"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="../images/icon-chevron-next2.svg"
-                      alt="다음으로"
-                    />
-                  </button>
-                </div>
+              <div class="picker-btn-box">
+                <button>
+                  <img src="../images/icon-chevron-next.svg" alt="다음으로" />
+                </button>
+                <button>
+                  <img src="../images/icon-chevron-next1.svg" alt="다음으로" />
+                </button>
+                <button>
+                  <img src="../images/icon-chevron-next2.svg" alt="다음으로" />
+                </button>
               </div>
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <thead>
-                  <tr>
-                    <th>일</th>
-                    <th>월</th>
-                    <th>화</th>
-                    <th>수</th>
-                    <th>목</th>
-                    <th>금</th>
-                    <th>토</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="opacity">27</span></td>
-                    <td><span class="opacity">28</span></td>
-                    <td><span>1</span></td>
-                    <td><span>2</span></td>
-                    <td><span>3</span></td>
-                    <td><span>4</span></td>
-                    <td><span>5</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>6</span></td>
-                    <td><span>7</span></td>
-                    <td><span>8</span></td>
-                    <td><span>9</span></td>
-                    <td><span>10</span></td>
-                    <td><span>11</span></td>
-                    <td><span>12</span></td>
-                  </tr>
-                  <tr>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                  </tr>
-                  <tr>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                  </tr>
-                  <tr>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="opacity">1</td>
-                    <td class="opacity">2</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                  <th>일</th>
+                  <th>월</th>
+                  <th>화</th>
+                  <th>수</th>
+                  <th>목</th>
+                  <th>금</th>
+                  <th>토</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="opacity">27</span></td>
+                  <td><span class="opacity">28</span></td>
+                  <td><span>1</span></td>
+                  <td><span>2</span></td>
+                  <td><span>3</span></td>
+                  <td><span>4</span></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr>
+                  <td><span>6</span></td>
+                  <td class="active"><span>7</span></td>
+                  <td><span>8</span></td>
+                  <td><span>9</span></td>
+                  <td><span>10</span></td>
+                  <td><span>11</span></td>
+                  <td><span>12</span></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td class="opacity">1</td>
+                  <td class="opacity">2</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="button-box">
             <button>취소</button>
