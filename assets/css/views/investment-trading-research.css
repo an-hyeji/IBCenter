@@ -85,6 +85,7 @@
 
 .right-research-table-wrap table {
   border-top: none;
+  table-layout: fixed;
 }
 .right-research-table-wrap table thead th {
   padding: 13px;
