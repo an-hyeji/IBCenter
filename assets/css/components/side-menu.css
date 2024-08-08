@@ -112,6 +112,7 @@
   padding: 8px 28px;
   position: relative;
   margin-bottom: 4px;
+  color: #fff;
 }
 .side-menu .sub-menu li:last-child {
   margin-bottom: 0;
@@ -119,6 +120,7 @@
 .side-menu .sub-menu li.active {
   background-color: #fff;
   border-radius: 4px;
+  color: #000;
 }
 .side-menu .sub-menu li.active a {
   color: #000;
@@ -135,6 +137,33 @@
   left: 16px;
   top: 14px;
   background-color: rgba(217, 217, 217, 0.4);
+}
+.side-menu .sub-menu li .depth {
+  margin: 8px 0 0 0;
+}
+.side-menu .sub-menu li .depth li {
+  padding: 0;
+  color: #6f7589;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+.side-menu .sub-menu li .depth li::after {
+  display: none;
+}
+.side-menu .sub-menu li .depth li a {
+  color: #6f7589;
+  display: flex;
+  align-items: center;
+}
+.side-menu .sub-menu li .depth li a span {
+  display: none;
+}
+.side-menu .sub-menu li .depth li.active a {
+  color: #2774e1;
+}
+.side-menu .sub-menu li .depth li.active a span {
+  display: block;
 }
 .side-menu .menu-list .list-title.open .flex {
   border-bottom: none;
