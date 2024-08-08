@@ -16,11 +16,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 24px 0 40px;
+  padding-right: 24px;
+}
+.nav-modal-content .top .modal-close {
+  padding: 0;
 }
 .nav-modal-content .top ul {
   display: flex;
   gap: 0 24px;
+  padding: 24px 0 0 40px;
 }
 .nav-modal-content .top ul li {
   cursor: pointer;
