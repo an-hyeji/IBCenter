@@ -1,8 +1,6 @@
 .login-body {
   overflow-y: auto;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 .login-flex-wrap {
   display: flex;
