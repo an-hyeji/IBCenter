@@ -16,18 +16,26 @@
           </button>
         </div>
         <div class="cont">
-          <div class="bookmark-button-box">
+          <div class="bookmark-up-down-botton-box">
             <p>메뉴를 선택하신 후 위,아래로 이동해주세요.</p>
+            <div class="up-down-botton">
+              <button>
+                <img src="../images/icon-chevron-top.svg" alt="위로버튼" />
+              </button>
+              <button>
+                <img src="../images/icon-chevron-down.svg" alt="아래로버튼" />
+              </button>
+            </div>
           </div>
-          <ul>
-            <li>투자업체정보</li>
-            <li>해외투자신고</li>
-            <li>일정관리</li>
-            <li>해외투자신고</li>
-            <li>사원정보</li>
-            <li>투자단위별 투자수익률</li>
-            <li>투자업체별 투자수익률</li>
-            <li>심사역</li>
+          <ul class="bookmark-list">
+            <li onclick="setListActive(this)">투자업체정보</li>
+            <li onclick="setListActive(this)" class="active">해외투자신고</li>
+            <li onclick="setListActive(this)">일정관리</li>
+            <li onclick="setListActive(this)">해외투자신고</li>
+            <li onclick="setListActive(this)">사원정보</li>
+            <li onclick="setListActive(this)">투자단위별 투자수익률</li>
+            <li onclick="setListActive(this)">투자업체별 투자수익률</li>
+            <li onclick="setListActive(this)">심사역</li>
           </ul>
         </div>
         <div class="bookmark-under-button-box">

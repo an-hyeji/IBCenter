@@ -14,6 +14,14 @@ function setTopActive(element) {
 //   element.classList.add('active');
 // }
 
+function setListActive(element) {
+  const listMenuItems = document.querySelectorAll('.bookmark-list li');
+  listMenuItems.forEach(function (item) {
+    item.classList.remove('active');
+  });
+  element.classList.add('active');
+}
+
 const modal = document.querySelector('.bookmark-modal');
 const btn = document.querySelector('.bookmark-button');
 const closeBtn = document.querySelector('.modal-close');

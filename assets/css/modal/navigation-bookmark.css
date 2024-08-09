@@ -79,6 +79,7 @@
   padding-right: 12px;
   height: 284px;
   overflow-y: auto;
+  padding-bottom: 20px;
 }
 .bookmark-content .cont ul::-webkit-scrollbar {
   width: 4px;
@@ -139,4 +140,28 @@
 }
 .bookmark-content .bookmark-under-button-box .flex button:last-child::after {
   display: none;
+}
+
+/* 즐겨찾기 메뉴 순서변경 */
+.bookmark-content .bookmark-up-down-botton-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-right: 14px;
+}
+.bookmark-content .bookmark-up-down-botton-box p {
+  color: #373a46;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.bookmark-content .cont .bookmark-list li {
+  border: 1px solid #f6f6fa;
+}
+.bookmark-content .cont .bookmark-list li.active {
+  border: 1px solid #2774e1;
+  background: #e8effe;
 }
