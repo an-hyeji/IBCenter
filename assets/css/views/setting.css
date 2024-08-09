@@ -21,6 +21,10 @@
 .setting-table-wrap table tbody td {
   font-weight: 600;
   height: unset;
+  color: #373a46;
+}
+.setting-table-wrap table tbody .font-color {
+  color: #555b6c;
 }
 .setting-table-wrap table tbody .ml-8 {
   margin-left: 8px;
