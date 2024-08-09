@@ -1,5 +1,4 @@
 /* 대시보드 header */
-
 .dashboard-header-wrap {
   background: linear-gradient(267deg, #3866c0 0%, #203a88 96.16%);
   border-bottom: 1px solid rgba(224, 226, 233, 0.08);
@@ -47,9 +46,21 @@
   color: #5198ff;
 }
 .bg-color {
-  background: var(--Bg-Default, #f6f6fa);
+  background: #f6f6fa;
 }
-
+.dashboard-title-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-title-top .dashboard-title {
+  color: #373a46;
+}
+.dashboard-title-top button {
+  border-radius: 4px;
+  background: #e8effe;
+  padding: 4px;
+}
 /* 대시보드 공통 끝 */
 
 /* 대시보드 top-section */
@@ -135,6 +146,9 @@
   height: 32px !important;
   box-shadow: 0px 3.24px 6.48px 0px rgba(0, 0, 0, 0.08);
   right: -20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-top: unset !important;
 }
 .swiper-button-prev {
   background-image: url(../../images/icon-swiper-arrow-prev.svg);
@@ -146,6 +160,9 @@
   height: 32px !important;
   box-shadow: 0px 3.24px 6.48px 0px rgba(0, 0, 0, 0.08);
   left: -20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-top: unset !important;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -155,10 +172,119 @@
 
 /* 대시보드 second-section*/
 .second-section {
-  border: 2px solid red;
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transform: translateY(-20px);
 }
 .second-section ul {
   display: grid;
+  gap: 12px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-/* 대시보드 second-section 끝*/
+.second-section ul li {
+  border-radius: 8px;
+  border: 1px solid #f5bcce;
+  background: #ffe8f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.second-section ul li:nth-child(2) {
+  border: 1px solid #f0c9ab;
+  background: #f8e3d3;
+}
+.second-section ul li:nth-child(3) {
+  border: 1px solid #b3e0bf;
+  background: #d7eedd;
+}
+.second-section ul li:nth-child(3) img {
+  width: 32px;
+}
+.second-section ul li .li-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+.second-section ul li .li-flex h4 {
+  color: #373a46;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.second-section ul li p {
+  color: #373a46;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+}
+.second-section ul li p span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+/* 대시보드 second-section 끝 */
+
+/* 대시보드 report-section */
+.report-section {
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.report-section ul {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 20px;
+}
+.report-section ul li {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(188, 188, 188, 0.25);
+  padding: 12px 20px 20px 20px;
+  cursor: pointer;
+}
+.report-section ul li .report-flex {
+  display: flex;
+  gap: 0 12px;
+  margin-top: 8px;
+}
+.report-section ul li .report-flex p {
+  color: #6f7589;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+.report-section ul li .report-flex span {
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+/* 대시보드 report-section 끝 */
+
+/* 대시보드 under-section */
+.under-section {
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* 대시보드 under-section 끝 */
