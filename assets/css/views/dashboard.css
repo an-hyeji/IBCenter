@@ -47,6 +47,7 @@
 }
 .bg-color {
   background: #f6f6fa;
+  height: 100%;
 }
 .dashboard-title-top {
   display: flex;
@@ -286,5 +287,8 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 44px;
 }
 /* 대시보드 under-section 끝 */
