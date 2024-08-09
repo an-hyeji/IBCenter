@@ -1,6 +1,7 @@
 /* 대시보드 header */
 
 .dashboard-header-wrap {
+  background: linear-gradient(267deg, #3866c0 0%, #203a88 96.16%);
   border-bottom: 1px solid rgba(224, 226, 233, 0.08);
 }
 .dashboard-header-wrap .nav-wrap .nav-bar a {
@@ -34,36 +35,29 @@
 
 /* 대시보드 header 끝 */
 
-.wrapper {
-  max-width: 1360px;
-  width: 100%;
-  margin: 0 auto;
-}
 .dashboard-title {
   color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 .dashboard-title span {
   color: #5198ff;
 }
 .top-section {
-  height: 360px;
-  background: linear-gradient(267deg, #3866c0 0%, #203a88 96.16%);
-  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 292px;
+  background: linear-gradient(267deg, #3866c0 0%, #203a88 96.16%);
 }
 .top-section .main-wrap {
-  padding-top: 68px;
   max-width: 1360px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .top-section .main-wrap .swiper-wrap {
   position: relative;
