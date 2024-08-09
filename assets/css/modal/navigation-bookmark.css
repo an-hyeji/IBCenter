@@ -1,3 +1,4 @@
+/* 즐겨찾기 미등록 */
 .bookmark-modal {
   display: none;
   position: fixed;
@@ -14,7 +15,7 @@
   position: absolute;
   top: 60px;
   left: 314px;
-  padding: 20px;
+  padding: 20px 4px 20px 20px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
@@ -39,12 +40,8 @@
 .bookmark-content .top .modal-close img {
   width: 100%;
 }
-.bookmark-content .cont {
-  height: 284px;
-  overflow-y: auto;
-}
 .bookmark-content .cont .empty {
-  height: 100%;
+  height: 284px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -61,4 +58,85 @@
   width: 24px;
   height: 24px;
   transform: translateY(-4px);
+}
+
+/* 즐겨찾기 등록 */
+.bookmark-content .cont .bookmark-button-box {
+  display: flex;
+  gap: 0 8px;
+  margin-top: 12px;
+}
+.bookmark-content .cont .bookmark-button-box button {
+  border-radius: 4px;
+  border: 1px solid #b4b9cc;
+  background: #fff;
+  padding: 8px 12px;
+  display: flex;
+  gap: 0 4px;
+}
+.bookmark-content .cont ul {
+  margin-top: 20px;
+  padding-right: 12px;
+  height: 284px;
+  overflow-y: auto;
+}
+.bookmark-content .cont ul::-webkit-scrollbar {
+  width: 4px;
+}
+.bookmark-content .cont ul::-webkit-scrollbar-track {
+  background: #fff;
+}
+.bookmark-content .cont ul::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #caced8;
+}
+.bookmark-content .cont ul li {
+  border-radius: 4px;
+  background: #f6f6fa;
+  padding: 8px 12px;
+  margin-top: 4px;
+  color: #373a46;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+
+/* 즐겨찾기 메뉴해제 */
+.bookmark-content .bookmark-under-button-box .line {
+  border-top: 1px solid #e0e2e9;
+  margin-left: -20px;
+  margin-right: -4px;
+}
+.bookmark-content .bookmark-under-button-box .flex {
+  display: flex;
+  gap: 0 25px;
+  justify-content: end;
+  padding: 20px 20px 0 20px;
+}
+.bookmark-content .bookmark-under-button-box .flex button {
+  color: #373a46;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  position: relative;
+}
+.bookmark-content .bookmark-under-button-box .flex button::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 8px;
+  background-color: #b4b9cc;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bookmark-content .bookmark-under-button-box .flex button:last-child {
+  color: #2774e1;
+}
+.bookmark-content .bookmark-under-button-box .flex button:last-child::after {
+  display: none;
 }

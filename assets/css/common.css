@@ -8,6 +8,7 @@
 }
 .flex-wrap {
   display: flex;
+  height: 100%;
   flex-grow: 1;
 }
 .left-wrap {
@@ -265,7 +266,6 @@ input {
   background-clip: padding-box;
   border: 4px solid #f6f6fa;
   box-sizing: border-box;
-  position: relative;
 }
 
 .content-wrap::-webkit-scrollbar {
