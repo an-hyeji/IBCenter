@@ -32,9 +32,9 @@
 .dashboard-header-wrap .right-header .info-box {
   border: none !important;
 }
-
 /* 대시보드 header 끝 */
 
+/* 대시보드 공통 */
 .dashboard-title {
   color: #fff;
   font-size: 20px;
@@ -46,6 +46,13 @@
 .dashboard-title span {
   color: #5198ff;
 }
+.bg-color {
+  background: var(--Bg-Default, #f6f6fa);
+}
+
+/* 대시보드 공통 끝 */
+
+/* 대시보드 top-section */
 .top-section {
   width: 100%;
   height: 292px;
@@ -144,3 +151,14 @@
 .swiper-button-prev::after {
   display: none;
 }
+/* 대시보드 top-section 끝 */
+
+/* 대시보드 second-section*/
+.second-section {
+  border: 2px solid red;
+}
+.second-section ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+/* 대시보드 second-section 끝*/
