@@ -286,6 +286,10 @@
 body {
   overflow-y: hidden;
 }
+.scroll-body {
+  overflow-y: auto;
+  height: 100vh;
+}
 
 html,
 body,

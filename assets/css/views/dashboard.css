@@ -40,7 +40,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  padding-top: 40px;
 }
 .dashboard-title span {
   color: #5198ff;
@@ -48,11 +47,13 @@
 .bg-color {
   background: #f6f6fa;
   height: 100%;
+  padding-bottom: 44px;
 }
 .dashboard-title-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .dashboard-title-top .dashboard-title {
   color: #373a46;
@@ -290,5 +291,65 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0 44px;
+}
+.under-section table {
+  margin-top: 12px;
+  border: none;
+  /* border-collapse: collapse; */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.under-section table thead th {
+  border: none;
+  border-bottom: 1px solid #caced8;
+  color: #6f7589;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 8px 12px;
+}
+
+.under-section table tbody tr:hover {
+  background: #e8effe;
+  box-shadow: 0px 2px 12px 0px #ecf0f7;
+}
+.under-section table tbody tr.selected {
+  background: #f6f6fa;
+}
+.under-section table tbody tr:hover td {
+  border-style: solid none solid none;
+  border-width: 1px;
+  border-color: #2774e1 !important;
+}
+.under-section table tbody tr:hover td:first-child {
+  border-left-style: solid;
+}
+.under-section table tbody tr:hover td:last-child {
+  border-right-style: solid;
+}
+.under-section table tbody tr td {
+  font-weight: 400;
+  line-height: 16px;
+  padding: 14px 12px;
+  border-style: solid none solid none;
+  border-width: 1px;
+  border-color: transparent;
+}
+.under-section table tbody tr td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left-style: solid;
+  border-color: transparent;
+}
+.under-section table tbody tr td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right-style: solid;
+  border-color: transparent;
+}
+.under-section table tbody tr td:last-child {
+  color: #334680;
+  font-weight: 600;
 }
 /* 대시보드 under-section 끝 */
