@@ -158,6 +158,7 @@ table tbody tr:first-child td {
 table tbody td:last-child {
   border-right: none;
 }
+
 table tbody .center {
   text-align: center;
 }
@@ -259,7 +260,6 @@ input {
 }
 .secondary-scroll::-webkit-scrollbar-track {
   background: #f6f6fa;
-  border-top: 1px solid #e0e2e9;
 }
 .secondary-scroll::-webkit-scrollbar-thumb {
   border-radius: 20px;
