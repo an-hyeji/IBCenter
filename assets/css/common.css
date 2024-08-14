@@ -264,9 +264,7 @@ input {
 .secondary-scroll::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: #caced8;
-  background-clip: padding-box;
-  border: 4px solid #f6f6fa;
-  box-sizing: border-box;
+  border: 6px solid #f6f6fa;
 }
 
 .content-wrap::-webkit-scrollbar {
@@ -280,7 +278,6 @@ input {
 .content-wrap::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: #caced8;
-  background-clip: padding-box;
   border: 6px solid #f6f6fa;
 }
 

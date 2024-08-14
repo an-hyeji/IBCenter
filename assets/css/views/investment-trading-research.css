@@ -57,6 +57,9 @@
   border-top: 1px solid #b4b9cc;
   font-weight: 500;
 }
+.left-research-table-wrap table tbody tr:nth-last-child(2) td {
+  border-bottom: none;
+}
 
 .left-research-table-wrap table tbody td {
   padding: 9px 8px;
