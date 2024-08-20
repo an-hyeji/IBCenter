@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/main.js" defer></script>
     <script src="../js/navigation.js" defer></script>
-    <title>네비게이션_투자관리</title>
+    <title>네비게이션_회계관리</title>
   </head>
   <body>
     <div class="wrap">
@@ -290,36 +290,224 @@
             </div>
           </div>
           <div class="content-wrap nav-content-wrap">
-            <h1 class="title">투자관리</h1>
+            <h1 class="title">회계관리</h1>
             <div class="list-box">
               <div class="list">
-                <p>투자기업관리</p>
+                <p>일일업무</p>
                 <ul>
-                  <li><span>투자업체정보</span></li>
-                  <li><span>투심위정보</span></li>
-                  <li><span>법인등기부등본 RPA</span></li>
-                  <li><span>투자업체 자본금 정보</span></li>
-                  <li><span>심사역 정보</span></li>
-                  <li><span>해외투자신고 관리</span></li>
-                  <li><span>IPO 일정관리</span></li>
+                  <li><span>당일 기일도래 내역</span></li>
+                  <li><span>미결내역 처리</span></li>
+                  <li><span>조합비용 / 리스트</span></li>
+                  <li><span>일계표</span></li>
+                  <li><span>회계전표 리스트</span></li>
+                  <li>
+                    <div class="click-menu">
+                      <span>거래내역 리스트</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>투자거래 / 출자분배 / 거래전표</li>
+                    </ul>
+                  </li>
+                  <li><span>일마감</span></li>
                 </ul>
               </div>
               <div class="list">
-                <p>투자거래관리</p>
+                <p>회계전표</p>
                 <ul>
-                  <li><span>투자자산 평가</span></li>
-                  <li><span>투자원장</span></li>
-                  <li><span>FoF현황</span></li>
-                  <li><span>투자거래검색</span></li>
+                  <li>
+                    <div class="click-menu">
+                      <span>회계전표</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>등록 / 리스트 / 검색</li>
+                    </ul>
+                  </li>
+                  <li><span>반제처리(미결관리)</span></li>
+                  <li><span>결산전표 관리</span></li>
                 </ul>
               </div>
               <div class="list">
-                <p>투자회수관리</p>
+                <p>세무관리</p>
                 <ul>
-                  <li><span>투자단위별 투자수익률</span></li>
-                  <li><span>투자업체별 투자수익률</span></li>
-                  <li><span>조합별 투자수익률</span></li>
-                  <li><span>심사역 투자/회수 실적</span></li>
+                  <li>
+                    <div class="click-menu">
+                      <span>거래전표</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>매출등록 / 매입등록 / 리스트 / 검색</li>
+                    </ul>
+                  </li>
+                  <li><span>전자세금계산서 관리</span></li>
+                  <li><span>부가가치세 관리</span></li>
+                  <li><span>부가가치세 대리납부신고서</span></li>
+                  <li><span>증권거래세 관리</span></li>
+                  <li>
+                    <div class="click-menu">
+                      <span>원천징수소득관리</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>기타소득입력 / 연도별 / 월별 / 소득자별 리스트</li>
+                      <li>이자소득입력 / 연도별 / 월별 / 소득자별 리스트</li>
+                      <li>배당소득입력 / 연도별 / 월별 / 소득자별 리스트</li>
+                    </ul>
+                  </li>
+                  <li><span>원천징수이행상황신고서</span></li>
+                  <li><span>해외금융계좌 관리 신고</span></li>
+                  <li><span>세무내역 조회</span></li>
+                </ul>
+              </div>
+              <div class="list">
+                <p>장부 등</p>
+                <ul>
+                  <li>
+                    <div class="click-menu">
+                      <span>기본장부</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>총계정원장 / 분개장</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="click-menu">
+                      <span>거래처</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>거래처코드 / 거래처원장 / 계정별거래처별</li>
+                      <li>결산명세서</li>
+                    </ul>
+                  </li>
+                  <li><span>조합별 장부리스트</span></li>
+                  <li><span>채권채무관리</span></li>
+                </ul>
+              </div>
+              <div class="list">
+                <p>자금관리</p>
+                <ul>
+                  <li>
+                    <div class="click-menu">
+                      <span>예금</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>예금계좌코드리스트</li>
+                      <li>계정별계좌별 명세서</li>
+                      <li>계좌별원장</li>
+                      <li>조합별예금</li>
+                      <li>조합별현금흐름</li>
+                      <li>RPA 계좌관리</li>
+                    </ul>
+                  </li>
+                  <li><span>일일자금보고</span></li>
+                  <li><span>증권계좌현황</span></li>
+                </ul>
+              </div>
+              <div class="list">
+                <p>재무제표/보고서</p>
+                <ul>
+                  <li>
+                    <div class="click-menu">
+                      <span>월별분석</span>
+                      <button class="toggle-btn">
+                        <img
+                          src="../images/icon-plus-menu.svg"
+                          alt="플러스 아이콘"
+                        />
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                          class="hidden"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>월별손익요약표 / 월계표</li>
+                      <li>손익계산서그룹별월별비교표</li>
+                    </ul>
+                  </li>
+                  <li><span>재무제표</span></li>
+                  <li><span>일일재무제표</span></li>
+                  <li><span>재원별 F/S비교조회</span></li>
+                  <li><span>Forecast 관리</span></li>
+                  <li><span>시계열 재무제표</span></li>
+                  <li><span>지분법 연결 평가자료</span></li>
+                  <li><span>조합투자업체지분(SAP용)</span></li>
+                  <li><span>전자 보고용 시산표</span></li>
                 </ul>
               </div>
             </div>

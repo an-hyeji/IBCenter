@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .nav-content-wrap::-webkit-scrollbar {
   display: none;
 }
@@ -35,7 +39,6 @@
   font-weight: 500;
   line-height: 28px;
   position: relative;
-  /* padding: 8px 0 8px 12px; */
   border-bottom: 1px solid #e0e2e9;
   cursor: pointer;
 }
@@ -62,7 +65,9 @@
   padding-left: 12px;
   border-top: 1px solid #e0e2e9;
   position: relative;
+  display: none;
 }
+
 .nav-content-wrap .list ul li .under-menu::after {
   position: absolute;
   content: '';
@@ -97,9 +102,3 @@
   background: #e8effe;
   color: #334680;
 }
-
-/* .nav-content-wrap .list ul li.active,
-.nav-content-wrap .list ul li:hover {
-  background: #e8effe;
-  color: #334680;
-} */
