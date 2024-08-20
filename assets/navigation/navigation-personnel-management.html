@@ -38,20 +38,41 @@
                       즐겨찾기
                     </button>
                   </li>
-                  <li><a href="">투자관리</a></li>
+                  <li>
+                    <a
+                      href="../navigation/navigation-investment-management.html"
+                      >투자관리</a
+                    >
+                  </li>
                   <li><a href="">조합관리</a></li>
-                  <li><a href="">회계관리</a></li>
-                  <li><a href="">전자결재</a></li>
+                  <li>
+                    <a href="">회계관리</a>
+                  </li>
+                  <li>
+                    <a href="">전자결재</a>
+                  </li>
                   <li><a href="">경영관리</a></li>
-                  <li><a href="">기본정보</a></li>
-                  <li><a href="">인사관리</a></li>
+                  <li>
+                    <a href="../navigation/navigation-basic-information.html"
+                      >기본정보</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../navigation/navigation-personnel-management.html"
+                      >인사관리</a
+                    >
+                  </li>
                   <li><a href="">전자결재</a></li>
                   <li><a href="">자금세탁방지</a></li>
                   <li><a href="">조합보고</a></li>
                   <li><a href="">투자관리</a></li>
                   <li><a href="">조합관리</a></li>
-                  <li><a href="">회계관리</a></li>
-                  <li><a href="">전자결재</a></li>
+                  <li>
+                    <a href="">회계관리</a>
+                  </li>
+                  <li>
+                    <a href="">전자결재</a>
+                  </li>
                   <li><a href="">경영관리</a></li>
                   <li><a href="">기본정보</a></li>
                   <li><a href="">인사관리</a></li>
@@ -269,58 +290,96 @@
             </div>
           </div>
           <div class="content-wrap nav-content-wrap">
-            <h1 class="title">인사관리 메뉴</h1>
+            <h1 class="title">인사관리</h1>
             <div class="list-box">
               <div class="list">
                 <p>기초정보/사원정보</p>
                 <ul>
-                  <li>직위</li>
-                  <li>직종</li>
-                  <li>부서코드</li>
+                  <li><span>직위</span></li>
+                  <li><span>직종</span></li>
+                  <li><span>부서코드</span></li>
                   <li>
-                    <p>사원정보</p>
-                    <span>사원정보</span
-                    ><span class="under-line">재직자정보</span
-                    ><span>퇴직자정보</span>
+                    <div class="click-menu">
+                      <span>사원정보</span>
+                      <button>
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>사원정보</li>
+                      <li>재직자정보</li>
+                      <li>퇴직자정보</li>
+                    </ul>
                   </li>
-                  <li>인사 Batch</li>
+                  <li><span>인사 Batch</span></li>
                   <li>
-                    <p>재직증명서</p>
-                    <span>입력</span><span>리스트</span>
+                    <div class="click-menu">
+                      <span> 재직증명서</span>
+
+                      <button>
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>입력 / 리스트</li>
+                    </ul>
                   </li>
                   <li>
-                    <p>경력증명서</p>
-                    <span>입력</span><span>리스트</span>
+                    <div class="click-menu">
+                      <span>경력증명서</span>
+                      <button>
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>입력 / 리스트</li>
+                    </ul>
                   </li>
-                  <li>
-                    <p>퇴직증명서</p>
-                    <span>입력</span><span>리스트</span>
-                  </li>
-                  <li>근태코드(휴가포함)</li>
-                  <li>상벌구분코드</li>
-                  <li>환경설정</li>
-                  <li>회사정보</li>
+                  <li><span>근태코드(휴가포함)</span></li>
+                  <li><span>상벌구분코드</span></li>
+                  <li><span>환경설정</span></li>
+                  <li><span>회사정보</span></li>
                 </ul>
               </div>
               <div class="list">
                 <p>경영관리 정보</p>
                 <ul>
-                  <li>인사관련정보</li>
-                  <li>사업장별 인원정보</li>
-                  <li>연차일수 부여기준</li>
-                  <li>연차관리</li>
+                  <li><span>인사관련정보</span></li>
+                  <li><span>사업장별 인원정보</span></li>
+                  <li><span>연차일수 부여기준</span></li>
+                  <li><span>연차관리</span></li>
                   <li>
-                    <p>휴가원</p>
-                    <span>검색</span><span>리스트</span>
+                    <div class="click-menu">
+                      <span>휴가원</span>
+                      <button>
+                        <img
+                          src="../images/icon-minus-menu.svg"
+                          alt="마이너스 아이콘"
+                        />
+                      </button>
+                    </div>
+                    <ul class="under-menu">
+                      <li>리스트</li>
+                      <li>검색</li>
+                    </ul>
                   </li>
-                  <li onclick="setListActive(this)">교육신청서 리스트</li>
-                  <li onclick="setListActive(this)">야근보고서 리스트</li>
+                  <li><span>교육신청서 리스트</span></li>
+                  <li><span>야근보고서 리스트 </span></li>
                 </ul>
               </div>
               <div class="list">
-                <p>유틸리티</p>
+                <p>경영관리 정보</p>
                 <ul>
-                  <li onclick="setListActive(this)">달력관리</li>
+                  <li><span>달력관리</span></li>
                 </ul>
               </div>
             </div>
