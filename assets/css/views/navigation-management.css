@@ -21,6 +21,9 @@
   gap: 36px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.nav-content-wrap .list-box .list {
+  height: fit-content;
+}
 
 .nav-content-wrap .list p {
   color: #373a46;
@@ -57,8 +60,20 @@
   align-items: center;
   justify-content: space-between;
 }
-.nav-content-wrap .list ul li .click-menu span:hover {
+.nav-content-wrap .list ul li .click-menu a:hover {
   background-color: #fff;
+}
+.nav-content-wrap .list ul li a .total {
+  color: var(--Text-1, #373a46);
+  border-bottom: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-left: 20px;
+  padding: 0;
+}
+.nav-content-wrap .list ul li a .total span {
+  color: #2774e1;
 }
 .nav-content-wrap .list ul li .under-menu {
   background-color: #f6f6fa;
@@ -94,11 +109,12 @@
   top: 17px;
   border-radius: 0;
 }
-.nav-content-wrap .list ul li span {
-  display: block;
+.nav-content-wrap .list ul li a {
+  display: flex;
+  align-items: center;
   padding: 8px 0 8px 12px;
 }
-.nav-content-wrap .list ul li span:hover {
+.nav-content-wrap .list ul li a:hover {
   background: #e8effe;
   color: #334680;
 }

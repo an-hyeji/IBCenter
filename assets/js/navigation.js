@@ -34,23 +34,3 @@ window.onclick = function (e) {
     document.body.style.overflow = 'auto';
   }
 };
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.toggle-btn').forEach((button) => {
-    button.addEventListener('click', function () {
-      const underMenu = this.parentElement.nextElementSibling;
-      const plusIcon = this.querySelector('img[alt="플러스 아이콘"]');
-      const minusIcon = this.querySelector('img[alt="마이너스 아이콘"]');
-
-      if (underMenu.style.display === 'block') {
-        underMenu.style.display = 'none';
-        plusIcon.classList.remove('hidden');
-        minusIcon.classList.add('hidden');
-      } else {
-        underMenu.style.display = 'block';
-        plusIcon.classList.add('hidden');
-        minusIcon.classList.remove('hidden');
-      }
-    });
-  });
-});
