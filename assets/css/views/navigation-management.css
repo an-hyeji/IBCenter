@@ -34,7 +34,7 @@
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .nav-content-wrap .accounting-list-box {
-  grid-template-rows: 400px;
+  grid-template-rows: 400px auto;
 }
 .nav-content-wrap .list-box .list {
   height: fit-content;
