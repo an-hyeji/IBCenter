@@ -17,13 +17,6 @@
               <a href="/">
                 <img src="../images/logo.png" alt="로고" class="logo"
               /></a>
-              <button id="menu-toggle">
-                <img
-                  src="../images/icon-menu.png"
-                  alt="아이콘메뉴"
-                  class="icon-menu"
-                />
-              </button>
             </div>
             <div class="nav-wrap">
               <nav>
@@ -288,7 +281,13 @@
             </div>
           </div>
           <div class="content-wrap nav-content-wrap">
-            <h1 class="title">인사관리</h1>
+            <div class="nav-flex">
+              <h1 class="title">인사관리</h1>
+              <button class="all-menu">
+                <img src="../images/icon-all-menu.svg" alt="추가아이콘" />
+                전체메뉴
+              </button>
+            </div>
             <div class="list-box">
               <div class="list">
                 <p>기초정보/사원정보</p>
@@ -413,14 +412,6 @@
     </div>
     <script>
       document.querySelectorAll('.click-menu').forEach((menu) => {
-        const underMenu = menu.nextElementSibling;
-        const plusIcon = menu.querySelector('img[alt="플러스 아이콘"]');
-        const minusIcon = menu.querySelector('img[alt="마이너스 아이콘"]');
-
-        underMenu.style.display = 'block';
-        plusIcon.classList.add('hidden');
-        minusIcon.classList.remove('hidden');
-
         menu.addEventListener('click', function () {
           const underMenu = this.nextElementSibling;
           const plusIcon = this.querySelector('img[alt="플러스 아이콘"]');
@@ -437,6 +428,28 @@
           }
         });
       });
+
+      document
+        .querySelector('.all-menu')
+        .addEventListener('click', function () {
+          const allUnderMenus = document.querySelectorAll('.under-menu');
+          const allClickMenus = document.querySelectorAll('.click-menu');
+
+          allUnderMenus.forEach((menu) => {
+            menu.style.display = 'block';
+          });
+
+          allClickMenus.forEach((clickMenu) => {
+            const plusIcon =
+              clickMenu.querySelector('img[alt="플러스 아이콘"]');
+            const minusIcon = clickMenu.querySelector(
+              'img[alt="마이너스 아이콘"]'
+            );
+
+            plusIcon.classList.add('hidden');
+            minusIcon.classList.remove('hidden');
+          });
+        });
     </script>
   </body>
 </html>
