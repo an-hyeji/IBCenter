@@ -2,15 +2,14 @@
   border-radius: 4px;
   border: 1px solid #b4b9cc;
   background: #fff;
-  padding: 4px 12px;
+  padding: 0px 12px;
   display: flex;
   gap: 0 4px;
   align-items: center;
   margin-bottom: 20px;
+  line-height: 33px;
 }
-.edit-btn .arrow-icon {
-  margin-top: -2px;
-}
+
 .bold-blue {
   color: #2774e1;
   font-weight: 600;

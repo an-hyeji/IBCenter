@@ -365,7 +365,7 @@ input {
   transform: translateY(-50%);
 }
 .add-remove-button-box .add-remove-button {
-  padding: 8px 12px;
+  padding: 0 12px;
   border-radius: 4px;
   border: 1px solid #b4b9cc;
   background: #fff;
@@ -373,13 +373,17 @@ input {
   font-size: 14px;
   font-weight: 500;
   display: flex;
+  align-items: center;
   gap: 0 8px;
+  height: 32px;
+  line-height: 30px;
 }
 .up-down-botton {
   border-radius: 4px;
   border: 1px solid #b4b9cc;
   background: #fff;
   display: flex;
+  height: 32px;
 }
 .up-down-botton button {
   width: 32px;
@@ -390,7 +394,7 @@ input {
   position: absolute;
   content: '';
   width: 1px;
-  height: 100%;
+  height: 31px;
   background-color: #b4b9cc;
   right: 0;
   top: 0;

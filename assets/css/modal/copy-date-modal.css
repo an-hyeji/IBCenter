@@ -86,6 +86,7 @@
   font-weight: 400;
   line-height: 14px;
   padding: 9px 12px;
+  border-collapse: separate;
 }
 .copy-table-wrap .date-input-btn button:first-child {
   border-radius: 4px 0px 0px 4px;
