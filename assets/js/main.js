@@ -98,8 +98,6 @@ listTitles.forEach((listTitle) => {
   }
 });
 
-window.addEventListener('resize', () => console.log('resizing'));
-
 // 체크박스
 document.addEventListener('DOMContentLoaded', function () {
   const selectAllCheckbox = document.getElementById('select-all');

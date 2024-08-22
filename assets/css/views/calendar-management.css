@@ -21,12 +21,13 @@
   border-radius: 4px;
   border: 1px solid rgba(51, 70, 128, 0.8);
   background: #fff;
-  padding: 8px 12px;
+  padding: 0 12px;
   color: #334680;
   font-size: 14px;
   font-weight: 500;
   margin-left: 4px;
   height: 32px;
+  line-height: 30px;
 }
 .calendar-table-wrap {
   margin-top: 32px;

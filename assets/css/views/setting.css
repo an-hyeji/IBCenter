@@ -37,6 +37,9 @@
   padding: 12px 16px;
   height: unset;
 }
+.setting-table-wrap table tbody .padding {
+  padding: 12px 16px;
+}
 .setting-table-wrap table tbody td select {
   width: 71.3%;
 }
