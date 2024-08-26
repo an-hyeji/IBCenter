@@ -8,6 +8,8 @@
   position: relative;
   z-index: 10;
   background-color: #fff;
+  border-bottom: 1px solid #caced8;
+  box-shadow: 0px 4px 12px 0px rgba(215, 215, 222, 0.4);
 }
 .header-wrap .left-header {
   display: flex;
